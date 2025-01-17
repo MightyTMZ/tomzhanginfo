@@ -29,6 +29,15 @@ const Resources = () => {
         <li>AR/VR cheatsheet</li>
         <li>Finance cheatsheet</li>
         <li>Energy economics cheatsheet</li>
+        <li>
+          Tokenization cheatsheet (leverage your experience from Token Z Labs)
+        </li>
+        <li>RAG cheatsheet</li>
+        <li>AI in finance cheatsheet</li>
+        <li>AI in Web3 cheatsheet</li>
+        <li>Web3 cheatsheet</li>
+        <li>Blockchain cheatsheet</li>
+        <li>RWA cheatsheet</li>
         <li>... as you learn, make resources for yourself and others</li>
         <li>
           Put ads on this page and also collect people's emails as they download
