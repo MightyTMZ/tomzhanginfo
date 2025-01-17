@@ -23,6 +23,17 @@ const FullScreenNavigation = () => {
           &times;
         </button>
         <div className="overlay-content">
+          <h1
+            style={{
+              color: "white",
+              fontSize: "24px",
+              textTransform: "uppercase",
+              fontWeight: "bold",
+            }}
+          >
+            Tom Zhang
+          </h1>
+
           {navItems.map((item) => (
             <Link
               key={item.id}

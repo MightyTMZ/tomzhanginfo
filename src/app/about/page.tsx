@@ -1,7 +1,8 @@
 import React from "react";
+import About from "@/components/LandingPageSections/About/About";
 
 const AboutMe = () => {
-  return <div></div>;
+  return <About />;
 };
 
 export default AboutMe;
