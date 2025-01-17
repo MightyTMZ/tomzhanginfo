@@ -34,7 +34,14 @@ const Resources = () => {
         </li>
         <li>RAG cheatsheet</li>
         <li>AI in finance cheatsheet</li>
+        <li>Machine Learning math resource #1</li>
+        <li>Machine Learning math resource #2</li>
+        <li>Machine Learning math resource #3</li>
+        <li>Machine Learning math resource #4</li>
         <li>AI in Web3 cheatsheet</li>
+        <li>Electrical engineering math resource #1</li>
+        <li>Electrical engineering math resource #2</li>
+        <li>Electrical engineering math resource #3</li>
         <li>Web3 cheatsheet</li>
         <li>Blockchain cheatsheet</li>
         <li>RWA cheatsheet</li>
