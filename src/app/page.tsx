@@ -3,7 +3,7 @@ import Hero from "@/components/LandingPageSections/Hero/Hero";
 import About from "@/components/LandingPageSections/About/About";
 import MissionStatement from "@/components/LandingPageSections/MissionStatement/MissionStatement";
 import Quote from "@/components/LandingPageSections/Quote/Quote";
-import Contact from "@/components/LandingPageSections/Contact";
+import Contact from "@/components/LandingPageSections/Contact/Contact";
 
 const Home = () => {
   // title: Tom Zhang - Home
