@@ -13,6 +13,7 @@
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 20px;
+  margin-top: 50px;
 }
 
 .description {
@@ -33,7 +34,7 @@
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -48,6 +49,11 @@
   color: #1f4157;
 }
 
+.projectTitle:hover {
+  font-weight: bold;
+  transition: 0.1s font-weight;
+}
+
 .projectFeatureImage {
   width: 100%;
   margin-top: 15px;
@@ -55,8 +61,13 @@
   border-radius: 10px;
 }
 
+.projectFeatureImage:hover {
+  border: 5px solid rgb(11, 135, 250);
+  transition: 0.3s border;
+}
+
 .projectDescription {
-  font-size: 1rem;
+  font-size: 18px;
   margin-bottom: 20px;
   color: #555;
 }
@@ -68,10 +79,10 @@
 
 .linkIcon {
   font-size: 1.5rem;
-  color: #007acc;
+  color: #1f4157;
   transition: color 0.3s;
 }
 
 .linkIcon:hover {
-  color: #005bb5;
+  color: #1f4157;
 }
