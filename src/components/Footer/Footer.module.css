@@ -1,0 +1,53 @@
+.footer {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 40px 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navSection {
+  flex: 1 1 30%;
+  margin-bottom: 20px;
+}
+
+.navTitle {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #78a5f8;
+}
+
+.navList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navLink {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  margin: 5px 0;
+  transition: color 0.3s;
+}
+
+.navLink:hover {
+  color: #78a5f8;
+}
+
+.footerBottom {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.footerText {
+  font-size: 14px;
+  color: #999999;
+}
