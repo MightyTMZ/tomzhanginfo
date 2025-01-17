@@ -33,7 +33,7 @@ const FullScreenNavigation = () => {
   };
 
   return (
-    <div>
+    <div className="stickyContainer">
       <div className={`overlay ${isOpen ? "open" : ""}`}>
         <button className="closebtn" onClick={closeNav}>
           &times;
@@ -60,8 +60,13 @@ const FullScreenNavigation = () => {
         </div>
       </div>
 
-      <span style={{ fontSize: "30px", cursor: "pointer" }} onClick={openNav}>
+      <span
+        style={{ fontSize: "30px", cursor: "pointer" }}
+        onClick={openNav}
+        id="fullscreennavigation-expand-button"
+      >
         &#9776;
+        <br />
       </span>
     </div>
   );

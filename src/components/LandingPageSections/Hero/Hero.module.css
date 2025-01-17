@@ -1,0 +1,42 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #04457e 0%, #dde6e7 100%);
+  color: #ffffff;
+  padding: 20px;
+}
+
+.content {
+  max-width: 600px;
+}
+
+.helloHeading {
+  font-size: 3.5em;
+  margin-bottom: 20px;
+}
+
+.name {
+  background: -webkit-linear-gradient(135deg, #0037ff, #000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  display: block;
+}
+
+.imageWrapper {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.profileImage {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

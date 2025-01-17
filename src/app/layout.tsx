@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import "./normalize.css";
 import FullScreenNavigation from "@/components/FullScreenNavigation/FullScreenNavigation";
+import Footer from "@/components/Footer/Footer";
 import { Montserrat } from "next/font/google";
 
 /*const geistSans = Geist({
@@ -37,6 +38,7 @@ export default function RootLayout({
       <body className={`${montserrat.variable} antialiased`}>
         <FullScreenNavigation />
         <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );

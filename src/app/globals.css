@@ -4,9 +4,10 @@
 
 main {
   font-family: "Montserrat", sans-serif;
-  padding: 1rem;
+  /*padding: 1rem;*/
 }
 
+/*
 @media (min-width: 640px) {
   main {
     padding: 2rem;
@@ -18,3 +19,4 @@ main {
     padding: 3rem;
   }
 }
+*/
