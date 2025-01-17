@@ -16,8 +16,9 @@ const navItems = [
   { id: 5, title: "Self-Education", reference: "/self-education" },
   { id: 6, title: "My Works", reference: "/my-works" },
   { id: 7, title: "Services", reference: "/services" },
-  { id: 8, title: "My Ventures", reference: "/my-ventures" },
-  { id: 9, title: "Testimonials", reference: "/testimonials" },
+  { id: 8, title: "Resources", reference: "/resources" },
+  { id: 9, title: "My Ventures", reference: "/my-ventures" },
+  { id: 10, title: "Testimonials", reference: "/testimonials" },
 ];
 
 const FullScreenNavigation = () => {
@@ -39,7 +40,11 @@ const FullScreenNavigation = () => {
         </button>
         <div className="overlay-content">
           {navItems.map((item) => (
-            <Link key={item.id} href={item.reference}>
+            <Link
+              key={item.id}
+              href={item.reference}
+              onClick={() => setIsOpen(false)}
+            >
               {item.title}
             </Link>
           ))}
