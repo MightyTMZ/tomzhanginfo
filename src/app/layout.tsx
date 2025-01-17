@@ -4,7 +4,7 @@ import "./globals.css";
 import "./normalize.css";
 import FullScreenNavigation from "@/components/FullScreenNavigation/FullScreenNavigation";
 import Footer from "@/components/Footer/Footer";
-import { Montserrat } from "next/font/google";
+import { Montserrat, Poppins } from "next/font/google";
 
 /*const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,6 +20,13 @@ const montserrat = Montserrat({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-montserrat",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+});
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-poppins",
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 

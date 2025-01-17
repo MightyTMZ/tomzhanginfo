@@ -5,20 +5,21 @@ import Link from "next/link";
 import "./FullScreenNavigation.css";
 
 const navItems = [
-  { id: 1, title: "About", reference: "/about" },
+  { id: 1, title: "Home", reference: "/" },
+  { id: 2, title: "About", reference: "/about" },
   {
-    id: 2,
+    id: 3,
     title: "Daily Dose of Insights",
     reference: "/daily-dose-of-insights",
   },
-  { id: 3, title: "Connect with me", reference: "/connect-with-me" },
-  { id: 4, title: "Photography", reference: "/photography" },
-  { id: 5, title: "Self-Education", reference: "/self-education" },
-  { id: 6, title: "My Works", reference: "/my-works" },
-  { id: 7, title: "Services", reference: "/services" },
-  { id: 8, title: "Resources", reference: "/resources" },
-  { id: 9, title: "My Ventures", reference: "/my-ventures" },
-  { id: 10, title: "Testimonials", reference: "/testimonials" },
+  { id: 4, title: "Connect with me", reference: "/connect-with-me" },
+  { id: 5, title: "Photography", reference: "/photography" },
+  { id: 6, title: "Self-Education", reference: "/self-education" },
+  { id: 7, title: "My Works", reference: "/my-works" },
+  { id: 8, title: "Services", reference: "/services" },
+  { id: 9, title: "Resources", reference: "/resources" },
+  { id: 10, title: "My Ventures", reference: "/my-ventures" },
+  { id: 11, title: "Testimonials", reference: "/testimonials" },
 ];
 
 const FullScreenNavigation = () => {

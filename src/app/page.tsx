@@ -6,6 +6,8 @@ import Quote from "@/components/LandingPageSections/Quote/Quote";
 import Contact from "@/components/LandingPageSections/Contact";
 
 const Home = () => {
+  // title: Tom Zhang - Home
+
   return (
     <>
       <Hero />
