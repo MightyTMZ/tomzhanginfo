@@ -9,6 +9,7 @@ const Resources = () => {
       </p>
       <ul>
         <li>Python Cheatsheet</li>
+        <li>Git cheatsheet</li>
         <li>JavaScript cheatsheet</li>
         <li>SQL cheatsheet</li>
         <li>Power BI cheatsheet</li>
