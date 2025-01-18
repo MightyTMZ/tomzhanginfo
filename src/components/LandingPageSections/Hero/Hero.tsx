@@ -17,11 +17,11 @@ const Hero = () => {
             alt={"Tom Zhang"}
             className={styles.profileImage}
           ></Image>
-          <Image
+          {/*<Image
             src={Tom2}
             alt={"Tom Zhang"}
             className={styles.profileImage}
-          ></Image>
+          ></Image>*/}
         </div>
       </div>
     </section>
