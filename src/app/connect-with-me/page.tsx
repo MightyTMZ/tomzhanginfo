@@ -11,9 +11,8 @@ const ConnectWithMe = () => {
   const pageDescription =
     "Get in touch with Tom Zhang for inquiries, collaboration, or networking opportunities.";
   const pageKeywords = "Tom Zhang, contact, email, social media, collaboration";
-  const pageUrl = window.location.href;
 
-  document.title = websiteName + " - " + pageTitle;
+  const fullTitle = websiteName + " - " + pageTitle;
 
   return (
     <>
@@ -22,9 +21,10 @@ const ConnectWithMe = () => {
         <meta name="keywords" content={pageKeywords} />
         <meta property="og:title" content={websiteName + " - " + pageTitle} />
         <meta property="og:description" content={pageDescription} />
-        <meta property="og:url" content={pageUrl} />
+        {/*<meta property="og:url" content={pageUrl} />*/}
         <meta property="og:type" content="website" />
         <meta property="og:image" content="your-image-url-here.jpg" />
+        <title>{fullTitle}</title>
       </Head>
       <section className={styles.connectPage}>
         <div className={styles.container}>

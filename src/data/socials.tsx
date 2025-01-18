@@ -7,14 +7,14 @@ export const socialLinks = [
     icon: <FaLinkedin />,
     title: "Tom Zhang",
     label: "LinkedIn",
-    url: "https://linkedin.com/in/tomzhang",
+    url: "https://www.linkedin.com/in/tom-zhang-485341274/",
   },
   {
     id: 2,
     icon: <FaGithub />,
     title: "MightyTMZ",
     label: "GitHub",
-    url: "https://github.com/tomzhang",
+    url: "https://github.com/MightyTMZ",
   },
 
   {

@@ -3,6 +3,19 @@
   color: #333;
   background-color: #f9f9f9;
   padding: 20px;
+  padding: 30px 15%;
+}
+
+@media (max-width: 768px) {
+  .pageContainer {
+    padding: 20px 10%;
+  }
+}
+
+@media (max-width: 440px) {
+  .pageContainer {
+    padding: 10px 5%;
+  }
 }
 
 /* Hero Section */

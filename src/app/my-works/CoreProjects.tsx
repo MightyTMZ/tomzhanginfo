@@ -18,7 +18,6 @@ const CoreProjects = () => {
 
   return (
     <>
-      <h1 className={styles.sectionTitle}>Projects</h1>
       <div className={styles.projectGrid}>
         {projects.map((project) => (
           <div key={project.id} className={styles.projectCard}>

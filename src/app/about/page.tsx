@@ -9,9 +9,8 @@ const AboutMe = () => {
     "Learn more about Tom Zhang, his work, skills, and expertise in various fields like AI, programming, entrepreneurship, and more.";
   const pageKeywords =
     "Tom Zhang, about, AI, entrepreneurship, programming, tech, machine learning, software engineer";
-  const pageUrl = window.location.href; // Assuming the current URL for the page
 
-  document.title = websiteName + " - " + pageTitle;
+  const fullTitle = websiteName + " - " + pageTitle;
 
   return (
     <>
@@ -20,7 +19,6 @@ const AboutMe = () => {
         <meta name="keywords" content={pageKeywords} />
         <meta property="og:title" content={websiteName + " - " + pageTitle} />
         <meta property="og:description" content={pageDescription} />
-        <meta property="og:url" content={pageUrl} />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="your-image-url-here.jpg" />{" "}
         {/* Optionally add an image for social sharing 
@@ -29,6 +27,7 @@ const AboutMe = () => {
         <meta name="twitter:description" content={pageDescription} />
         <meta name="twitter:image" content="your-image-url-here.jpg" />{" "}*/}
         {/* Optionally add an image for Twitter */}
+        <title>{fullTitle}</title>
       </Head>
       <About />
     </>
