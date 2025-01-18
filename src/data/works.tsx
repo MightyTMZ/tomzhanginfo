@@ -172,10 +172,14 @@ export const tools_Integrations = [
     featureImage: saleemai ? saleemai : placeholderImage,
     description: `I created a "ChatGPT" of my computer science teacher, Mr. Saleem, capturing his humor and teaching style. It quickly became a school sensation, with over 90 students now using it for coding help. This fun AI version of Mr. Saleem has become a go-to resource for students!`,
     links: [
-      { icon: <FaGlobe />, url: "https://orbitview.com", label: "Live Site" },
+      {
+        icon: <FaGlobe />,
+        url: "https://chatgpt.com/g/g-DLJ1ZKf5m-mr-saleem-ai",
+        label: "Live Site",
+      },
       {
         icon: <FaGithub />,
-        url: "https://github.com/tomzhang/orbitview",
+        url: "https://github.com/",
         label: "GitHub",
       },
     ],
