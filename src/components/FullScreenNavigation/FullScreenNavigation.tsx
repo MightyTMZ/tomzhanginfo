@@ -31,7 +31,7 @@ const FullScreenNavigation = () => {
               fontWeight: "bold",
             }}
           >
-            <a href="/">Tom Zhang</a>
+            <Link href="/">Tom Zhang</Link>
           </h1>
 
           {navItems.map((item) => (

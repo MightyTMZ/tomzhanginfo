@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./CurrentVenturesPage.module.css"; // Importing the CSS module
 import { websiteName } from "@/data/base";
-import Head from "next/head";
 import { Metadata } from "next";
 import ReturnHomeButton from "@/components/ReturnHomeButton/ReturnHomeButton";
 

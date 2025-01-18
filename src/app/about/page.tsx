@@ -1,8 +1,8 @@
 import React from "react";
-import About from "@/components/LandingPageSections/About/About";
 import { websiteName } from "@/data/base";
 import Head from "next/head";
 import { Metadata } from "next";
+import AboutPage from "@/components/LandingPageSections/About/AboutPage";
 
 const pageTitle = "About";
 const pageDescription =
@@ -36,7 +36,7 @@ export default function AboutMe() {
         {/* Optionally add an image for Twitter */}
         <title>{fullTitle}</title>
       </Head>
-      <About />
+      <AboutPage />
     </>
   );
 }
