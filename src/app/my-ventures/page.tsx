@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import styles from "./CurrentVenturesPage.module.css"; // Importing the CSS module
 import { websiteName } from "@/data/base";

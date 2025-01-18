@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import styles from "./MyWorks.module.css";
 import CoreProjects from "./CoreProjects";
@@ -17,7 +15,7 @@ const pageKeywords =
   "projects, prototypes, experiments, tools, integrations, technology, innovation, software development, AI, machine learning, digital solutions";
 
 export const metadata: Metadata = {
-  title: pageTitle,
+  title: fullTitle,
   description: pageDescription,
   keywords: pageKeywords,
 };
@@ -25,9 +23,6 @@ export const metadata: Metadata = {
 export default function MyWorks() {
   return (
     <>
-      <Head>
-        <title>{fullTitle}</title>
-      </Head>
       <section className={styles.myWorksPage}>
         <div className={styles.container}>
           <h1 className={styles.sectionTitle}>Projects</h1>
