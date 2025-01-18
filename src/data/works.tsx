@@ -7,6 +7,7 @@ import saleemai from "./workPics/saleemai.png";
 import scisoc from "./workPics/EarlHaigScienceSociety.png";
 import orbImmersive from "./workPics/orb_immersive.png";
 import ollama from "./workPics/ollama.png";
+import personalWeb from "./workPics/personalweb.png";
 
 export const coreProjects = [
   {
@@ -33,8 +34,8 @@ export const coreProjects = [
     featureImage: tokenzlabs ? tokenzlabs : placeholderImage,
     description: `Token Z Labs, the world's first hybrid model platform combining 
       off-chain and on-chain solutions for capital markets and real estate. 
-      Personally, I implemented SEO and refined the UI/UX to increase investor and user
-      engagement by over 67% and search engine visibility by over 300%`,
+      Personally, I implemented SEO and refined the UI/UX and increased investor and user
+      engagement`, // by over 67% and search engine visibility by over 300%
     links: [
       { icon: <FaGlobe />, url: "https://tokenzlabs.com/", label: "Live Site" },
     ],
@@ -101,6 +102,18 @@ export const coreProjects = [
   },
   {
     id: 7,
+    title: "Personal Website",
+    featureImage: personalWeb ? personalWeb : placeholderImage,
+    description: `You are viewing this project right now! 
+      It showcases my works (projects, prototypes, experiments, integrations) along with my
+      mission statement, favourite quotes, etc. 
+    `, // by over 67% and search engine visibility by over 300%
+    links: [
+      { icon: <FaGlobe />, url: "https://tomzhang.info/", label: "Live Site" },
+    ],
+  },
+  {
+    id: 8,
     title: "Tom Zhang 2.0",
     featureImage: placeholderImage,
     description: `

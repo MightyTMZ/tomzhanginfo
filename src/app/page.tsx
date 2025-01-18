@@ -1,6 +1,6 @@
 import React from "react";
 import Hero from "@/components/LandingPageSections/Hero/Hero";
-import About from "@/components/LandingPageSections/About/About";
+import AboutPage from "@/components/LandingPageSections/About/AboutPage";
 import MissionStatement from "@/components/LandingPageSections/MissionStatement/MissionStatement";
 import Quote from "@/components/LandingPageSections/Quote/Quote";
 import Contact from "@/components/LandingPageSections/Contact/Contact";
@@ -26,7 +26,7 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <About />
+      <AboutPage />
       <MissionStatement />
       <Quote />
       <Contact />
