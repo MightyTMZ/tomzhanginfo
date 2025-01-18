@@ -26,12 +26,12 @@ const FullScreenNavigation = () => {
           <h1
             style={{
               color: "white",
-              fontSize: "24px",
+              fontSize: "16px",
               textTransform: "uppercase",
               fontWeight: "bold",
             }}
           >
-            Tom Zhang
+            <a href="/">Tom Zhang</a>
           </h1>
 
           {navItems.map((item) => (

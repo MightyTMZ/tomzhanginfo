@@ -49,32 +49,15 @@ export default function Resources() {
             <div className={styles.textContainer}>
               <p className={styles.description}>
                 <p>
-                  I am a firm believer in sharing my knowledge and expertise
-                  through resources. By offering these resources, I aim to
-                  empower others to learn, grow, and achieve their goals more
-                  efficiently. Sharing knowledge creates a ripple effect, where
-                  the more you give, the more you receive. Not only does it help
-                  others save time and avoid unnecessary mistakes, but it also
-                  fosters a sense of community, collaboration, and continuous
-                  learning.
+                  I will <strong>soon</strong> be releasing comprehensive
+                  guides, cheat sheets, designed to simplify complex processes
+                  for everyone including me, in fields like programming, data
+                  science, AI, blockchain, finance, and more. By breaking down
+                  complicated subjects into digestible pieces, I aim to make
+                  learning accessible to not only myself but to everyone, from
+                  beginners to professionals who may need a small helping hand.
                 </p>
-                <p>
-                  These resources will serve as comprehensive guides, cheat
-                  sheets, and in-depth tutorials, designed to simplify complex
-                  topics in fields like programming, data science, AI,
-                  blockchain, finance, and more. By breaking down complicated
-                  subjects into digestible pieces, I aim to make learning
-                  accessible to everyone, from beginners to advanced
-                  professionals.
-                </p>
-                <p>
-                  Whether you&apos;re a student trying to master a new skill, a
-                  professional looking to level up your expertise, or an
-                  entrepreneur seeking to streamline your workflow, these
-                  resources are designed to help you achieve your goals faster
-                  and with more confidence. Stay tuned for more!
-                </p>{" "}
-                <br />
+                <p>Stay tuned for more!</p> <br />
                 <br />
                 <CollapsibleList
                   title="Programming Languages"
