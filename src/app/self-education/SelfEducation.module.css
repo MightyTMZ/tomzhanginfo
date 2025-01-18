@@ -1,0 +1,113 @@
+.educationSection {
+  padding: 0 15%;
+}
+
+@media screen and (max-width: 768px) {
+  .educationSection {
+    padding: 0 10%;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .educationSection {
+    padding: 0 5%;
+  }
+}
+
+.titleSection {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #333;
+  text-align: center;
+}
+
+.titleDescription {
+  font-size: 1.25rem;
+}
+
+.titleDescription:hover {
+  animation: shake 0.5s ease-in-out 1;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(5px);
+  }
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.heading {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.progressBar {
+  width: 70%;
+  height: 10px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  margin: 0 15px;
+}
+
+.progress {
+  height: 100%;
+  background-color: #007bff;
+  border-radius: 5px;
+}
+
+.courseSpan {
+  font-size: 18px;
+  color: #333;
+  display: inline-block;
+}
+.certSpan {
+  font-size: 18px;
+  color: #333;
+  display: inline-block;
+}
+
+.skillSpan {
+  font-size: 18px;
+  color: #333;
+  display: inline-block;
+}
+
+.bookSpan {
+  font-size: 18px;
+  color: #333;
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .progressBar {
+    width: 100%;
+  }
+}

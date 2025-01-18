@@ -1,0 +1,8 @@
+.showMoreLessUnderlineButton {
+  text-decoration: underline;
+}
+
+.showMoreLessUnderlineButton:hover {
+  text-decoration: underline;
+  color: rgb(7, 7, 133);
+}

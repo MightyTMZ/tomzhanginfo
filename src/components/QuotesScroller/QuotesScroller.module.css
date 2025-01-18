@@ -1,0 +1,66 @@
+.quotesContainer {
+  position: relative; /* Ensure the buttons are positioned relative to this container */
+  height: 100%; /* Let the container fill the available height */
+  padding-bottom: 60px; /* Add some padding at the bottom for the buttons */
+}
+
+.quote {
+  font-size: 24px; /* Your desired font size */
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.context {
+  font-size: 18px;
+  color: #555;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.quoteNavigation {
+  position: absolute; /* Fix the position of the navigation buttons */
+  bottom: 0; /* Align it to the bottom of the container */
+  width: 100%; /* Ensure the buttons span the full width */
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Optional: Add some background for contrast */
+}
+
+.navButton {
+  background-color: #1e3d5e;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.navButton:hover {
+  background-color: #0d1f31;
+}
+
+.quoteNavigation {
+  position: fixed; /* Fix the position to the bottom of the viewport */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px 0;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Optional: Add some background for contrast */
+}
