@@ -9,7 +9,8 @@ import { Metadata } from "next";
 
 const pageTitle = "Home";
 const fullTitle = websiteName + " - " + pageTitle;
-const pageDescription = "Hello! My name is Tom and welcome to my website!";
+const pageDescription =
+  "Welcome to my personal website! View my projects, prototypes, experiments, integrations, photos, etc. Enjoy!";
 const pageKeywords =
   "tom, tom zhang, earl haig, canada, north york, baseball, programming, billionaire, ai, tech, ar vr, finance, economics, ultimate frisbee";
 
