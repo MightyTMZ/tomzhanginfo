@@ -3,6 +3,7 @@ import styles from "./CurrentVenturesPage.module.css"; // Importing the CSS modu
 import { websiteName } from "@/data/base";
 import Head from "next/head";
 import { Metadata } from "next";
+import ReturnHomeButton from "@/components/ReturnHomeButton/ReturnHomeButton";
 
 const pageTitle = "Current Ventures";
 const fullTitle = websiteName + " - " + pageTitle;
@@ -20,10 +21,8 @@ export const metadata: Metadata = {
 export default function CurrentVenturesPage() {
   return (
     <>
-      <Head>
-        <title>{fullTitle}</title>
-      </Head>
       <div className={styles.pageContainer}>
+        <ReturnHomeButton />
         {/* Hero Section */}
         <header className={styles.heroSection}>
           <h1 className={styles.title}>Current Ventures</h1>

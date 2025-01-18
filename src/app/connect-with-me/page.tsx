@@ -5,6 +5,7 @@ import { socialLinks } from "@/data/socials";
 import Link from "next/link";
 import { Metadata } from "next";
 import { websiteName } from "@/data/base";
+import ReturnHomeButton from "@/components/ReturnHomeButton/ReturnHomeButton";
 
 const pageTitle = "Contact";
 const pageDescription =
@@ -24,6 +25,7 @@ export default function ConnectWithMe() {
     <>
       <section className={styles.connectPage}>
         <div className={styles.container}>
+          <ReturnHomeButton />
           <h1 className={styles.title}>Connect with Me</h1>
           <p className={styles.description}>
             Whether you have a question, a collaboration idea, or just want to

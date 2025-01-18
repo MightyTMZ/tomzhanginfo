@@ -4,6 +4,7 @@ import { educationData } from "@/data/educationData";
 import { FaCheckCircle } from "react-icons/fa";
 import { websiteName } from "@/data/base";
 import { Metadata } from "next";
+import ReturnHomeButton from "@/components/ReturnHomeButton/ReturnHomeButton";
 
 const pageTitle = "Self Education and Continuous Learning";
 const fullTitle = websiteName + " - " + pageTitle;
@@ -20,6 +21,8 @@ export default function EducationProgress() {
   return (
     <>
       <section className={styles.educationSection}>
+        <ReturnHomeButton />
+
         <div className={styles.titleSection}>
           <h1 className={styles.title}>
             Self Education and Continuous Learning Progress

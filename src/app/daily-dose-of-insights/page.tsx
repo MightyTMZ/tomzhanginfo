@@ -2,6 +2,7 @@ import React from "react";
 import QuotesScroller from "@/components/QuotesScroller/QuotesScroller";
 import { websiteName } from "@/data/base";
 import { Metadata } from "next";
+import ReturnHomeButton from "@/components/ReturnHomeButton/ReturnHomeButton";
 
 const fullTitle = websiteName + " - " + "Daily Dose of Insights";
 const pageDescription = "Discover how Tom gets his daily dose of insights";
@@ -30,7 +31,14 @@ export default function DailyDoseOfInsights() {
 
   return (
     <div className="pr-6 pl-6">
-      <div style={{ maxWidth: "1200px", fontSize: "16px", fontFamily: "Montserrat" }}>
+      <ReturnHomeButton />
+      <div
+        style={{
+          maxWidth: "1200px",
+          fontSize: "16px",
+          fontFamily: "Montserrat",
+        }}
+      >
         <h1>
           {greetingMessage} Get your dose of insights by pressing the pause/play
           button along with the back/forward buttons

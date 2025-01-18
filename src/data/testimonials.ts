@@ -13,7 +13,7 @@ export const testimonials = [
     id: 2,
     image: Aurick,
     text: "I’ve worked with Tom and I am still working closely at the time of me saying this. He is is one hell of a smart guy and isn't afraid to execute, experiment, or prototype. No work is too menial for him. As long as he has the obligation, he does it!",
-    name: "Aurick A.",
+    name: "Aurick Anwar",
     role: "Co-Founder at OrbitView",
   },
 ];

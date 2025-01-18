@@ -3,13 +3,15 @@ import Image from "next/image";
 import React from "react";
 import { testimonials } from "@/data/testimonials";
 import styles from "./Testimonials.module.css"; // Import the stylesheet
+import ReturnHomeButton from "../ReturnHomeButton/ReturnHomeButton";
 
 const Testimonials = () => {
   return (
     <section id="testimonials" className={styles.section}>
+      <ReturnHomeButton />
       <div className="container text-center">
         <h2 className={styles.title}>What People Say</h2>
-        <div className="row">
+        <div className={`${styles.row} ${styles.testimonialContainer}`}>
           {testimonials.map((testimonial) => (
             <div className="col-md-4" key={testimonial.id}>
               <div className={styles.card}>

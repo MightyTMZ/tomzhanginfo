@@ -3,7 +3,7 @@ import styles from "./PhotographyPage.module.css";
 import placeholderIMG from "../../../public/placeholder.webp";
 import Image from "next/image";
 import { websiteName } from "@/data/base";
-import Head from "next/head";
+import ReturnHomeButton from "@/components/ReturnHomeButton/ReturnHomeButton";
 import { Metadata } from "next";
 
 const photos = [
@@ -48,15 +48,13 @@ export const metadata: Metadata = {
 export default function PhotographyPage() {
   return (
     <>
-      <Head>
-        <title>{fullTitle}</title>
-      </Head>
       <section className={styles.photographyPage}>
         <div className={styles.container}>
+          <ReturnHomeButton />
           <h1 className={styles.title}>My Photography</h1>
           <p className={styles.description}>
-            A collection of moments I&apos;ve captured through my lens. From stunning
-            landscapes to candid shots, explore the world as I see it.
+            A collection of moments I&apos;ve captured through my lens. From
+            stunning landscapes to candid shots, explore the world as I see it.
           </p>
           <div className={styles.gallery}>
             {photos.map((photo) => (

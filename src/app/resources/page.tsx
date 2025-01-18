@@ -13,6 +13,7 @@ import {
 } from "@/data/resources";
 import { websiteName } from "@/data/base";
 import { Metadata } from "next";
+import ReturnHomeButton from "@/components/ReturnHomeButton/ReturnHomeButton";
 
 const pageTitle = "Resources";
 
@@ -37,6 +38,7 @@ export default function Resources() {
     <>
       <section className={styles.servicesSection}>
         <div className={styles.container}>
+          <ReturnHomeButton />
           <h2 className={styles.sectionTitle}>Resources</h2>
           <div className={styles.content}>
             {/*<div className={styles.imageContainer}>

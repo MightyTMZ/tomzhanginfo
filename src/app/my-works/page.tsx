@@ -5,6 +5,7 @@ import PrototypesExperiments from "./ProtoTypesExperiments";
 import ToolsIntegration from "./ToolsIntegrations";
 import { websiteName } from "@/data/base";
 import { Metadata } from "next";
+import ReturnHomeButton from "@/components/ReturnHomeButton/ReturnHomeButton";
 
 const pageTitle = "My Works";
 const fullTitle = websiteName + " - " + pageTitle;
@@ -24,6 +25,7 @@ export default function MyWorks() {
     <>
       <section className={styles.myWorksPage}>
         <div className={styles.container}>
+          <ReturnHomeButton />
           <h1 className={styles.sectionTitle}>Projects</h1>
 
           <p className={styles.description}>

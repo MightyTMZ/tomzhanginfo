@@ -3,6 +3,7 @@ import styles from "./Services.module.css";
 import Contact from "@/components/LandingPageSections/Contact/Contact";
 import { websiteName } from "@/data/base";
 import { Metadata } from "next";
+import ReturnHomeButton from "@/components/ReturnHomeButton/ReturnHomeButton";
 
 const pageTitle = "Services";
 const fullTitle = websiteName + " - " + pageTitle;
@@ -20,6 +21,7 @@ export default function Services() {
     <>
       <section className={styles.servicesSection}>
         <div className={styles.container}>
+          <ReturnHomeButton />
           <h2 className={styles.sectionTitle}>Services</h2>
           <div className={styles.content}>
             {/*<div className={styles.imageContainer}>
