@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./About.module.css"; // Import CSS Module
+import { aboutTitle, aboutDescription } from "@/data/aboutTom";
 
 const About = () => {
   return (
@@ -15,16 +16,8 @@ const About = () => {
             />
           </div>*/}
           <div className={styles.textContainer}>
-            <p className={styles.intro}>
-              Hello, I'm Tom Zhang. I'm passionate about technology and building
-              innovative solutions to solve real-world problems.
-            </p>
-            <p className={styles.description}>
-              With a deep interest in software development, AI, and
-              entrepreneurship, I’ve embarked on a journey to revolutionize
-              industries through tech. I believe in continuous learning and
-              pushing boundaries to make an impact on the world.
-            </p>
+            <p className={styles.intro}>{aboutTitle}</p>
+            <p className={styles.description}>{aboutDescription}</p>
           </div>
         </div>
       </div>

@@ -1,11 +1,12 @@
 import React from "react";
 import styles from "./Quote.module.css";
+import { quoteContent, quoteAuthor } from "@/data/favouriteQuote";
 
 const Quote = () => {
   return (
     <div className={styles["mission-container"]}>
-      <p className={styles["mission-title"]}>"This is a great quote"</p>
-      <p className={styles["mission-text"]}>- the person who said the quote</p>
+      <p className={styles["mission-title"]}>"{quoteContent}"</p>
+      <p className={styles["mission-text"]}>- {quoteAuthor}</p>
     </div>
   );
 };
