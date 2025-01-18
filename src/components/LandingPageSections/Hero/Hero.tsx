@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Hero.module.css";
 import Tom1 from "./tz.webp";
-import Tom2 from "./realTom.png";
+// import Tom2 from "./realTom.png";
 import Image from "next/image";
 
 const Hero = () => {

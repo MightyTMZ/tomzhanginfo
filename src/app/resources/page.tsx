@@ -68,7 +68,7 @@ export default function Resources() {
                   professionals.
                 </p>
                 <p>
-                  Whether you're a student trying to master a new skill, a
+                  Whether you&apos;re a student trying to master a new skill, a
                   professional looking to level up your expertise, or an
                   entrepreneur seeking to streamline your workflow, these
                   resources are designed to help you achieve your goals faster

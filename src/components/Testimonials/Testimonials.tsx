@@ -20,7 +20,7 @@ const Testimonials = () => {
                   width={90}
                   height={90}
                 />
-                <p className={styles.text}>"{testimonial.text}"</p>
+                <p className={styles.text}>&ldquo;{testimonial.text}&rdquo;</p>
                 <h5 className={styles.name}>{testimonial.name}</h5>
                 <span className={styles.role}>{testimonial.role}</span>
               </div>

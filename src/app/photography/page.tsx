@@ -55,7 +55,7 @@ export default function PhotographyPage() {
         <div className={styles.container}>
           <h1 className={styles.title}>My Photography</h1>
           <p className={styles.description}>
-            A collection of moments I've captured through my lens. From stunning
+            A collection of moments I&apos;ve captured through my lens. From stunning
             landscapes to candid shots, explore the world as I see it.
           </p>
           <div className={styles.gallery}>

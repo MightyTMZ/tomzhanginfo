@@ -122,7 +122,13 @@ export const protoTypes_Experiments = [
     description: `Attempting to increase media consumption engagement through the use of customization tools and filters.
       Supports: stereoscopic filters, contrast toggle, font size adjustments, contrast adjustments, 
       `,
-    links: [],
+    links: [
+      {
+        icon: <FaExternalLinkAlt />,
+        url: "https://orbitview.vercel.app/article/5/join-orbitview-today/immersive",
+        label: "Read More",
+      },
+    ],
   },
   {
     id: 2,

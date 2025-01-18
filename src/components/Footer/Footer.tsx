@@ -18,8 +18,8 @@ const Footer = () => {
         <div className={styles.navSection}>
           <h3 className={styles.navTitle}>Navigate</h3>
           <ul className={styles.navList}>
-            {navigateLinks.map((link) => (
-              <li>
+            {navigateLinks.map((link, index) => (
+              <li key={index}>
                 <Link
                   key={link.id}
                   href={link.reference}
@@ -36,8 +36,8 @@ const Footer = () => {
         <div className={styles.navSection}>
           <h3 className={styles.navTitle}>Explore</h3>
           <ul className={styles.navList}>
-            {exploreLinks.map((link) => (
-              <li>
+            {exploreLinks.map((link, index) => (
+              <li key={index}>
                 <Link
                   key={link.id}
                   href={link.reference}
@@ -54,8 +54,8 @@ const Footer = () => {
         <div className={styles.navSection}>
           <h3 className={styles.navTitle}>More Resources</h3>
           <ul className={styles.navList}>
-            {moreResources.map((link) => (
-              <li>
+            {moreResources.map((link, index) => (
+              <li key={index}>
                 <Link
                   key={link.id}
                   href={link.reference}

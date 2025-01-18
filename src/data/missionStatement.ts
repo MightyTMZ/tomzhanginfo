@@ -1,2 +1,2 @@
-export const missionStatementTitle = 'This is my mission statement';
-export const missionStatementDescription = 'And here is a good description of it';
+export const missionStatementTitle = "To challenge the status quo and create innovative solutions that empower people to connect, share, and build a better, more connected future for all.";
+export const missionStatementDescription = 'I am on a mission to commitment to combine transformative innovation with inclusivity, aiming to break the status quo by creating solutions that empower people to connect, share, and build a more connected and meaningful future for all.';

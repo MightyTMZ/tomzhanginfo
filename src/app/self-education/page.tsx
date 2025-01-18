@@ -9,7 +9,7 @@ const pageTitle = "Self Education and Continuous Learning";
 const fullTitle = websiteName + " - " + pageTitle;
 
 export const metadata: Metadata = {
-  title: pageTitle,
+  title: fullTitle,
   description:
     "I find fulfillment in educating myself and continuously learning",
   keywords:

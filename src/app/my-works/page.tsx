@@ -4,7 +4,6 @@ import CoreProjects from "./CoreProjects";
 import PrototypesExperiments from "./ProtoTypesExperiments";
 import ToolsIntegration from "./ToolsIntegrations";
 import { websiteName } from "@/data/base";
-import Head from "next/head";
 import { Metadata } from "next";
 
 const pageTitle = "My Works";

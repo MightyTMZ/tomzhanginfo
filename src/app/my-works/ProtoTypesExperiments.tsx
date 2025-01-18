@@ -32,18 +32,24 @@ const PrototypesExperiments = () => {
             />
             <p className={styles.projectDescription}>{project.description}</p>
             <div className={styles.projectLinks}>
-              {project.links.map((link, index) => (
-                <Link
-                  key={index}
-                  href={link.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.linkIcon}
-                  aria-label={link.label}
-                >
-                  {link.icon}
-                </Link>
-              ))}
+              {project.links.length > 0 ? (
+                <>
+                  {project.links.map((link, index) => (
+                    <Link
+                      key={index}
+                      href={link.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={styles.linkIcon}
+                      aria-label={link.label}
+                    >
+                      {link.icon}
+                    </Link>
+                  ))}
+                </>
+              ) : (
+                <></>
+              )}
             </div>
           </div>
         ))}

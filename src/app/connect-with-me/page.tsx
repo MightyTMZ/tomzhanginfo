@@ -3,7 +3,6 @@ import styles from "./ConnectWithMe.module.css";
 import Contact from "@/components/LandingPageSections/Contact/Contact";
 import { socialLinks } from "@/data/socials";
 import Link from "next/link";
-import Head from "next/head";
 import { Metadata } from "next";
 import { websiteName } from "@/data/base";
 
@@ -23,16 +22,6 @@ export const metadata: Metadata = {
 export default function ConnectWithMe() {
   return (
     <>
-      <Head>
-        <meta name="description" content={pageDescription} />
-        <meta name="keywords" content={pageKeywords} />
-        <meta property="og:title" content={websiteName + " - " + pageTitle} />
-        <meta property="og:description" content={pageDescription} />
-        {/*<meta property="og:url" content={pageUrl} />*/}
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="your-image-url-here.jpg" />
-        <title>{fullTitle}</title>
-      </Head>
       <section className={styles.connectPage}>
         <div className={styles.container}>
           <h1 className={styles.title}>Connect with Me</h1>
@@ -44,8 +33,8 @@ export default function ConnectWithMe() {
           <div className={styles.socialLinks}>
             <h2 className={styles.socialTitle}>Follow Me</h2>
             <ul className={styles.socialIcons}>
-              {socialLinks.map((link) => (
-                <li>
+              {socialLinks.map((link, index) => (
+                <li key={index}>
                   <Link
                     key={link.id}
                     href={link.url}
