@@ -54,9 +54,10 @@ const advancedAI = [
 ];
 
 const financeEconomics = [
-  "Finance Data Analysis Cheatsheet",
-  "Tokenization Basics (Leverage Token Z Labs Experience)",
+  "Finance Data Analysis",
+  "Tokenization Basics",
   "Blockchain in Finance Resource",
+  "Time Series Forecasting",
   "Energy Economics",
   "Financial Modeling with Python",
   "DeFi 101: Introduction to Decentralized Finance",
@@ -65,7 +66,7 @@ const financeEconomics = [
 ];
 
 const engineeringMathResources = [
-  "Electrical Engineering Math Resources (3-part series)",
+  "Electrical Engineering Math Resources",
   "Mechanical Engineering Resource Guide",
   "Structural Analysis Cheatsheet",
   "Linear Algebra for Engineers",
