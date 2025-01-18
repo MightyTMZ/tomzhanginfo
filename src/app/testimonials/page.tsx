@@ -1,21 +1,23 @@
 import React from "react";
 import Testimonials from "@/components/Testimonials/Testimonials";
 import { websiteName } from "@/data/base";
-import Head from "next/head";
+import { Metadata } from "next";
 
-const TestimonialsPage = () => {
-  const pageTitle = "Testimonials";
+const pageTitle = "Testimonials";
+const fullTitle = websiteName + " - " + pageTitle;
+const pageDescription = "Here is what people say about me";
+const pageKeywords = "testimonials, partners, mentors, collaborators";
 
-  const fullTitle = websiteName + " - " + pageTitle;
+export const metadata: Metadata = {
+  title: fullTitle,
+  description: pageDescription,
+  keywords: pageKeywords,
+};
 
+export default function TestimonialsPage() {
   return (
     <>
-      <Head>
-        <title>{fullTitle}</title>
-      </Head>
       <Testimonials />
     </>
   );
-};
-
-export default TestimonialsPage;
+}

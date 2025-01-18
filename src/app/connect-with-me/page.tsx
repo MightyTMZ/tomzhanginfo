@@ -4,16 +4,23 @@ import Contact from "@/components/LandingPageSections/Contact/Contact";
 import { socialLinks } from "@/data/socials";
 import Link from "next/link";
 import Head from "next/head";
+import { Metadata } from "next";
 import { websiteName } from "@/data/base";
 
-const ConnectWithMe = () => {
-  const pageTitle = "Contact";
-  const pageDescription =
-    "Get in touch with Tom Zhang for inquiries, collaboration, or networking opportunities.";
-  const pageKeywords = "Tom Zhang, contact, email, social media, collaboration";
+const pageTitle = "Contact";
+const pageDescription =
+  "Get in touch with Tom Zhang for inquiries, collaboration, or networking opportunities.";
+const pageKeywords = "Tom Zhang, contact, email, social media, collaboration";
 
-  const fullTitle = websiteName + " - " + pageTitle;
+const fullTitle = websiteName + " - " + pageTitle;
 
+export const metadata: Metadata = {
+  title: fullTitle,
+  description: pageDescription,
+  keywords: pageKeywords,
+};
+
+export default function ConnectWithMe() {
   return (
     <>
       <Head>
@@ -62,6 +69,4 @@ const ConnectWithMe = () => {
       </section>
     </>
   );
-};
-
-export default ConnectWithMe;
+}

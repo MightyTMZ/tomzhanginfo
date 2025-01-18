@@ -33,11 +33,8 @@ export const coreProjects = [
     featureImage: tokenzlabs ? tokenzlabs : placeholderImage,
     description: `Token Z Labs, the world's first hybrid model platform combining 
       off-chain and on-chain solutions for capital markets and real estate. 
-      Our innovative approach enables accredited, institutional, and 
-      retail investors globally to participate in the private markets with 
-      full compliance and transparency. Leveraging cutting-edge blockchain 
-      technology, we aim to modernize traditional markets, providing seamless 
-      access to investment opportunities while ensuring robust regulatory adherence.`,
+      Personally, I implemented SEO and refined the UI/UX to increase investor and user
+      engagement by over 67% and search engine visibility by over 300%`,
     links: [
       { icon: <FaGlobe />, url: "https://tokenzlabs.com/", label: "Live Site" },
     ],

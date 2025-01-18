@@ -5,20 +5,25 @@ import MissionStatement from "@/components/LandingPageSections/MissionStatement/
 import Quote from "@/components/LandingPageSections/Quote/Quote";
 import Contact from "@/components/LandingPageSections/Contact/Contact";
 import { websiteName } from "@/data/base";
-import Head from "next/head";
+import { Metadata } from "next";
 
-const Home = () => {
+const pageTitle = "Home";
+const fullTitle = websiteName + " - " + pageTitle;
+const pageDescription = "Hello! My name is Tom and welcome to my website!";
+const pageKeywords =
+  "tom, tom zhang, earl haig, canada, north york, baseball, programming, billionaire, ai, tech, ar vr, finance, economics, ultimate frisbee";
+
+export const metadata: Metadata = {
+  title: fullTitle,
+  description: pageDescription,
+  keywords: pageKeywords,
+};
+
+export default function Home() {
   // title: Tom Zhang - Home
-
-  const pageTitle = "Home";
-
-  const fullTitle = websiteName + " - " + pageTitle;
 
   return (
     <>
-      <Head>
-        <title>{fullTitle}</title>
-      </Head>
       <Hero />
       <About />
       <MissionStatement />
@@ -26,6 +31,4 @@ const Home = () => {
       <Contact />
     </>
   );
-};
-
-export default Home;
+}

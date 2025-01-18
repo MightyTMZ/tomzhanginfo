@@ -4,12 +4,22 @@ import React from "react";
 import styles from "./CurrentVenturesPage.module.css"; // Importing the CSS module
 import { websiteName } from "@/data/base";
 import Head from "next/head";
+import { Metadata } from "next";
 
-function CurrentVenturesPage() {
-  const pageTitle = "Current Ventures";
+const pageTitle = "Current Ventures";
+const fullTitle = websiteName + " - " + pageTitle;
+const pageDescription =
+  "Tom Zhang is currently deeply focused on a few ventures. Discover them here";
+const pageKeywords =
+  "Tom Zhang, Tom, Zhang, OrbitView, Ollama, book, AI agents, AI, agents, bookwriting, book, guide, artificial intelligence";
 
-  const fullTitle = websiteName + " - " + pageTitle;
+export const metadata: Metadata = {
+  title: fullTitle,
+  description: pageDescription,
+  keywords: pageKeywords,
+};
 
+export default function CurrentVenturesPage() {
   return (
     <>
       <Head>
@@ -114,5 +124,3 @@ function CurrentVenturesPage() {
     </>
   );
 }
-
-export default CurrentVenturesPage;

@@ -7,12 +7,22 @@ import PrototypesExperiments from "./ProtoTypesExperiments";
 import ToolsIntegration from "./ToolsIntegrations";
 import { websiteName } from "@/data/base";
 import Head from "next/head";
+import { Metadata } from "next";
 
-const MyWorks = () => {
-  const pageTitle = "My Works";
+const pageTitle = "My Works";
+const fullTitle = websiteName + " - " + pageTitle;
+const pageDescription =
+  "Explore a collection of my key projects, prototypes, experiments, and integrations that showcase my skills in technology and innovation. From core projects to cutting-edge tools, this page highlights my journey in creating impactful solutions and pushing the boundaries of digital transformation.";
+const pageKeywords =
+  "projects, prototypes, experiments, tools, integrations, technology, innovation, software development, AI, machine learning, digital solutions";
 
-  const fullTitle = websiteName + " - " + pageTitle;
+export const metadata: Metadata = {
+  title: pageTitle,
+  description: pageDescription,
+  keywords: pageKeywords,
+};
 
+export default function MyWorks() {
   return (
     <>
       <Head>
@@ -33,6 +43,4 @@ const MyWorks = () => {
       </section>
     </>
   );
-};
-
-export default MyWorks;
+}

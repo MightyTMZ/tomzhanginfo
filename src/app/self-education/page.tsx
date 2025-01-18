@@ -3,18 +3,22 @@ import styles from "./SelfEducation.module.css";
 import { educationData } from "@/data/educationData";
 import { FaCheckCircle } from "react-icons/fa";
 import { websiteName } from "@/data/base";
-import Head from "next/head";
+import { Metadata } from "next";
 
-const EducationProgress = () => {
-  const pageTitle = "Self Education and Continuous Learning";
+const pageTitle = "Self Education and Continuous Learning";
+const fullTitle = websiteName + " - " + pageTitle;
 
-  const fullTitle = websiteName + " - " + pageTitle;
+export const metadata: Metadata = {
+  title: pageTitle,
+  description:
+    "I find fulfillment in educating myself and continuously learning",
+  keywords:
+    "education, learning, knowledge, skills, books, certifications, school",
+};
 
+export default function EducationProgress() {
   return (
     <>
-      <Head>
-        <title>{fullTitle}</title>
-      </Head>
       <section className={styles.educationSection}>
         <div className={styles.titleSection}>
           <h1 className={styles.title}>
@@ -22,6 +26,7 @@ const EducationProgress = () => {
           </h1>
           <p className={styles.titleDescription}>
             I find fulfillment in educating myself and continuously learning
+            beyong traditional education...
           </p>
         </div>
 
@@ -78,7 +83,8 @@ const EducationProgress = () => {
                   display: "inline-flex",
                 }}
               >
-                {skill.title}&nbsp;&nbsp;<span style={{ fontSize: "30px" }}>{skill.icon}</span>
+                {skill.title}&nbsp;&nbsp;
+                <span style={{ fontSize: "30px" }}>{skill.icon}</span>
               </span>
               {/*<div className={styles.progressBar}>
               <div
@@ -110,6 +116,4 @@ const EducationProgress = () => {
       </section>
     </>
   );
-};
-
-export default EducationProgress;
+}

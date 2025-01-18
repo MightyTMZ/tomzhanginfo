@@ -12,18 +12,29 @@ import {
   webDevelopment,
 } from "@/data/resources";
 import { websiteName } from "@/data/base";
-import Head from "next/head";
+import { Metadata } from "next";
 
-const Resources = () => {
-  const pageTitle = "Resources";
+const pageTitle = "Resources";
 
-  const fullTitle = websiteName + " - " + pageTitle;
+const fullTitle = websiteName + " - " + pageTitle;
 
+export const metadata: Metadata = {
+  title: fullTitle,
+  description: `These resources will serve as comprehensive guides, cheat
+                  sheets, and in-depth tutorials, designed to simplify complex
+                  topics in fields like programming, data science, AI,
+                  blockchain, finance, and more. By breaking down complicated
+                  subjects into digestible pieces, I aim to make learning
+                  accessible to everyone, from beginners to advanced
+                  professionals.`,
+
+  keywords:
+    "blockchain, AI, finance, economics, data, data science, programming, resources, complex",
+};
+
+export default function Resources() {
   return (
     <>
-      <Head>
-        <title>{fullTitle}</title>
-      </Head>
       <section className={styles.servicesSection}>
         <div className={styles.container}>
           <h2 className={styles.sectionTitle}>Resources</h2>
@@ -108,6 +119,4 @@ const Resources = () => {
       </section>
     </>
   );
-};
-
-export default Resources;
+}

@@ -4,6 +4,7 @@ import placeholderIMG from "../../../public/placeholder.webp";
 import Image from "next/image";
 import { websiteName } from "@/data/base";
 import Head from "next/head";
+import { Metadata } from "next";
 
 const photos = [
   {
@@ -33,11 +34,18 @@ const photos = [
   // Add more photos here
 ];
 
-const PhotographyPage = () => {
-  const pageTitle = "Photography";
+const pageTitle = "Photography";
 
-  const fullTitle = websiteName + " - " + pageTitle;
+const fullTitle = websiteName + " - " + pageTitle;
 
+export const metadata: Metadata = {
+  title: fullTitle,
+  description:
+    "Photography is one of my go-to activities for relaxation and tranquility. Explore the photos that I take.",
+  keywords: "photo, photography, media",
+};
+
+export default function PhotographyPage() {
   return (
     <>
       <Head>
@@ -69,6 +77,4 @@ const PhotographyPage = () => {
       </section>
     </>
   );
-};
-
-export default PhotographyPage;
+}

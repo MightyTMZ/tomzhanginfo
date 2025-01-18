@@ -2,16 +2,23 @@ import React from "react";
 import About from "@/components/LandingPageSections/About/About";
 import { websiteName } from "@/data/base";
 import Head from "next/head";
+import { Metadata } from "next";
 
-const AboutMe = () => {
-  const pageTitle = "About";
-  const pageDescription =
-    "Learn more about Tom Zhang, his work, skills, and expertise in various fields like AI, programming, entrepreneurship, and more.";
-  const pageKeywords =
-    "Tom Zhang, about, AI, entrepreneurship, programming, tech, machine learning, software engineer";
+const pageTitle = "About";
+const pageDescription =
+  "Learn more about Tom Zhang, his work, skills, and expertise in various fields like AI, programming, entrepreneurship, and more.";
+const pageKeywords =
+  "Tom Zhang, about, AI, entrepreneurship, programming, tech, machine learning, software engineer";
 
-  const fullTitle = websiteName + " - " + pageTitle;
+const fullTitle = websiteName + " - " + pageTitle;
 
+export const metadata: Metadata = {
+  title: fullTitle,
+  description: pageDescription,
+  keywords: pageKeywords,
+};
+
+export default function AboutMe() {
   return (
     <>
       <Head>
@@ -32,6 +39,4 @@ const AboutMe = () => {
       <About />
     </>
   );
-};
-
-export default AboutMe;
+}

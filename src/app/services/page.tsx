@@ -2,18 +2,22 @@ import React from "react";
 import styles from "./Services.module.css";
 import Contact from "@/components/LandingPageSections/Contact/Contact";
 import { websiteName } from "@/data/base";
-import Head from "next/head";
+import { Metadata } from "next";
 
-const Services = () => {
-  const pageTitle = "Services";
+const pageTitle = "Services";
+const fullTitle = websiteName + " - " + pageTitle;
+const pageDescription = "I will start to offer personal services very soon!";
+const pageKeywords = "services, freelance, skills";
 
-  const fullTitle = websiteName + " - " + pageTitle;
+export const metadata: Metadata = {
+  title: fullTitle,
+  description: pageDescription,
+  keywords: pageKeywords,
+};
 
+export default function Services() {
   return (
     <>
-      <Head>
-        <title>{fullTitle}</title>
-      </Head>
       <section className={styles.servicesSection}>
         <div className={styles.container}>
           <h2 className={styles.sectionTitle}>Services</h2>
@@ -41,6 +45,4 @@ const Services = () => {
       </section>
     </>
   );
-};
-
-export default Services;
+}
