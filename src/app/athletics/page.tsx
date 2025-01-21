@@ -1,16 +1,12 @@
 import React from "react";
 import styles from "./ConnectWithMe.module.css";
-import Contact from "@/components/LandingPageSections/Contact/Contact";
-import { socialLinks } from "@/data/socials";
-import Link from "next/link";
 import { Metadata } from "next";
 import { websiteName } from "@/data/base";
-import ReturnHomeButton from "@/components/ReturnHomeButton/ReturnHomeButton";
 
-const pageTitle = "Contact";
+const pageTitle = "Athletics";
 const pageDescription =
-  "Get in touch with Tom Zhang for inquiries, collaboration, or networking opportunities.";
-const pageKeywords = "Tom Zhang, contact, email, social media, collaboration";
+  "Tom Zhang plays ultimate frisbee and baseball. Check out my athletic metrics, highlights, clips, and goals."
+const pageKeywords = "Tom Zhang, ultimate, ultimate frisbee, frisbee, baseball, sports, athletics";
 
 const fullTitle = websiteName + " - " + pageTitle;
 
