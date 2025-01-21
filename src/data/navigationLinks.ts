@@ -14,6 +14,7 @@ export const navItems = [
     { id: 9, title: "Resources", reference: "/resources" },
     { id: 10, title: "My Ventures", reference: "/my-ventures" },
     { id: 11, title: "Testimonials", reference: "/testimonials" },
+    { id: 12, title: "Athletics", reference: "/athletics" },
   ];
 
 
@@ -34,6 +35,6 @@ export const exploreLinks = [
 export const moreResources = [
     { id: 9, title: "Resources", reference: "/resources" },
     { id: 10, title: "My Ventures", reference: "/my-ventures" },
-    { id: 11, title: "Testimonials", reference: "/testimonials" }
-
+    { id: 11, title: "Testimonials", reference: "/testimonials" },
+    { id: 12, title: "Athletics", reference: "/athletics" },
 ]
