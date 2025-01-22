@@ -8,6 +8,7 @@ import scisoc from "./workPics/EarlHaigScienceSociety.png";
 import orbImmersive from "./workPics/orb_immersive.png";
 import ollama from "./workPics/ollama.png";
 import personalWeb from "./workPics/personalweb.png";
+import privateNotekeeper from "./workPics/private_notekeeper.png"
 
 export const coreProjects = [
   {
@@ -180,6 +181,29 @@ export const tools_Integrations = [
       {
         icon: <FaGithub />,
         url: "https://github.com/",
+        label: "GitHub",
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "Personal Private Notekeeper Chatbpt",
+    featureImage: privateNotekeeper ? privateNotekeeper : placeholderImage,
+    description: `
+    
+    A local AI that processes sensitive data entirely on your device, ensuring privacy
+     and security. By utilizing Ollama and ChromaDB, this system supports a variety of 
+     file types (PDFs, MP3s, DOCX, Excel, etc.) and allows for secure data querying and 
+     processing without the need for cloud storage. It empowers users to upload, preprocess, 
+     and interact with their data locally, ensuring sensitive information remains confidential.
+
+     All in all, this project is a very transferable use case both at the personal and entreprise scales. 
+    
+    `,
+    links: [
+      {
+        icon: <FaGithub />,
+        url: "https://github.com/MightyTMZ/Private_AI_Notekeeper/blob/main/Personal_Private_Chatbot_using_Ollama.ipynb",
         label: "GitHub",
       },
     ],
