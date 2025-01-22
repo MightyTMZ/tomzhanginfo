@@ -1,5 +1,5 @@
 import React from "react";
-]import { Metadata } from "next";
+import { Metadata } from "next";
 import { websiteName } from "@/data/base";
 
 const pageTitle = "Athletics";
