@@ -187,7 +187,7 @@ export const tools_Integrations = [
   },
   {
     id: 2,
-    title: "Personal Private Notekeeper Chatbpt",
+    title: "Personal Private Notekeeper Chatbot",
     featureImage: privateNotekeeper ? privateNotekeeper : placeholderImage,
     description: `
     
