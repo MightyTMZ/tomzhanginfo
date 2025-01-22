@@ -1,6 +1,5 @@
 import React from "react";
-import styles from "./ConnectWithMe.module.css";
-import { Metadata } from "next";
+]import { Metadata } from "next";
 import { websiteName } from "@/data/base";
 
 const pageTitle = "Athletics";
@@ -19,7 +18,7 @@ export const metadata: Metadata = {
 export default function Athletics() {
   return (
     <>
-      <section className={styles.connectPage}>
+      <section>
         Coming soon! I play baseball (NY Blues, Stingers, EH Carpes) and
         ultimate frisbee (Elites Ultimate: TORO)
       </section>
