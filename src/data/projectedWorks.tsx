@@ -234,6 +234,19 @@ export const protoTypes_Experiments = [
       // attach a demo video if applicable
     ],
   },
+  {
+    id: 7,
+    title: "Expanding your vocabulary using generative AI",
+    featureImage: placeholderImage,
+    description: `Learning new words can be hard. Using generative AI allows for the use of the self-referencing principle in psychology. 
+    Upon learning about new words, they can type a sentence that gets validated grammatically using our AI. This project was inspired when 
+    I realized that there were no tools for me like this when I was studying for the SAT and learning many new words. (perhaps this tool can be
+    sold to Google)
+    `,
+    links: [
+      // attach a demo video if applicable
+    ],
+  },
 ];
 
 export const tools_Integrations = [
