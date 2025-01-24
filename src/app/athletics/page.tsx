@@ -68,8 +68,20 @@ export default function Athletics() {
           </span>
           ;{" "}
           <span className={styles["inline-flex"]}>
+            Detroit, Michigan &nbsp;
+            <FaFlagUsa />
+            &nbsp;
+          </span>
+          ;{" "}
+          <span className={styles["inline-flex"]}>
             Ottawa, Ontario &nbsp;
             <SiAircanada /> &nbsp;
+          </span>
+          ;{" "}
+          <span className={styles["inline-flex"]}>
+            Chicago, Illinois &nbsp;
+            <FaFlagUsa />
+            &nbsp;
           </span>
           ;{" "}
           <span className={styles["inline-flex"]}>
