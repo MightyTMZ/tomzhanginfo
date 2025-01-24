@@ -11,6 +11,9 @@ import {
 } from "@/data/athleticProgress";
 import styles from "./Athletics.module.css";
 import ReturnHomeButton from "@/components/ReturnHomeButton/ReturnHomeButton";
+import { FaFlagUsa } from "react-icons/fa";
+import { SiAircanada } from "react-icons/si";
+import { GiFrisbee } from "react-icons/gi";
 
 const pageTitle = "Athletics";
 const pageDescription =
@@ -39,17 +42,66 @@ export default function Athletics() {
             marginBottom: "30px",
           }}
         >
-          I am a dedicated baseball and ultimate frisbee athlete with
-          aspirations to lead my school&apos;s varsity baseball team (Earl Haig
-          Secondary School) as captain this spring. This summer, I aim to
-          compete with Elites Ultimate TORO, continuing to challenge myself at
-          the highest levels of competition. Off the field, I am committed to
-          rigorous training in speed, agility, power, strength, explosiveness,
-          endurance, and conditioning to maximize my athletic potential. Explore
-          my performance metrics below, and feel free to reach out with any
-          inquiries or opportunities.
+          I am a dedicated baseball and ultimate frisbee athlete projected to
+          lead my school&apos;s varsity baseball team (Earl Haig Secondary
+          School) as captain this spring and as a key player on co-ed ultimate
+          frisbee team.
           <br />
-          I am a man on a mission 🗣️
+          <br />I have been a rep-elite baseball player for four years,
+          traveling to numerous cities across North America to compete,
+          including{" "}
+          <span className={styles["inline-flex"]}>
+            South Bend, Indiana &nbsp;
+            <FaFlagUsa />
+            &nbsp;
+          </span>
+          ;{" "}
+          <span className={styles["inline-flex"]}>
+            Buffalo, New York &nbsp;
+            <FaFlagUsa />
+            &nbsp;
+          </span>
+          ;{" "}
+          <span className={styles["inline-flex"]}>
+            Toronto, Ontario &nbsp;
+            <SiAircanada /> &nbsp;
+          </span>
+          ;{" "}
+          <span className={styles["inline-flex"]}>
+            Ottawa, Ontario &nbsp;
+            <SiAircanada /> &nbsp;
+          </span>
+          ;{" "}
+          <span className={styles["inline-flex"]}>
+            Windsor, Ontario &nbsp;
+            <SiAircanada /> &nbsp;
+          </span>
+          ;{" "}
+          <span className={styles["inline-flex"]}>
+            Barrie, Ontario &nbsp;
+            <SiAircanada /> &nbsp;
+          </span>
+          ;{" "}
+          <span className={styles["inline-flex"]}>
+            Caledon, Ontario &nbsp;
+            <SiAircanada /> &nbsp;
+          </span>
+          , and many more. This summer (2025), I aim to compete with Elites
+          <span className={styles["inline-flex"]}>
+            Elites Ultimate TORO &nbsp;
+            <GiFrisbee /> &nbsp;
+          </span>
+          , continuing to challenge myself at the highest levels of competition
+          on a provincial and national scale.
+          <br />
+          <br />
+          Off the field, I am committed to rigorous training in speed, agility,
+          power, strength, explosiveness, endurance, and conditioning to
+          maximize my athletic potential. Explore my performance metrics below,
+          and feel free to reach out with any inquiries or opportunities.
+          <br />
+          <br />
+          Below are my stats in the gym
         </p>
 
         <AthleticCollapsibleList
