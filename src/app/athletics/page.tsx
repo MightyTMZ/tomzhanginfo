@@ -40,7 +40,7 @@ export default function Athletics() {
           }}
         >
           I am a dedicated baseball and ultimate frisbee athlete with
-          aspirations to lead my school's varsity baseball team (Earl Haig
+          aspirations to lead my school&apos;s varsity baseball team (Earl Haig
           Secondary School) as captain this spring. This summer, I aim to
           compete with Elites Ultimate TORO, continuing to challenge myself at
           the highest levels of competition. Off the field, I am committed to
@@ -48,6 +48,8 @@ export default function Athletics() {
           endurance, and conditioning to maximize my athletic potential. Explore
           my performance metrics below, and feel free to reach out with any
           inquiries or opportunities.
+          <br />
+          I am a man on a mission 🗣️
         </p>
 
         <AthleticCollapsibleList
