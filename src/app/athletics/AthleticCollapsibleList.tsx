@@ -1,13 +1,26 @@
 "use client";
-import { useState } from "react";
+import { ReactNode, useState } from "react";
 import styles from "./Athletics.module.css";
+
+interface SupplementReference {
+  title: string;
+  icon: ReactNode;
+  reference: string;
+}
+
+interface AthleticExercise {
+  title: string;
+  stat: string;
+  lastUpdated: string;
+  links: SupplementReference[];
+}
 
 export function AthleticCollapsibleList({
   title,
   items,
 }: {
   title: string;
-  items: any[];
+  items: AthleticExercise[];
 }) {
   const [isExpanded, setIsExpanded] = useState(false);
 
