@@ -23,6 +23,9 @@ const Hero = () => {
   const handleViewWorks = () => {
     router.push("/my-works/");
   };
+  const handleViewAthletics = () => {
+    router.push("/athletics/");
+  };
 
   return (
     <section id="hero" className={styles.hero}>
@@ -47,6 +50,7 @@ const Hero = () => {
           <PrimaryAppButton text="Contact me" onClick={handleContact} />
           <SecondaryAppButton text="View my works" onClick={handleViewWorks} />
           <TertiaryAppButton text="Resources" onClick={handleResources} />
+          <PrimaryAppButton text="Athletics" onClick={handleViewAthletics} />
         </div>
       </div>
     </section>
