@@ -40,8 +40,20 @@ export const speedAndAgility = [
   },
   {
     title: "Shuttle run",
-    stat: "7.41 s",
+    stat: "-",
     lastUpdated: "Jan 23, 2024",
+    links: [
+      {
+        title: "Video",
+        icon: <FaVideo />,
+        reference: "",
+      },
+    ],
+  },
+  {
+    title: "Lateral Cone Hops",
+    stat: "-",
+    lastUpdated: "-",
     links: [
       {
         title: "Video",
@@ -173,6 +185,80 @@ export const powerAndStrength = [
       },
     ],
   },
+
+  {
+    title: "Landmine Press",
+    stat: "-",
+    lastUpdated: "-",
+    links: [
+      {
+        title: "Video",
+        icon: <FaVideo />,
+        reference: "",
+      },
+    ],
+  },
+  {
+    title: "Single Arm Landmine Press",
+    stat: "-",
+    lastUpdated: "-",
+    links: [
+      {
+        title: "Video",
+        icon: <FaVideo />,
+        reference: "",
+      },
+    ],
+  },
+  {
+    title: "Single-Leg Romanian Deadlift",
+    stat: "-",
+    lastUpdated: "-",
+    links: [
+      {
+        title: "Video",
+        icon: <FaVideo />,
+        reference: "",
+      },
+    ],
+  },
+  {
+    title: "Bulgarian Split Squat",
+    stat: "-",
+    lastUpdated: "-",
+    links: [
+      {
+        title: "Video",
+        icon: <FaVideo />,
+        reference: "",
+      },
+    ],
+  },
+  {
+    title: "Power Clean",
+    stat: "-",
+    lastUpdated: "-",
+    links: [
+      {
+        title: "Video",
+        icon: <FaVideo />,
+        reference: "",
+      },
+    ],
+  },
+
+  {
+    title: "Weighted Pull-Ups",
+    stat: "-",
+    lastUpdated: "-",
+    links: [
+      {
+        title: "Video",
+        icon: <FaVideo />,
+        reference: "",
+      },
+    ],
+  },
 ];
 
 export const explosiveness = [
@@ -200,6 +286,30 @@ export const explosiveness = [
       },
     ],
   },
+  {
+    title: "Medicine Ball Slams",
+    stat: "30 lbs for 60 slams",
+    lastUpdated: "Jan 23, 2025",
+    links: [
+      {
+        title: "Video",
+        icon: <FaVideo />,
+        reference: "",
+      },
+    ],
+  },
+  {
+    title: "Broad Jumps",
+    stat: "30 lbs for 60 slams",
+    lastUpdated: "Jan 23, 2025",
+    links: [
+      {
+        title: "Video",
+        icon: <FaVideo />,
+        reference: "",
+      },
+    ],
+  },
 ];
 
 export const endurance = [
@@ -219,6 +329,18 @@ export const endurance = [
     title: "Stair Master",
     stat: "114 floors (at once)",
     lastUpdated: "Jan 23, 2024",
+    links: [
+      {
+        title: "Video",
+        icon: <FaVideo />,
+        reference: "",
+      },
+    ],
+  },
+  {
+    title: "5km Timed Run",
+    stat: "-",
+    lastUpdated: "-",
     links: [
       {
         title: "Video",

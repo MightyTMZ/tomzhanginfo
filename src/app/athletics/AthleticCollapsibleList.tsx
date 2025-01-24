@@ -39,7 +39,7 @@ export function AthleticCollapsibleList({
                 {/* last updated */} {item.lastUpdated}
               </p>
               <div className="card-links">
-                {item.links.map((link: any, i: number) => (
+                {item.links.map((link: SupplementReference, i: number) => (
                   <a
                     key={i}
                     href={link.reference}
