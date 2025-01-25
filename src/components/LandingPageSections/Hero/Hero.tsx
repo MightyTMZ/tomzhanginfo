@@ -9,6 +9,7 @@ import PrimaryAppButton from "@/components/PrimaryAppButton/PrimaryAppButton";
 import { useRouter } from "next/navigation";
 import SecondaryAppButton from "@/components/SecondaryAppButton/SecondaryAppButton";
 import TertiaryAppButton from "@/components/TertiaryAppButton/TertiaryAppButton";
+import SlideAnimationButton from "@/components/SlideAnimationButton/SlideAnimationButton";
 
 const Hero = () => {
   const router = useRouter();
@@ -50,7 +51,10 @@ const Hero = () => {
           <PrimaryAppButton text="Contact me" onClick={handleContact} />
           <SecondaryAppButton text="View my works" onClick={handleViewWorks} />
           <TertiaryAppButton text="Resources" onClick={handleResources} />
-          <PrimaryAppButton text="Athletics" onClick={handleViewAthletics} />
+          <SlideAnimationButton
+            text="Athletics"
+            onClick={handleViewAthletics}
+          />
         </div>
       </div>
     </section>
