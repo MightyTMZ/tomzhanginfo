@@ -4,7 +4,7 @@ import { FaPhotoFilm } from "react-icons/fa6";
 export const speedAndAgility = [
   {
     title: "60 yard dash",
-    stat: "7.41 s",
+    stat: "-",
     lastUpdated: "Jan 23, 2024",
     links: [
       {
@@ -16,7 +16,7 @@ export const speedAndAgility = [
   },
   {
     title: "40 yard dash",
-    stat: "4.63 s",
+    stat: "-",
     lastUpdated: "Jan 23, 2024",
     links: [
       {
@@ -28,7 +28,7 @@ export const speedAndAgility = [
   },
   {
     title: "10-meter sprint",
-    stat: "2.41 s",
+    stat: "-",
     lastUpdated: "Jan 23, 2024",
     links: [
       {
