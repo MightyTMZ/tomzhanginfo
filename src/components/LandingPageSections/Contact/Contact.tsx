@@ -5,6 +5,10 @@ import styles from "./Contact.module.css";
 import { email } from "@/data/email";
 import Link from "next/link";
 
+
+// Tom Zhang 2.0
+// drafts messages for services, hackathon collaborations, (for coding help, my agent will help you HAHA)
+
 const Contact = () => {
   const maxMessageLength = 5000;
   const localStorageKey = "TomZhangContactMessageDraft";
