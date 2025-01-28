@@ -1,6 +1,6 @@
 import { FaGlobe, FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import placeholderImage from "../../public/placeholder.webp";
-import orbitview from "./workPics/OrbitView.png";
+import orbitview from "./workPics/newOrbitView.png";
 import tokenzlabs from "./workPics/TokenZLabs.png";
 import chatbot_tzl from "./workPics/TokenZLabschatbot.png";
 import saleemai from "./workPics/saleemai.png";
@@ -8,7 +8,8 @@ import scisoc from "./workPics/EarlHaigScienceSociety.png";
 import orbImmersive from "./workPics/orb_immersive.png";
 import ollama from "./workPics/ollama.png";
 import personalWeb from "./workPics/personalweb.png";
-import privateNotekeeper from "./workPics/private_notekeeper.png"
+import privateNotekeeper from "./workPics/private_notekeeper.png";
+import sluggerdynamics from "./workPics/sluggerdyanmics_ai.png";
 
 export const coreProjects = [
   {
@@ -123,6 +124,23 @@ export const coreProjects = [
        emails aligned with my style. Beyond simplifying engagement, it serves 
        as the first prototype of an OrbitView AI agent, empowering users to 
        learn valuable skills like AI, machine learning, and more.
+      `,
+    links: [],
+  },
+  {
+    id: 9,
+    title: "SluggerDynamicsAI",
+    featureImage: sluggerdynamics,
+    description: `
+      SluggerDynamicsAI is an advanced baseball pitching machine 
+      owered by cutting-edge generative AI. Designed to mimic the 
+      pitching styles of iconic players like Trevor Bauer and 
+      Ben Joyce, it delivers unparalleled training experiences. 
+      From fastballs to curveballs, SluggerDynamicsAI dynamically 
+      adjusts pitch types, speeds, and trajectories to keep hitters 
+      sharp and elevate their game. Whether you're an amateur slugger 
+      or a pro in the making, this system brings the mound to you, 
+      redefining the way players train and master their swing.
       `,
     links: [],
   },

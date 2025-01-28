@@ -62,7 +62,17 @@ export default function CurrentVenturesPage() {
           <p>
             <strong>What’s Next?</strong> OrbitView is currently under
             development, with features being refined to ensure the ultimate user
-            experience. Stay tuned for updates as we move closer to launch!
+            experience. However, you can join the{" "}
+            <a
+              href="https://orbitview-v5.vercel.app/"
+              style={{
+                textDecoration: "underline",
+                fontWeight: "bold",
+              }}
+            >
+              waitlist
+            </a>{" "}
+            and recieve updates as we move closer to launch!
           </p>
         </section>
 
