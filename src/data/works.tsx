@@ -25,7 +25,7 @@ export const coreProjects = [
     links: [
       {
         icon: <FaExternalLinkAlt />,
-        url: "https://orbitview.vercel.app/",
+        url: "https://orbitview-v5.vercel.app/",
         label: "Details",
       },
     ],
