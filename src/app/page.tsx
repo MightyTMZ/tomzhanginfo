@@ -6,6 +6,7 @@ import Quote from "@/components/LandingPageSections/Quote/Quote";
 import Contact from "@/components/LandingPageSections/Contact/Contact";
 import { websiteName } from "@/data/base";
 import { Metadata } from "next";
+import Newsletter from "@/components/LandingPageSections/Newsletter/Newsletter";
 
 const pageTitle = "Home";
 const fullTitle = websiteName + " - " + pageTitle;
@@ -28,6 +29,7 @@ export default function Home() {
       <Hero />
       <AboutPage />
       <MissionStatement />
+      <Newsletter />
       <Quote />
       <Contact />
     </>
