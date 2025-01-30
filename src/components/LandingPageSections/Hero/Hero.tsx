@@ -45,7 +45,7 @@ const Hero = () => {
         <div className={styles.buttonContainer}>
           <SlideAnimationButton
             text="Contact me"
-            color="#e7af53"
+            color="#8C1515"
             onClick={handleContact}
           />
           <SlideAnimationButton
@@ -56,7 +56,7 @@ const Hero = () => {
           {/*<TertiaryAppButton text="Resources" onClick={handleResources} /> */}
           <SlideAnimationButton
             text="Athletics"
-            color="#8C1515"
+            color="#e7af53"
             onClick={handleViewAthletics}
           />
         </div>
