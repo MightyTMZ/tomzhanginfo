@@ -97,7 +97,7 @@
   bottom: -1px;
   left: -8px;
   width: 0;
-  background-color: #ff4655;
+  /* background-color: #ff4655; */
   transform: skew(-15deg);
   transition: all 0.2s ease;
 }
