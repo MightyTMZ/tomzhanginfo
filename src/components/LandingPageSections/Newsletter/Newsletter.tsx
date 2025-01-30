@@ -7,7 +7,9 @@ import Image from "next/image";
 const Newsletter = () => {
   return (
     <section id="newsletter" className={styles.newsletterContainer}>
-      <h1 className={styles.newsletterHeading}>My Newsletter/Blog</h1>
+      <h1 className={styles.newsletterHeading}>
+        <a href="https://zhangtommy.substack.com/">My Newsletter/Blog</a>
+      </h1>
       <SubstackFeed />
       <hr />
       <p className={styles.readBy}>Read by awesome people from </p>

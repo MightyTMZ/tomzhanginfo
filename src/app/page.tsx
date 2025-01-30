@@ -1,12 +1,26 @@
 import React from "react";
-import Hero from "@/components/LandingPageSections/Hero/Hero";
-import AboutPage from "@/components/LandingPageSections/About/AboutPage";
-import MissionStatement from "@/components/LandingPageSections/MissionStatement/MissionStatement";
-import Quote from "@/components/LandingPageSections/Quote/Quote";
-import Contact from "@/components/LandingPageSections/Contact/Contact";
+import dynamic from "next/dynamic";
+const Hero = dynamic(
+  () => import("@/components/LandingPageSections/Hero/Hero")
+);
+const AboutPage = dynamic(
+  () => import("@/components/LandingPageSections/About/AboutPage")
+);
+const MissionStatement = dynamic(
+  () =>
+    import("@/components/LandingPageSections/MissionStatement/MissionStatement")
+);
+const Newsletter = dynamic(
+  () => import("@/components/LandingPageSections/Newsletter/Newsletter")
+);
+const Quote = dynamic(
+  () => import("@/components/LandingPageSections/Quote/Quote")
+);
+const Contact = dynamic(
+  () => import("@/components/LandingPageSections/Contact/Contact")
+);
 import { websiteName } from "@/data/base";
 import { Metadata } from "next";
-import Newsletter from "@/components/LandingPageSections/Newsletter/Newsletter";
 
 const pageTitle = "Home";
 const fullTitle = websiteName + " - " + pageTitle;
