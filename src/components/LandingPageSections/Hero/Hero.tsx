@@ -17,9 +17,9 @@ const Hero = () => {
     router.push("/connect-with-me/");
   };
 
-  const handleResources = () => {
+  /*  const handleResources = () => {
     router.push("/resources/");
-  };
+  };*/
 
   const handleViewWorks = () => {
     router.push("/my-works/");
