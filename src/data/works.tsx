@@ -109,6 +109,8 @@ export const coreProjects = [
     description: `You are viewing this project right now! 
       It showcases my works (projects, prototypes, experiments, integrations) along with my
       mission statement, favourite quotes, etc. 
+      On mobile, performance: 93; accessibility: 87; best practices: 100; SEO: 100;
+      On desktop, performance: 100; accessibilityL 87; best practices: 100; SEO: 100;
     `, // by over 67% and search engine visibility by over 300%
     links: [
       { icon: <FaGlobe />, url: "https://tomzhang.info/", label: "Live Site" },
