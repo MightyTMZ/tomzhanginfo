@@ -10,9 +10,6 @@ const MissionStatement = dynamic(
   () =>
     import("@/components/LandingPageSections/MissionStatement/MissionStatement")
 );
-const Newsletter = dynamic(
-  () => import("@/components/LandingPageSections/Newsletter/Newsletter")
-);
 const Quote = dynamic(
   () => import("@/components/LandingPageSections/Quote/Quote")
 );
@@ -43,7 +40,6 @@ export default function Home() {
       <Hero />
       <AboutPage />
       <MissionStatement />
-      <Newsletter />
       <Quote />
       <Contact />
     </>

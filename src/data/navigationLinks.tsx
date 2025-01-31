@@ -12,6 +12,7 @@ import {
   FaQuoteRight,
   FaRunning,
 } from "react-icons/fa";
+import { TfiWrite } from "react-icons/tfi";
 
 export const navItems = [
   {
@@ -90,13 +91,22 @@ export const navItems = [
     id: 9,
     title: (
       <span style={{ display: "inline-flex" }}>
+        Blog/Newsletter &nbsp; <TfiWrite />
+      </span>
+    ),
+    reference: "/newsletter",
+  },
+  {
+    id: 10,
+    title: (
+      <span style={{ display: "inline-flex" }}>
         Resources &nbsp; <FaBookOpen />
       </span>
     ),
     reference: "/resources",
   },
   {
-    id: 10,
+    id: 11,
     title: (
       <span style={{ display: "inline-flex" }}>
         My Ventures &nbsp; <FaRocket />
@@ -105,7 +115,7 @@ export const navItems = [
     reference: "/my-ventures",
   },
   {
-    id: 11,
+    id: 12,
     title: (
       <span style={{ display: "inline-flex" }}>
         Testimonials &nbsp; <FaQuoteRight />
@@ -114,7 +124,7 @@ export const navItems = [
     reference: "/testimonials",
   },
   {
-    id: 12,
+    id: 13,
     title: (
       <span style={{ display: "inline-flex" }}>
         Athletics &nbsp; <FaRunning />
@@ -144,7 +154,8 @@ export const exploreLinks = [
 
 export const moreResources = [
   { id: 9, title: "Resources", reference: "/resources" },
-  { id: 10, title: "My Ventures", reference: "/my-ventures" },
-  { id: 11, title: "Testimonials", reference: "/testimonials" },
-  { id: 12, title: "Athletics", reference: "/athletics" },
+  { id: 10, title: "Blog/Newsletter", reference: "/newsletter" },
+  { id: 11, title: "My Ventures", reference: "/my-ventures" },
+  { id: 12, title: "Testimonials", reference: "/testimonials" },
+  { id: 13, title: "Athletics", reference: "/athletics" },
 ];
