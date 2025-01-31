@@ -25,8 +25,8 @@ const Hero = () => {
     router.push("/my-works/");
   };
 
-  const handleViewAthletics = () => {
-    router.push("/athletics/");
+  const handleViewNewsletter = () => {
+    router.push("/newsletter/");
   };
 
   return (
@@ -55,9 +55,9 @@ const Hero = () => {
           />
           {/*<TertiaryAppButton text="Resources" onClick={handleResources} /> */}
           <SlideAnimationButton
-            text="Athletics"
+            text="Newsletter/Blog"
             color="#e7af53"
-            onClick={handleViewAthletics}
+            onClick={handleViewNewsletter}
           />
         </div>
       </div>
