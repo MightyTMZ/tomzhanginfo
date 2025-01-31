@@ -40,7 +40,13 @@ const FullScreenNavigation = () => {
               href={item.reference}
               onClick={() => setIsOpen(false)}
             >
-              {item.title}
+              <span
+                style={{
+                  display: "inline-flex",
+                }}
+              >
+                {item.title}&nbsp;{item.icon}
+              </span>
             </Link>
           ))}
           {/*<a href="#">About</a>
