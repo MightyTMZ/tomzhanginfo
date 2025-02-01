@@ -29,6 +29,10 @@ const Hero = () => {
     router.push("/newsletter/");
   };
 
+  const handleViewResume = () => {
+    router.push("/resume/");
+  };
+
   return (
     <section id="hero" className={styles.hero}>
       <video autoPlay loop muted playsInline className={styles.backgroundVideo}>
@@ -45,7 +49,7 @@ const Hero = () => {
         <div className={styles.buttonContainer}>
           <SlideAnimationButton
             text="Contact me"
-            color="#8C1515"
+            color="#1d2161"
             onClick={handleContact}
           />
           <SlideAnimationButton
@@ -58,6 +62,11 @@ const Hero = () => {
             text="Newsletter/Blog"
             color="#e7af53"
             onClick={handleViewNewsletter}
+          />
+          <SlideAnimationButton
+            text="Download my resume"
+            color="#8C1515"
+            onClick={handleViewResume}
           />
         </div>
       </div>

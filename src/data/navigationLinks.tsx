@@ -11,6 +11,7 @@ import {
   FaRocket,
   FaQuoteRight,
   FaRunning,
+  FaFileAlt,
 } from "react-icons/fa";
 import { TfiWrite } from "react-icons/tfi";
 
@@ -41,54 +42,60 @@ export const navItems = [
   },
   {
     id: 5,
+    title: "Resume",
+    reference: "/resume",
+    icon: <FaFileAlt />,
+  },
+  {
+    id: 6,
     title: "Photography",
     reference: "/photography",
     icon: <FaCamera />,
   },
   {
-    id: 6,
+    id: 7,
     title: "Self Education",
     reference: "/self-education",
     icon: <FaBook />,
   },
   {
-    id: 7,
+    id: 8,
     title: "My Works",
     reference: "/my-works",
     icon: <FaProjectDiagram />,
   },
   {
-    id: 8,
+    id: 9,
     title: "Services",
     reference: "/services",
     icon: <FaTools />,
   },
   {
-    id: 9,
+    id: 10,
     title: "Blog/Newsletter",
     reference: "/newsletter",
     icon: <TfiWrite />,
   },
   {
-    id: 10,
+    id: 11,
     title: "Resources",
     reference: "/resources",
     icon: <FaBookOpen />,
   },
   {
-    id: 11,
+    id: 12,
     title: "My Ventures",
     reference: "/my-ventures",
     icon: <FaRocket />,
   },
   {
-    id: 12,
+    id: 13,
     title: "Testimonials",
     reference: "/testimonials",
     icon: <FaQuoteRight />,
   },
   {
-    id: 13,
+    id: 14,
     title: "Athletics",
     reference: "/athletics",
     icon: <FaRunning />,
