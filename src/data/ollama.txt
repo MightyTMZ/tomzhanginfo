@@ -1,0 +1,8 @@
+wrote and published "A Practical Guidebook to Ollama"
+authored Jupyter notebooks on a GitHub repo that had over [number] stars
+
+conducted an AI and data science program at Columbia University
+where we assigned more than 64 graduate students to test out 
+foundational models, and Ollama which gave us invaluable insights
+to my book "A Practical Guidebook to Ollama"
+
