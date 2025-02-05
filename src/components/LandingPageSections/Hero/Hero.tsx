@@ -9,6 +9,7 @@ import styles from "./Hero.module.css";
 // import TertiaryAppButton from "@/components/TertiaryAppButton/TertiaryAppButton";
 import SlideAnimationButton from "@/components/SlideAnimationButton/SlideAnimationButton";
 import { useRouter } from "next/navigation";
+import { ReactTyped } from "react-typed";
 
 const Hero = () => {
   const router = useRouter();
@@ -44,6 +45,25 @@ const Hero = () => {
           Hello, my name is <span className={styles.name}>Tom Zhang</span>
         </h1>
         <div className={styles.imageWrapper}>
+          <ReactTyped
+            strings={[
+              "ENTJ 🧑",
+              "Passionate Gym Enthusiast ❤️‍🩹",
+              "Lover of Scenic Adventures 🌵",
+              "Road Trip Explorer 🛣️",
+              "Tech Builder ⚙️",
+              "Aspiring World-Class Engineer 🧑‍🔬",
+              "Multi-Sport Athlete 🥏⚾",
+              "Continuous Learner",
+            ]}
+            typeSpeed={20}
+            backSpeed={50}
+            loop
+            style={{
+              fontWeight: "bold",
+              fontSize: "24px"
+            }}
+          ></ReactTyped>
           {/* <Image src={Tom1} alt={"Tom Zhang"} className={styles.profileImage} /> */}
         </div>
         <div className={styles.buttonContainer}>
