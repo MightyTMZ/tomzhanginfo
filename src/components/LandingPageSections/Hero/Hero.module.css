@@ -106,6 +106,7 @@
   display: flex;
   justify-content: center;
   gap: 15px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .profileImage {

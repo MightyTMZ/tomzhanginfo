@@ -56,12 +56,12 @@ const Hero = () => {
               "Multi-Sport Athlete 🥏⚾",
               "Continuous Learner",
             ]}
-            typeSpeed={20}
-            backSpeed={50}
+            typeSpeed={35}
+            backSpeed={10}
             loop
             style={{
               fontWeight: "bold",
-              fontSize: "24px"
+              fontSize: "24px", 
             }}
           ></ReactTyped>
           {/* <Image src={Tom1} alt={"Tom Zhang"} className={styles.profileImage} /> */}
