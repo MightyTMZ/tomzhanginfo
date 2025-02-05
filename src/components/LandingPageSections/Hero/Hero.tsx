@@ -53,7 +53,7 @@ const Hero = () => {
               "Road Trip Explorer 🛣️",
               "Tech Builder ⚙️",
               "Aspiring World-Class Engineer 🧑‍🔬",
-              "Multi-Sport Athlete 🥏⚾",
+              "Multi-Sport Athlete ⚾🥏",
               "Continuous Learner",
             ]}
             typeSpeed={35}
