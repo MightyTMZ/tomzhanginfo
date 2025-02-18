@@ -6,3 +6,7 @@ where we assigned more than 64 graduate students to test out
 foundational models, and Ollama which gave us invaluable insights
 to my book "A Practical Guidebook to Ollama"
 
+will (hopefully) host an Ollama hackathon on Columbia University campus
+
+- Packt will be there
+- Ollama (company) will be there too
