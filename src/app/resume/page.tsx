@@ -26,7 +26,7 @@ const Resume = () => {
           <a href="/connect-with-me"><span className="text-blue-500">reach out to me</span></a>
         </p>
         <iframe
-          src="/Tom_Zhang_Resume.pdf"
+          src="/Tom Zhang - Resume.pdf"
           width="75%"
           height="800px"
           title="My Resume"
