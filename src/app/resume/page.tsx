@@ -19,7 +19,7 @@ const Resume = () => {
       <div className="container mx-auto px-4 pb-7">
         <ReturnHomeButton />
 
-        <h1>Download my resume (Feb 2025)</h1>
+        <h1>Download my resume</h1>
         <p className="pb-4">
           <span className="text-red-500 font-bold">Disclaimer:</span> If you would like to
           me update my resume, please kindly{" "}
