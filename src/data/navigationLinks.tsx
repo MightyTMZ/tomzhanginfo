@@ -8,7 +8,6 @@ import {
   FaProjectDiagram,
   FaTools,
   FaBookOpen,
-  FaRocket,
   FaQuoteRight,
   FaRunning,
   FaFileAlt,
@@ -82,12 +81,12 @@ export const navItems = [
     reference: "/resources",
     icon: <FaBookOpen />,
   },
-  {
+  /*{
     id: 12,
     title: "My Ventures",
     reference: "/my-ventures",
     icon: <FaRocket />,
-  },
+  },*/
   {
     id: 13,
     title: "Testimonials",

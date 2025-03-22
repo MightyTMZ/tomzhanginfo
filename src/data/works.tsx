@@ -1,22 +1,23 @@
-import { FaGlobe, FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { FaGlobe, FaGithub, FaExternalLinkAlt, FaVideo } from "react-icons/fa";
 import placeholderImage from "../../public/placeholder.webp";
 import orbitview from "./workPics/newOrbitView.png";
-import tokenzlabs from "./workPics/TokenZLabs.png";
-import chatbot_tzl from "./workPics/TokenZLabschatbot.png";
+// import tokenzlabs from "./workPics/TokenZLabs.png";
+import azure_partners from "./workPics/azure_partners.png";
 import saleemai from "./workPics/saleemai.png";
 import scisoc from "./workPics/EarlHaigScienceSociety.png";
 import orbImmersive from "./workPics/orb_immersive.png";
 import ollama from "./workPics/ollama.png";
 import personalWeb from "./workPics/personalweb.png";
 import privateNotekeeper from "./workPics/private_notekeeper.png";
-import sluggerdynamics from "./workPics/sluggerdyanmics_ai.png";
+import ssn from "./workPics/ssn.jpg";
+import ah from "./workPics/ah.jpg";
 
 export const coreProjects = [
   {
     id: 1,
     title: "OrbitView",
     featureImage: orbitview ? orbitview : placeholderImage,
-    description: `OrbitView empowers professionals to create AI-powered versions of themselves,
+    description: `OrbitView empowers people to create AI-powered versions of themselves,
        sharing their expertise effortlessly. By uploading files and training a 
        "free" or "paid" agent, they can generate passive income while learners
         gain personalized insights from trusted sources. 
@@ -31,20 +32,34 @@ export const coreProjects = [
     ],
   },
   {
-    id: 2,
-    title: "Token Z Labs",
-    featureImage: tokenzlabs ? tokenzlabs : placeholderImage,
-    description: `Token Z Labs, the world's first hybrid model platform combining 
-      off-chain and on-chain solutions for capital markets and real estate. 
-      Personally, I implemented SEO and refined the UI/UX and increased investor and user
-      engagement`, // by over 67% and search engine visibility by over 300%
-    links: [
-      { icon: <FaGlobe />, url: "https://tokenzlabs.com/", label: "Live Site" },
-    ],
+    id: 6,
+    title: "Sentinel Safeguard Network",
+    featureImage: ssn ? ssn : placeholderImage,
+    description: `The Sentinel Network is an innovative neighborhood security solution that 
+    I developed to enhance community safety using cutting-edge Internet of Things (IoT) 
+    technology and scalable cloud infrastructure. This project integrates security cameras,
+     motion detectors, alarms, and sensors to monitor and detect suspicious activities 
+     in real-time. Data collected from these devices is processed with advanced AI models 
+     to identify potential threats, such as firearms or masked burglars. 
+     The Sentinel Network features a user communication platform that enables 
+     residents and law enforcement to share information instantly, 
+     creating a robust web of interconnected devices and a vigilant community. 
+     Winner: 2024 Toronto Science Fair (Bronze Medal)
+    `, // by over 67% and search engine visibility by over 300%
+    links: [],
   },
-
   {
-    id: 3,
+    id: 7,
+    title: "Automatic Humidifier",
+    featureImage: ah ? ah : placeholderImage,
+    description: `
+    Created an automatic humidifier using a ESP8266, DHT11 sensor, relay module. 
+    Turns on and off dynamically if humidity falls below 70%
+    `,
+    links: [],
+  },
+  {
+    id: 2,
     title: "Earl Haig Science Society",
     featureImage: scisoc ? scisoc : placeholderImage,
     description: `
@@ -63,7 +78,7 @@ export const coreProjects = [
     ],
   },
   {
-    id: 4,
+    id: 3,
     title: "Ollama Guidebook (in progress)",
     featureImage: ollama ? ollama : placeholderImage,
     description:
@@ -77,33 +92,7 @@ export const coreProjects = [
     ],
   },
   {
-    id: 5,
-    title: "Token Z Labs investor and customer support chatbot (in progress)",
-    featureImage: chatbot_tzl ? chatbot_tzl : placeholderImage,
-    description: `
-      Many investors and customers do not fully understand the industry Token Z Labs operates in: real-world-asset
-      tokenization and off/on-chain solutions for capital markets and real estate. I am creating this chatbot to 
-      increase investor engagement and customer understanding by providing clear, concise explanations, answering 
-      frequently asked questions, and showcasing the unique value propositions of Token Z Labs' offerings.
-      `,
-    links: [],
-  },
-  {
-    id: 6,
-    title: "Token Z Labs Wallet Login System (in progress)",
-    featureImage: placeholderImage,
-    description: `
-      A secure, SEC-compliant wallet login leveraging multisignature or MPC
-       technology to protect user assets and credentials. This system ensures 
-       robust security, streamlined onboarding, and regulatory adherence, 
-       enhancing trust and reliability for investors and customers. Collaboration
-        with key stakeholders will align the solution with industry standards and
-         strategic objectives.
-      `,
-    links: [],
-  },
-  {
-    id: 7,
+    id: 4,
     title: "Personal Website",
     featureImage: personalWeb ? personalWeb : placeholderImage,
     description: `You are viewing this project right now! 
@@ -111,13 +100,13 @@ export const coreProjects = [
       mission statement, favourite quotes, etc. 
       On mobile, performance: 93; accessibility: 87; best practices: 100; SEO: 100;
       On desktop, performance: 100; accessibilityL 87; best practices: 100; SEO: 100;
-    `, // by over 67% and search engine visibility by over 300%
+    `,
     links: [
       { icon: <FaGlobe />, url: "https://tomzhang.info/", label: "Live Site" },
     ],
   },
   {
-    id: 8,
+    id: 5,
     title: "Tom Zhang 2.0",
     featureImage: placeholderImage,
     description: `
@@ -127,33 +116,40 @@ export const coreProjects = [
        as the first prototype of an OrbitView AI agent, empowering users to 
        learn valuable skills like AI, machine learning, and more.
       `,
-    links: [],
+    links: [
+      {
+        icon: <FaVideo />,
+        url: "https://drive.google.com/file/d/1qUQTg9CwieKWmZOV9D33TU6MTG1X-ldO/view?usp=sharing",
+        label: "Demo Video",
+      },
+    ],
   },
   {
-    id: 9,
-    title: "SluggerDynamicsAI",
-    featureImage: sluggerdynamics,
-    description: `
-      SluggerDynamicsAI is an advanced baseball pitching machine 
-      owered by cutting-edge generative AI. Designed to mimic the 
-      pitching styles of iconic players like Trevor Bauer and 
-      Ben Joyce, it delivers unparalleled training experiences. 
-      From fastballs to curveballs, SluggerDynamicsAI dynamically 
-      adjusts pitch types, speeds, and trajectories to keep hitters 
-      sharp and elevate their game. Whether you're an amateur slugger 
-      or a pro in the making, this system brings the mound to you, 
-      redefining the way players train and master their swing.
-      `,
-    links: [],
+    id: 6,
+    title: "Azure Partners",
+    featureImage: azure_partners ? azure_partners : placeholderImage,
+    description: `Azure Partners: AI Enablement, Research, and Industry Collaboration. 
+
+     Empowering Business Growth with AI
+
+
+    `, // by over 67% and search engine visibility by over 300%
+    links: [
+      {
+        icon: <FaGlobe />,
+        url: "https://azurepartners.vercel.app/",
+        label: "Live Site",
+      },
+    ],
   },
 ];
 
 export const protoTypes_Experiments = [
   {
     id: 1,
-    title: "OrbitView Immersive Reader",
+    title: "OrbitView Immersive Reader (failed)",
     featureImage: orbImmersive ? orbImmersive : placeholderImage,
-    description: `Attempting to increase media consumption engagement through the use of customization tools and filters.
+    description: `Attempted to increase media consumption engagement through the use of customization tools and filters.
       Supports: stereoscopic filters, contrast toggle, font size adjustments, contrast adjustments, 
       `,
     links: [
@@ -163,26 +159,6 @@ export const protoTypes_Experiments = [
         label: "Read More",
       },
     ],
-  },
-  {
-    id: 2,
-    title: "OrbitView Agent Creation (in progress)",
-    featureImage: placeholderImage,
-    description: `A prototype enabling users to train AI agents that educate others, monetizing their expertise. 
-      Admiring learners can pay for premium "paid agents" (e.g., Peter Thiel's AI) to access exclusive
-       insights, while free agents provide foundational knowledge. Operating on a tiered subscription model, 
-       the platform combines personalized AI learning with scalable earning opportunities.`,
-    links: [],
-  },
-  {
-    id: 3,
-    title: "Haig Engineering Hub (HEH)",
-    featureImage: placeholderImage,
-    description: `A collaborative platform for Earl Haig students, providing access to essential tools, 
-      resources, and knowledge to excel in engineering. It offers a central space for learning, 
-      innovation, and project development, helping students connect, build, and grow within 
-      the engineering field.`,
-    links: [],
   },
 ];
 
