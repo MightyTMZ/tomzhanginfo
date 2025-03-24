@@ -5,7 +5,7 @@ import { coreProjects } from "@/data/works";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import "./ShowMoreLessButton.css"
+import "./ShowMoreLessButton.css";
 
 const CoreProjects = () => {
   const [showMore, setShowMore] = useState(false);
@@ -27,12 +27,20 @@ const CoreProjects = () => {
               alt={project.title}
               className={styles.projectFeatureImage}
             />
-            <p className={styles.projectDescription}>{project.description}</p>
+            <p className={styles.projectDescription}>
+              {project.description.split("\n").map((line, index) => (
+                <span key={index}>
+                  {line}
+                  <br />
+                </span>
+              ))}
+            </p>
             <div className={styles.projectLinks}>
               {project.links.map((link, index) => (
                 <Link
                   key={index}
                   href={link.url}
+                  title={link.label}
                   target="_blank"
                   rel="noopener noreferrer"
                   className={styles.linkIcon}
@@ -44,7 +52,10 @@ const CoreProjects = () => {
             </div>
           </div>
         ))}
-        <button onClick={handleShowMore} className="showMoreLessUnderlineButton">
+        <button
+          onClick={handleShowMore}
+          className="showMoreLessUnderlineButton"
+        >
           {showMore ? "Show less" : "Show more"}
         </button>
       </div>

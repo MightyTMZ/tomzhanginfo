@@ -1,4 +1,10 @@
-import { FaGlobe, FaGithub, FaExternalLinkAlt, FaVideo } from "react-icons/fa";
+import {
+  FaGlobe,
+  FaGithub,
+  FaExternalLinkAlt,
+  FaVideo,
+  FaTwitter,
+} from "react-icons/fa";
 import placeholderImage from "../../public/placeholder.webp";
 import orbitview from "./workPics/newOrbitView.png";
 // import tokenzlabs from "./workPics/TokenZLabs.png";
@@ -11,6 +17,7 @@ import personalWeb from "./workPics/personalweb.png";
 import privateNotekeeper from "./workPics/private_notekeeper.png";
 import ssn from "./workPics/ssn.jpg";
 import ah from "./workPics/ah.jpg";
+import desync from "./workPics/desync.png";
 
 export const coreProjects = [
   {
@@ -18,11 +25,10 @@ export const coreProjects = [
     title: "OrbitView",
     featureImage: orbitview ? orbitview : placeholderImage,
     description: `OrbitView empowers people to create AI-powered versions of themselves,
-       sharing their expertise effortlessly. By uploading files and training a 
-       "free" or "paid" agent, they can generate passive income while learners
+       sharing their expertise effortlessly. By uploading files and training a "free" or "paid" agent, they can generate passive income while learners
         gain personalized insights from trusted sources. 
-        It's a simple, groundbreaking way to scale knowledge and connect authentically in a digital age.
-        In addition, we provide immersive media consumption through customization tools.`,
+        
+        It's a simple, groundbreaking way to scale knowledge and connect authentically in a digital age. In addition, we provide immersive media consumption through customization tools.`,
     links: [
       {
         icon: <FaExternalLinkAlt />,
@@ -35,18 +41,43 @@ export const coreProjects = [
     id: 6,
     title: "Sentinel Safeguard Network",
     featureImage: ssn ? ssn : placeholderImage,
-    description: `The Sentinel Network is an innovative neighborhood security solution that 
-    I developed to enhance community safety using cutting-edge Internet of Things (IoT) 
-    technology and scalable cloud infrastructure. This project integrates security cameras,
-     motion detectors, alarms, and sensors to monitor and detect suspicious activities 
-     in real-time. Data collected from these devices is processed with advanced AI models 
-     to identify potential threats, such as firearms or masked burglars. 
-     The Sentinel Network features a user communication platform that enables 
-     residents and law enforcement to share information instantly, 
-     creating a robust web of interconnected devices and a vigilant community. 
-     Winner: 2024 Toronto Science Fair (Bronze Medal)
-    `, // by over 67% and search engine visibility by over 300%
+    description: `Innovative neighborhood security solution that to enhance community safety using cutting-edge Internet of Things (IoT) technology and scalable cloud infrastructure. This project integrates security cameras, motion detectors, alarms, and sensors to monitor and detect suspicious activities in real-time. Data collected from these devices is processed with advanced AI models to identify potential threats, such as firearms or masked burglars. 
+     
+    Features a user communication platform that enables residents and law enforcement to share information instantly, creating a robust web of interconnected devices and a vigilant community. 
+    
+    Winner (Bronze Medal) 🥉 @ 2024 Toronto Science Fair 
+    `,
     links: [],
+  },
+  {
+    id: 11,
+    title: "desync.fi",
+    featureImage: desync ? desync : placeholderImage,
+    description: `deSync is a zero-interest lending protocol built on Scroll that unlocks lucrative yield for lenders while allowing borrowers to borrow at 0% interest.
+
+      It provides a crypto-native, scalable solution for yield generation achieved by delta-hedging Bitcoin, Ethereum and USDC spot assets using perpetual futures contracts.
+
+      Democratizing loans for all - Using delta neutral strategies to offer zero-interest loans while providing the best yield to lenders
+      
+      Winner (1st place: DeFi Track) @ Scroll Open 📜
+      `,
+    links: [
+      {
+        icon: <FaGlobe />,
+        url: "https://desync.fi/",
+        label: "Live Site",
+      },
+      {
+        icon: <FaTwitter />,
+        url: "https://x.com/Scroll_ZKP/status/1904244528716136668",
+        label: "Twitter (X)",
+      },
+      {
+        icon: <FaGithub />,
+        url: "https://github.com/deSyncLabs/scroll-open",
+        label: "GitHub",
+      },
+    ],
   },
   {
     id: 7,
@@ -63,11 +94,9 @@ export const coreProjects = [
     title: "Earl Haig Science Society",
     featureImage: scisoc ? scisoc : placeholderImage,
     description: `
-      Earl Haig Science Society is part of the largest public high school in Ontario and is the central hub
-      for STEM opportunities, labs, and contest. Personally, I lead the engineering department which 
-      hosts weekly workshops, talks to staff/students/teachers to solve problems around the school, and most
-      importantly created the website that gives over 330 students (roughly 16% of our entire school's student body)
-      with equal access to information.
+      Earl Haig Science Society is part of the largest public high school in Ontario and is the central hub for STEM opportunities, labs, and contest. Personally, I lead the engineering department which hosts weekly workshops, talks to staff/students/teachers to solve problems around the school, and most importantly created the website that gives over 330 students (roughly 16% of our entire school's student body) with equal access to information.
+      
+      Added interactive event modals and integrations with Google Calendar API, Outlook Calendar API, and more to make scheduling events for members easier than ever!
       `,
     links: [
       {
@@ -81,8 +110,9 @@ export const coreProjects = [
     id: 3,
     title: "Ollama Guidebook (in progress)",
     featureImage: ollama ? ollama : placeholderImage,
-    description:
-      "A comprehensive guidebook to Ollama, covering tools and integrations for seamless AI workflows. Publisher: Packt",
+    description: `A comprehensive guidebook to Ollama, covering tools and integrations for seamless AI workflows. 
+      
+      Publisher: Packt`,
     links: [
       {
         icon: <FaExternalLinkAlt />,
@@ -95,26 +125,21 @@ export const coreProjects = [
     id: 4,
     title: "Personal Website",
     featureImage: personalWeb ? personalWeb : placeholderImage,
-    description: `You are viewing this project right now! 
-      It showcases my works (projects, prototypes, experiments, integrations) along with my
-      mission statement, favourite quotes, etc. 
-      On mobile, performance: 93; accessibility: 87; best practices: 100; SEO: 100;
-      On desktop, performance: 100; accessibilityL 87; best practices: 100; SEO: 100;
+    description: `You are viewing this project right now! It showcases my works (projects, prototypes, experiments, integrations) along with my mission statement, favourite quotes, etc. 
     `,
     links: [
       { icon: <FaGlobe />, url: "https://tomzhang.info/", label: "Live Site" },
     ],
   },
+
+  // On mobile, performance: 93; accessibility: 87; best practices: 100; SEO: 100;
+  //     On desktop, performance: 100; accessibilityL 87; best practices: 100; SEO: 100;
   {
     id: 5,
     title: "Tom Zhang 2.0",
     featureImage: placeholderImage,
     description: `
-      An interactive AI clone designed to streamline communication on my personal
-       website, helping over 5,000 users effortlessly draft proposals and 
-       emails aligned with my style. Beyond simplifying engagement, it serves 
-       as the first prototype of an OrbitView AI agent, empowering users to 
-       learn valuable skills like AI, machine learning, and more.
+      An interactive AI clone designed to streamline communication with me, helping over 5,000 users effortlessly draft proposals and emails aligned with my style. Beyond simplifying engagement, it serves as the first prototype of an OrbitView AI agent, empowering users to learn valuable skills like AI, machine learning, and more.
       `,
     links: [
       {

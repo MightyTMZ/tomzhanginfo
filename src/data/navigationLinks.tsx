@@ -27,12 +27,12 @@ export const navItems = [
     reference: "/about",
     icon: <FaInfoCircle />,
   },
-  {
+  /*{
     id: 3,
     title: "Daily Dose of Insights",
     reference: "/daily-dose-of-insights",
     icon: <FaLightbulb />,
-  },
+  },*/
   {
     id: 4,
     title: "Connect with me",
@@ -51,12 +51,12 @@ export const navItems = [
     reference: "/photography",
     icon: <FaCamera />,
   },
-  {
+  /*{
     id: 7,
     title: "Self Education",
     reference: "/self-education",
     icon: <FaBook />,
-  },
+  },*/
   {
     id: 8,
     title: "My Works",
@@ -93,12 +93,12 @@ export const navItems = [
     reference: "/testimonials",
     icon: <FaQuoteRight />,
   },
-  {
+  /*{
     id: 14,
     title: "Athletics",
     reference: "/athletics",
     icon: <FaRunning />,
-  },
+  },*/
 ];
 
 export const navigateLinks = navItems.slice(0, 5);
