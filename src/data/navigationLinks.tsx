@@ -1,15 +1,12 @@
 import {
   FaHome,
   FaInfoCircle,
-  FaLightbulb,
   FaUserFriends,
   FaCamera,
-  FaBook,
   FaProjectDiagram,
   FaTools,
   FaBookOpen,
   FaQuoteRight,
-  FaRunning,
   FaFileAlt,
 } from "react-icons/fa";
 import { TfiWrite } from "react-icons/tfi";
