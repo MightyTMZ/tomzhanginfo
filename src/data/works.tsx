@@ -69,7 +69,7 @@ export const coreProjects = [
       },
       {
         icon: <FaTwitter />,
-        url: "https://x.com/Scroll_ZKP/status/1904244528716136668",
+        url: "https://x.com/Scroll_ZKP/status/1904284853161357733?t=rrtNkKFjZxtOSi9X6UsY1w&s=19",
         label: "Twitter (X)",
       },
       {
