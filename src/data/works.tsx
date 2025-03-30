@@ -4,6 +4,7 @@ import {
   FaExternalLinkAlt,
   FaVideo,
   FaTwitter,
+  FaFileArchive,
 } from "react-icons/fa";
 import placeholderImage from "../../public/placeholder.webp";
 import orbitview from "./workPics/newOrbitView.png";
@@ -18,6 +19,8 @@ import privateNotekeeper from "./workPics/private_notekeeper.png";
 import ssn from "./workPics/ssn.jpg";
 import ah from "./workPics/ah.jpg";
 import desync from "./workPics/desync.png";
+import medport from "./workPics/medport.png";
+import prestreet from "./workPics/prestreet.png"
 
 export const coreProjects = [
   {
@@ -34,6 +37,28 @@ export const coreProjects = [
         icon: <FaExternalLinkAlt />,
         url: "https://www.orbitview.net/",
         label: "Details",
+      },
+    ],
+  },
+  {
+    id: 12,
+    title: "Medport",
+    featureImage: medport ? medport : placeholderImage,
+    description: `A secure and locally-ran health management system. Contains a container for storing your medication and supplements. Calibrated sensors to track intake instances in real time and generate a log/ledger. Users can then export the data and streamline the communication with their healthcare providers (e.g. doctors, physicians, nutritionists, etc). 
+    
+    Integrated with a graphical user interface (GUI) for viewing medication log/ledger and contacting emergency services.
+
+    Automated and Real-time logging. Privacy-first design. Effortless export and analytics. Convenient filtering options. Interactive log visualization. Local AI assistant trained using the person's biometric data. Emergency services integration.
+
+    Developed using Arduino Mega 2560, Raspberry Pi Pico W, Django, Next.js and many other IoT tools & frameworks 💖
+
+    Winner (Silver Medal) 🥈 @ 2025 Toronto Science Fair
+      `,
+    links: [
+      {
+        icon: <FaFileArchive />,
+        url: "https://drive.google.com/drive/folders/1slMnWFObjFdGeYCdAfj5KmmPZ_mEjSi_",
+        label: "Photo Drive",
       },
     ],
   },
@@ -77,6 +102,25 @@ export const coreProjects = [
         url: "https://github.com/deSyncLabs/scroll-open",
         label: "GitHub",
       },
+    ],
+  },
+  {
+    id: 13,
+    title: "PreStreet",
+    featureImage: prestreet ? prestreet : placeholderImage,
+    description: `Where Big Ideas Become Child's Play
+
+    Think of it like the Wall Street Journal (WSJ), Business Insider, or Fortune Magazine for young children.
+
+    Currently working with youth commissions and councils in my community to bring this project to as many people as possible 💖
+      `,
+    links: [
+      {
+        icon: <FaGlobe />,
+        url: "https://prestreet.vercel.app/",
+        label: "Live Site",
+      },
+    
     ],
   },
   {
