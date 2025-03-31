@@ -4,7 +4,8 @@ import {
   FaExternalLinkAlt,
   FaVideo,
   FaTwitter,
-  FaFileArchive,
+  // FaFileArchive,
+  FaGoogleDrive,
 } from "react-icons/fa";
 import placeholderImage from "../../public/placeholder.webp";
 import orbitview from "./workPics/newOrbitView.png";
@@ -56,7 +57,7 @@ export const coreProjects = [
       `,
     links: [
       {
-        icon: <FaFileArchive />,
+        icon: <FaGoogleDrive />,
         url: "https://drive.google.com/drive/folders/1slMnWFObjFdGeYCdAfj5KmmPZ_mEjSi_",
         label: "Photo Drive",
       },
