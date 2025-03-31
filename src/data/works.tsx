@@ -102,6 +102,11 @@ export const coreProjects = [
         url: "https://github.com/deSyncLabs/scroll-open",
         label: "GitHub",
       },
+      {
+        icon: <FaVideo />,
+        url: "https://drive.google.com/file/d/1Go4Ipu9FKrf-RKM37g1tqoAPZXLGQhaf/view?usp=drive_link",
+        label: "Demo Video",
+      },
     ],
   },
   {
