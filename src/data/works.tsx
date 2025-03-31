@@ -50,7 +50,7 @@ export const coreProjects = [
 
     Automated and Real-time logging. Privacy-first design. Effortless export and analytics. Convenient filtering options. Interactive log visualization. Local AI assistant trained using the person's biometric data. Emergency services integration.
 
-    Developed using Arduino Mega 2560, Raspberry Pi Pico W, Django, Next.js and many other IoT tools & frameworks 💖
+    Developed using Arduino Mega 2560, Raspberry Pi Pico W, Ollama, Django, Next.js and many other IoT tools & frameworks 💖
 
     Winner (Silver Medal) 🥈 @ 2025 Toronto Science Fair
       `,
