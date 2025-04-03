@@ -22,6 +22,7 @@ import ah from "./workPics/ah.jpg";
 import desync from "./workPics/desync.png";
 import medport from "./workPics/medport.png";
 import prestreet from "./workPics/prestreet.png"
+import nift_of_the_web from "./workPics/nift_of_the_web.png"
 
 export const coreProjects = [
   {
@@ -109,6 +110,18 @@ export const coreProjects = [
         label: "Demo Video",
       },
     ],
+  },
+  {
+    id: 14,
+    title: "The Nift of the Web",
+    featureImage: nift_of_the_web ? nift_of_the_web : placeholderImage,
+    description: `Master full-stack development across web and mobile platforms with AI integration. Access comprehensive resources and practical guides.
+
+    Initiative with Columbia University providing STEM department students the essential and high-quality cheatsheets and resources. 
+
+    At the heart of this initiative, we believe that every student entering the workforce should be an architect of technology rather than just a coder focused on small fragments of code. With AI taking over routine coding tasks, the focus will shift toward understanding the bigger picture and mastering debugging.
+    `,
+    links: [],
   },
   {
     id: 13,
