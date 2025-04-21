@@ -1,5 +1,5 @@
 import { email } from "./email";
-import { FaLinkedin, FaGithub, FaEnvelope, FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaLinkedin, FaEnvelope, FaTwitter } from "react-icons/fa";
 
 export const socialLinks = [
   {
