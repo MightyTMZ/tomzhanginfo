@@ -1,5 +1,5 @@
 import { email } from "./email";
-import { FaLinkedin, FaGithub, FaEnvelope, FaInstagram } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaEnvelope, FaInstagram, FaTwitter } from "react-icons/fa";
 
 export const socialLinks = [
   {
@@ -18,18 +18,18 @@ export const socialLinks = [
   },
   {
     id: 3,
-    icon: <FaInstagram />,
-    title: "@tom.zhang20",
-    label: "Instagram",
-    url: "https://www.instagram.com/tom.zhang20/",
+    icon: <FaTwitter />,
+    title: "OrbitTommyZ",
+    label: "Twitter (X)",
+    url: "https://x.com/OrbitTommyZ",
   },
-  {
+  /*{
     id: 4,
     icon: <FaGithub />,
     title: "MightyTMZ",
     label: "GitHub",
     url: "https://github.com/MightyTMZ",
-  },
+  },*/
 
   
 ];
