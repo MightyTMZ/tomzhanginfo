@@ -1,5 +1,6 @@
 import { email } from "./email";
 import { FaLinkedin, FaEnvelope, FaTwitter } from "react-icons/fa";
+import { SiCalendly } from "react-icons/si";
 
 export const socialLinks = [
   {
@@ -22,6 +23,13 @@ export const socialLinks = [
     title: "OrbitTommyZ",
     label: "Twitter (X)",
     url: "https://x.com/OrbitTommyZ",
+  },
+  {
+    id: 4,
+    icon: <SiCalendly />,
+    title: "Schedule a free call with me!",
+    label: "Calendly",
+    url: "https://calendly.com/tom-zhang-20",
   },
   /*{
     id: 4,

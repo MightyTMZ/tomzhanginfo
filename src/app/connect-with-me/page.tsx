@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./ConnectWithMe.module.css";
-import Contact from "@/components/LandingPageSections/Contact/Contact";
+// import Contact from "@/components/LandingPageSections/Contact/Contact";
 import { socialLinks } from "@/data/socials";
 import Link from "next/link";
 import { Metadata } from "next";
@@ -52,10 +52,10 @@ export default function ConnectWithMe() {
             </ul>
           </div>
 
-          {/* Contact Form Section */}
+          {/* Contact Form Section 
           <div className={styles.contactFormSection}>
             <Contact />
-          </div>
+          </div>*/}
         </div>
       </section>
     </>

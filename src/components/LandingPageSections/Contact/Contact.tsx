@@ -83,8 +83,22 @@ const Contact = () => {
             />
           </div>
           <div className={styles.inputGroup}>
+            <label className={styles.formLabel} htmlFor="subject">
+              Subject
+            </label>
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              placeholder="Type your subject here"
+              maxLength={255} // Assuming email addresses won't exceed this length
+              className={styles.formInput}
+              required
+            />
+          </div>
+          <div className={styles.inputGroup}>
             <label className={styles.formLabel} htmlFor="message">
-              Your Message
+              Message
             </label>
             <textarea
               id="message"

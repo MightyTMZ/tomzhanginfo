@@ -13,9 +13,9 @@ const MissionStatement = dynamic(
 const Quote = dynamic(
   () => import("@/components/LandingPageSections/Quote/Quote")
 );
-const Contact = dynamic(
+/*const Contact = dynamic(
   () => import("@/components/LandingPageSections/Contact/Contact")
-);
+);*/
 import { websiteName } from "@/data/base";
 import { Metadata } from "next";
 
@@ -41,7 +41,7 @@ export default function Home() {
       <AboutPage />
       <MissionStatement />
       <Quote />
-      <Contact />
+      {/*<Contact />*/}
     </>
   );
 }
