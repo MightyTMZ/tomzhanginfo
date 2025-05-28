@@ -29,11 +29,10 @@ export const coreProjects = [
     id: 1,
     title: "OrbitView",
     featureImage: orbitview ? orbitview : placeholderImage,
-    description: `OrbitView empowers people to create AI-powered versions of themselves,
-       sharing their expertise effortlessly. By uploading files and training a "free" or "paid" agent, they can generate passive income while learners
-        gain personalized insights from trusted sources. 
-        
-        It's a simple, groundbreaking way to scale knowledge and connect authentically in a digital age. In addition, we provide immersive media consumption through customization tools.`,
+    description: `OrbitView is a go-to career accelerator for students and professionals. 
+    
+    Solving people's problems with accelerating their career. Full information at https://www.orbitview.net/product
+`,
     links: [
       {
         icon: <FaExternalLinkAlt />,
