@@ -73,7 +73,7 @@ const Footer = () => {
       <div className={styles.footerBottom}>
         <ViewsCount />
         <p className={styles.footerText}>
-          © {new Date().getFullYear()} Tom Zhang. All rights reserved.
+          © 2025 Tom Zhang. All rights reserved.
         </p>
       </div>
     </footer>
