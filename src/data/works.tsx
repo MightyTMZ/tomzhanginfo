@@ -215,16 +215,16 @@ export const coreProjects = [
     id: 6,
     title: "Azure Partners",
     featureImage: azure_partners ? azure_partners : placeholderImage,
-    description: `Azure Partners: AI Enablement, Research, and Industry Collaboration. 
+    description: `Created a website that has multilingual support for both English-speaking and Chinese-speaking vistors of Azure Partners. 
 
-     Empowering Business Growth with AI
-
-
+    Helped the CEO present company information to top companies like ByteDance and Google to secure partnerships and investments. 
+    
+    Being the founding engineer, programming the site using Next.js was very fun!
     `, // by over 67% and search engine visibility by over 300%
     links: [
       {
         icon: <FaGlobe />,
-        url: "https://azurepartners.vercel.app/",
+        url: "https://azure-partners.vercel.app/",
         label: "Live Site",
       },
     ],
