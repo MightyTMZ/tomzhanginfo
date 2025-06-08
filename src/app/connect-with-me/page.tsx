@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     images: [
       {
-        url: "https://tomzhang.info/og-images/ogi_contact_me.jpg",
+        url: "https://tomzhang.info/og-images/ogi_connectwithme.jpg",
         width: 1120,
         height: 630,
         alt: "Tom Zhang's Personal Website",
