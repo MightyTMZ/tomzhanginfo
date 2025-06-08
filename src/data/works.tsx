@@ -168,21 +168,21 @@ export const coreProjects = [
       },
     ],
   },
-  {
-    id: 3,
-    title: "Ollama Guidebook (in progress)",
-    featureImage: ollama ? ollama : placeholderImage,
-    description: `A comprehensive guidebook to Ollama, covering tools and integrations for seamless AI workflows. 
+  // {
+  //   id: 3,
+  //   title: "Ollama Guidebook (in progress)",
+  //   featureImage: ollama ? ollama : placeholderImage,
+  //   description: `A comprehensive guidebook to Ollama, covering tools and integrations for seamless AI workflows. 
       
-      Publisher: Packt`,
-    links: [
-      {
-        icon: <FaExternalLinkAlt />,
-        url: "https://www.packtpub.com/",
-        label: "Read More",
-      },
-    ],
-  },
+  //     Publisher: Packt`,
+  //   links: [
+  //     {
+  //       icon: <FaExternalLinkAlt />,
+  //       url: "https://www.packtpub.com/",
+  //       label: "Read More",
+  //     },
+  //   ],
+  // },
   {
     id: 4,
     title: "Personal Website",
@@ -196,21 +196,21 @@ export const coreProjects = [
 
   // On mobile, performance: 93; accessibility: 87; best practices: 100; SEO: 100;
   //     On desktop, performance: 100; accessibilityL 87; best practices: 100; SEO: 100;
-  {
-    id: 5,
-    title: "Tom Zhang 2.0",
-    featureImage: placeholderImage,
-    description: `
-      An interactive AI clone designed to streamline communication with me, helping over 5,000 users effortlessly draft proposals and emails aligned with my style. Beyond simplifying engagement, it serves as the first prototype of an OrbitView AI agent, empowering users to learn valuable skills like AI, machine learning, and more.
-      `,
-    links: [
-      {
-        icon: <FaVideo />,
-        url: "https://drive.google.com/file/d/1qUQTg9CwieKWmZOV9D33TU6MTG1X-ldO/view?usp=sharing",
-        label: "Demo Video",
-      },
-    ],
-  },
+  // {
+  //   id: 5,
+  //   title: "Tom Zhang 2.0",
+  //   featureImage: placeholderImage,
+  //   description: `
+  //     An interactive AI clone designed to streamline communication with me, helping over 5,000 users effortlessly draft proposals and emails aligned with my style. Beyond simplifying engagement, it serves as the first prototype of an OrbitView AI agent, empowering users to learn valuable skills like AI, machine learning, and more.
+  //     `,
+  //   links: [
+  //     {
+  //       icon: <FaVideo />,
+  //       url: "https://drive.google.com/file/d/1qUQTg9CwieKWmZOV9D33TU6MTG1X-ldO/view?usp=sharing",
+  //       label: "Demo Video",
+  //     },
+  //   ],
+  // },
   {
     id: 6,
     title: "Azure Partners",
