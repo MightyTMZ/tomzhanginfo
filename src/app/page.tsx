@@ -24,12 +24,22 @@ const fullTitle = websiteName + " - " + pageTitle;
 const pageDescription =
   "Welcome to my personal website! View my projects, prototypes, experiments, integrations, photos, etc. Enjoy!";
 const pageKeywords =
-  "tom, tom zhang, earl haig, canada, north york, baseball, programming, billionaire, ai, tech, ar vr, finance, economics, ultimate frisbee";
+  "tom, tom zhang, earl haig, canada, north york, baseball, programming, harvard, orbitview billionaire, ai, tech, ar vr, finance, economics, ultimate frisbee";
 
 export const metadata: Metadata = {
   title: fullTitle,
   description: pageDescription,
   keywords: pageKeywords,
+  openGraph: {
+    images: [
+      {
+        url: "https://tomzhang.info/og-images/ogi_home.jpg",
+        width: 1120,
+        height: 630,
+        alt: "Tom Zhang's Personal Website",
+      },
+    ],
+  },
 };
 
 export default function Home() {

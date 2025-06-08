@@ -11,6 +11,16 @@ export const metadata: Metadata = {
     "Download my resume. It is available in latex format.",
   keywords:
     "education, learning, knowledge, skills, books, certifications, school, resume, career",
+  openGraph: {
+    images: [
+      {
+        url: "https://tomzhang.info/og-images/ogi_resume.jpg",
+        width: 1120,
+        height: 630,
+        alt: "Tom Zhang's Personal Website",
+      },
+    ],
+  },
 };
 
 const Resume = () => {

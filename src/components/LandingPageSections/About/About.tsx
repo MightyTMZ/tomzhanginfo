@@ -9,7 +9,7 @@ const About = () => {
       <div className={styles.container}>
         {" "}
         <ReturnHomeButton />
-        <h2 className={styles.sectionTitle}>About Me</h2>
+        <h1 className={styles.sectionTitle}>About Me</h1>
         <div className={styles.content}>
           {/*<div className={styles.imageContainer}>
            <img

@@ -9,6 +9,7 @@ import {
 } from "@/data/navigationLinks";
 import ViewsCount from "./ViewsCount";
 import Link from "next/link";
+import currentYear from "./CurrentYear";
 
 const Footer = () => {
   return (
@@ -73,7 +74,7 @@ const Footer = () => {
       <div className={styles.footerBottom}>
         <ViewsCount />
         <p className={styles.footerText}>
-          © 2025 Tom Zhang. All rights reserved.
+          © {currentYear} Tom Zhang. All rights reserved.
         </p>
       </div>
     </footer>

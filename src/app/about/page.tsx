@@ -16,6 +16,17 @@ export const metadata: Metadata = {
   title: fullTitle,
   description: pageDescription,
   keywords: pageKeywords,
+
+  openGraph: {
+    images: [
+      {
+        url: "https://tomzhang.info/og-images/ogi_about.jpg",
+        width: 1120,
+        height: 630,
+        alt: "Tom Zhang's Personal Website",
+      },
+    ],
+  },
 };
 
 export default function AboutMe() {
