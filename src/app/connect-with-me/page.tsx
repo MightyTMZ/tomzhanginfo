@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./ConnectWithMe.module.css";
 // import Contact from "@/components/LandingPageSections/Contact/Contact";
-import { socialLinks } from "@/data/socials";
+import { socialLinks, orbitviewProfileLink } from "@/data/socials";
 import Link from "next/link";
 import { Metadata } from "next";
 import { websiteName } from "@/data/base";
@@ -41,6 +41,23 @@ export default function ConnectWithMe() {
             Whether you have a question, a collaboration idea, or just want to
             say hi, I’d love to hear from you. Let’s get in touch!
           </p>
+          {/* OrbitView Section */}
+          <div className={styles.orbitviewSection}>
+            <h2 className={styles.socialTitle}>🪐 Chat With My Resume</h2>
+            <p className={styles.orbitviewDescription}>
+              Instead of emailing me your questions, try this first...
+              <strong> my resume can now answer you directly.</strong> <br />
+              Powered by OrbitView, where my story speaks for itself.
+            </p>
+            <Link
+              href={orbitviewProfileLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.orbitviewButton}
+            >
+              Chat With My Resume
+            </Link>
+          </div>
           {/* Social Links Section */}
           <div className={styles.socialLinks}>
             <h2 className={styles.socialTitle}>Follow Me</h2>

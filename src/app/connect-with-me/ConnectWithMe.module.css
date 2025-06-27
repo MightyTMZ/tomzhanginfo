@@ -39,3 +39,44 @@
 .socialIcon:hover {
   color: #005bb5;
 }
+
+
+.orbitviewSection {
+  margin-top: 3rem;
+  padding: 2rem;
+  background-color: #f9fafb;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid #e5e7eb;
+}
+
+.dark .orbitviewSection {
+  background-color: #1f2937;
+  border-color: #374151;
+}
+
+.orbitviewDescription {
+  margin: 1rem 0;
+  font-size: 1.1rem;
+  color: #4b5563;
+}
+
+.dark .orbitviewDescription {
+  color: #d1d5db;
+}
+
+.orbitviewButton {
+  background: linear-gradient(to right, #6366f1, #ec4899);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.orbitviewButton:hover {
+  transform: translateY(-2px);
+}

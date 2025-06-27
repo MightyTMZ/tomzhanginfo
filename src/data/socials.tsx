@@ -41,3 +41,5 @@ export const socialLinks = [
 
   
 ];
+
+export const orbitviewProfileLink = "https://www.orbitview.net/profile/tom.zhang20"
