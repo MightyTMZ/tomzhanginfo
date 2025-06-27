@@ -14,7 +14,7 @@ import azure_partners from "./workPics/azure_partners.png";
 import saleemai from "./workPics/saleemai.png";
 import scisoc from "./workPics/EarlHaigScienceSociety.png";
 import orbImmersive from "./workPics/orb_immersive.png";
-import ollama from "./workPics/ollama.png";
+// import ollama from "./workPics/ollama.png";
 import personalWeb from "./workPics/personalweb.png";
 import privateNotekeeper from "./workPics/private_notekeeper.png";
 import ssn from "./workPics/ssn.jpg";
