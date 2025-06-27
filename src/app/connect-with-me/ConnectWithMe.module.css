@@ -88,3 +88,16 @@
   max-width: 1000px;
   height: auto;
 }
+
+
+.orbitviewLink {
+  font-weight: 700;
+  color: #a855f7;
+  /*text-decoration: underline;*/
+  /*text-decoration-style: wavy;*/
+  transition: color 0.3s;
+}
+
+.orbitviewLink:hover {
+  color: #d946ef;
+}

@@ -47,7 +47,16 @@ export default function ConnectWithMe() {
             <p className={styles.orbitviewDescription}>
               Instead of emailing me your questions, try this first...
               <strong> my resume can now answer you directly.</strong> <br />
-              Powered by OrbitView, where my story speaks for itself.
+              Powered by Powered by{" "}
+              <Link
+                href={orbitviewProfileLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.orbitviewLink}
+              >
+                🪐 OrbitView
+              </Link>
+              , where my story speaks for itself.
             </p>
             <Link
               href={orbitviewProfileLink}
