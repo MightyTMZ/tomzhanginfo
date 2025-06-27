@@ -57,6 +57,17 @@ export default function ConnectWithMe() {
             >
               Chat With My Resume
             </Link>
+
+            <div className={styles.orbitviewEmbedWrapper}>
+              <iframe
+                src="https://www.orbitview.net/profile/tom.zhang20"
+                width="100%"
+                height="600"
+                style={{ border: "1px solid #ccc", borderRadius: "12px" }}
+                title="OrbitView Profile"
+                loading="lazy"
+              ></iframe>
+            </div>
           </div>
           {/* Social Links Section */}
           <div className={styles.socialLinks}>
