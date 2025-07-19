@@ -3,7 +3,7 @@ import styles from "./OrbitView.module.css";
 import { websiteName } from "@/data/base";
 import { Metadata } from "next";
 import ReturnHomeButton from "@/components/ReturnHomeButton/ReturnHomeButton";
-import { FaRocket, FaBrain, FaUsers, FaClock, FaCheckCircle } from "react-icons/fa";
+import { FaRocket, FaBrain, FaClock, FaCheckCircle } from "react-icons/fa";
 import Image from "next/image";
 
 const pageTitle = "OrbitView";
