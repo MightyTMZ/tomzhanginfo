@@ -37,7 +37,7 @@ export default function OrbitView() {
             </h1>
             
             <p className={styles.heroDescription}>
-              Can't mentally recall the achievements and impact you have made when you are under pressure or tired? Get instant, AI-powered answers about any resume—so you can spend less time scrolling and more time having real conversations.
+              Can&rsquo;t mentally recall the achievements and impact you have made when you are under pressure or tired? Get instant, AI-powered answers about any resume—so you can spend less time scrolling and more time having real conversations.
             </p>
             
             <div className={styles.ctaContainer}>
@@ -56,7 +56,7 @@ export default function OrbitView() {
         <div className={styles.container}>
           <h2 className={styles.sectionTitle}>Tired of the time wasted recollecting your achievements?</h2>
           <p className={styles.sectionDescription}>
-            OrbitView removes the friction of recalling your entire experience—so you always have the right answer, even when you're tired or under pressure.
+            OrbitView removes the friction of recalling your entire experience—so you always have the right answer, even when you are tired or under pressure.
           </p>
           
           <div className={styles.featuresGrid}>
@@ -76,7 +76,7 @@ export default function OrbitView() {
               </div>
               <h3 className={styles.featureTitle}>Smart Connections</h3>
               <p className={styles.featureDescription}>
-                Build meaningful relationships by understanding candidates' backgrounds and experiences instantly.
+                Build meaningful relationships by understanding candidates&rsquo; backgrounds and experiences instantly.
               </p>
             </div>
             
@@ -96,7 +96,7 @@ export default function OrbitView() {
               </div>
               <h3 className={styles.featureTitle}>Always Prepared</h3>
               <p className={styles.featureDescription}>
-                Never miss important details or achievements, even when you're tired or under pressure.
+                Never miss important details or achievements, even when you&rsquo;re tired or under pressure.
               </p>
             </div>
           </div>
@@ -108,7 +108,7 @@ export default function OrbitView() {
           <div className={styles.benefitsContent}>
             <div className={styles.benefitsText}>
               <h2 className={styles.benefitsTitle}>
-                You don't have to be a genius to be a billionaire.
+                You don&rsquo;t have to be a genius to be a billionaire.
               </h2>
               <div className={styles.benefitsList}>
                 <div className={styles.benefitItem}>
@@ -131,7 +131,7 @@ export default function OrbitView() {
                   <span className={styles.benefitNumber}>03</span>
                   <div className={styles.benefitContent}>
                     <h3>Memory Never Fails</h3>
-                    <p>Can't mentally recall your achievements under pressure? OrbitView ensures you never forget, even when you're tired or stressed</p>
+                    <p>Can&rsquo;t mentally recall your achievements under pressure? OrbitView ensures you never forget, even when you&rsquo;re tired or stressed</p>
                   </div>
                 </div>
               </div>

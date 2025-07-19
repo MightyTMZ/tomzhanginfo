@@ -21,7 +21,7 @@ export default function OrbitView() {
             </h2>
             
             <p className={styles.description}>
-              Can't mentally recall the achievements and impact you have made when you are under pressure or tired? Get instant, AI-powered answers about any resume—so you can spend less time scrolling and more time having real conversations.
+              Can&apos;t mentally recall the achievements and impact you have made when you are under pressure or tired? Get instant, AI-powered answers about any resume—so you can spend less time scrolling and more time having real conversations.
             </p>
             
             <div className={styles.features}>
