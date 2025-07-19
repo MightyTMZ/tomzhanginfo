@@ -50,10 +50,10 @@ const Hero = () => {
         </h1>
         <div className={styles.imageWrapper}>
           <div className={styles.portraitContainer}>
-            <Image 
-              src="/tom-portrait.png" 
-              alt="Tom Zhang" 
-              width={300} 
+            <Image
+              src="/tom-portrait.png"
+              alt="Tom Zhang"
+              width={300}
               height={300}
               className={styles.portraitImage}
             />
@@ -101,8 +101,8 @@ const Hero = () => {
             onClick={handleViewOrbitView}
           />
           <SlideAnimationButton
-            text="Check out my favourite tool"
-            color="#0029f3ff"
+            text="Subscribe to my newsletter"
+            color="#ff9900ff"
             onClick={handleViewNewsletter}
           />
           <SlideAnimationButton
