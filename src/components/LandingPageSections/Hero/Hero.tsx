@@ -3,7 +3,7 @@
 import React from "react";
 import styles from "./Hero.module.css";
 // import Tom1 from "./tz.webp";
-// import Image from "next/image";
+import Image from "next/image";
 // import PrimaryAppButton from "@/components/PrimaryAppButton/PrimaryAppButton";
 // import SecondaryAppButton from "@/components/SecondaryAppButton/SecondaryAppButton";
 // import TertiaryAppButton from "@/components/TertiaryAppButton/TertiaryAppButton";
@@ -49,6 +49,15 @@ const Hero = () => {
           Hello, my name is <span className={styles.name}>Tom Zhang</span>
         </h1>
         <div className={styles.imageWrapper}>
+          <div className={styles.portraitContainer}>
+            <Image 
+              src="/tom-portrait.png" 
+              alt="Tom Zhang" 
+              width={300} 
+              height={300}
+              className={styles.portraitImage}
+            />
+          </div>
           <ReactTyped
             strings={[
               "ENTJ 🧑",
@@ -73,7 +82,6 @@ const Hero = () => {
               fontSize: "24px",
             }}
           ></ReactTyped>
-          {/* <Image src={Tom1} alt={"Tom Zhang"} className={styles.profileImage} /> */}
         </div>
         <div className={styles.buttonContainer}>
           <SlideAnimationButton

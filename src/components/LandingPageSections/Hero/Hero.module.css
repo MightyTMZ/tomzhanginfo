@@ -104,9 +104,28 @@
 .imageWrapper {
   margin-top: 40px;
   display: flex;
-  justify-content: center;
-  gap: 15px;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
   font-family: "Montserrat", sans-serif;
+}
+
+.portraitContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.portraitImage {
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  border: 3px solid rgba(255, 255, 255, 0.2);
+}
+
+.portraitImage:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
 }
 
 .profileImage {
