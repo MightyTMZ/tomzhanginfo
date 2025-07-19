@@ -70,7 +70,7 @@ export default function OrbitView() {
               </p>
             </div>
             
-            <div className={styles.featureCard}>
+            {/* <div className={styles.featureCard}>
               <div className={styles.featureIcon}>
                 <FaUsers />
               </div>
@@ -78,7 +78,7 @@ export default function OrbitView() {
               <p className={styles.featureDescription}>
                 Build meaningful relationships by understanding candidates&rsquo; backgrounds and experiences instantly.
               </p>
-            </div>
+            </div> */}
             
             <div className={styles.featureCard}>
               <div className={styles.featureIcon}>
