@@ -6,7 +6,6 @@ import {
   FaProjectDiagram,
   FaTools,
   FaBookOpen,
-  FaQuoteRight,
   FaFileAlt,
   FaRocket,
 } from "react-icons/fa";
@@ -91,12 +90,12 @@ export const navItems = [
     reference: "/my-ventures",
     icon: <FaRocket />,
   },*/
-  {
-    id: 14,
-    title: "Testimonials",
-    reference: "/testimonials",
-    icon: <FaQuoteRight />,
-  },
+  // {
+  //   id: 14,
+  //   title: "Testimonials",
+  //   reference: "/testimonials",
+  //   icon: <FaQuoteRight />,
+  // },
   /*{
     id: 15,
     title: "Athletics",
