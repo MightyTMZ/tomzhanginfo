@@ -26,12 +26,16 @@ const Hero = () => {
     router.push("/my-works/");
   };
 
-  const handleViewNewsletter = () => {
-    router.push("/newsletter/");
+  const handleViewOrbitView = () => {
+    router.push("/orbitview/");
   };
 
   const handleViewResume = () => {
     router.push("/resume/");
+  };
+
+  const handleViewNewsletter = () => {
+    router.push("/newsletter/");
   };
 
   return (
@@ -48,12 +52,17 @@ const Hero = () => {
           <ReactTyped
             strings={[
               "ENTJ 🧑",
-              "Passionate Gym Enthusiast ❤️‍🩹",
-              "Lover of Scenic Adventures 🌵",
-              "Road Trip Explorer 🛣️",
+              // "Passionate Gym Enthusiast ❤️‍🩹",
+              // "Lover of Scenic Adventures 🌵",
+              // "Road Trip Explorer 🛣️",
+              "World-Class Engineer 🧑‍🔬",
+              "Programmer 🧑🏻‍💻",
+              "Full Stack Software Engineer 🖥️",
               "Tech Builder ⚙️",
-              "Aspiring World-Class Engineer 🧑‍🔬",
-              "Multi-Sport Athlete ⚾🥏",
+              "PhD-trained Electrical Engineer",
+              "PhD-trained Computer Scientist",
+              "First-principles Thinker",
+              // "Multi-Sport Athlete ⚾🥏",
               "Continuous Learner",
             ]}
             typeSpeed={35}
@@ -61,7 +70,7 @@ const Hero = () => {
             loop
             style={{
               fontWeight: "bold",
-              fontSize: "24px", 
+              fontSize: "24px",
             }}
           ></ReactTyped>
           {/* <Image src={Tom1} alt={"Tom Zhang"} className={styles.profileImage} /> */}
@@ -79,8 +88,13 @@ const Hero = () => {
           />
           {/*<TertiaryAppButton text="Resources" onClick={handleResources} /> */}
           <SlideAnimationButton
-            text="Newsletter/Blog"
-            color="#e7af53"
+            text="Check out my favourite tool"
+            color="#0029f3ff"
+            onClick={handleViewOrbitView}
+          />
+          <SlideAnimationButton
+            text="Check out my favourite tool"
+            color="#0029f3ff"
             onClick={handleViewNewsletter}
           />
           <SlideAnimationButton
