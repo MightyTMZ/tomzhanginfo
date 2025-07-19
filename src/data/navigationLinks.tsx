@@ -8,6 +8,7 @@ import {
   FaBookOpen,
   FaQuoteRight,
   FaFileAlt,
+  FaRocket,
 } from "react-icons/fa";
 import { TfiWrite } from "react-icons/tfi";
 
@@ -62,36 +63,42 @@ export const navItems = [
   },
   {
     id: 9,
+    title: "OrbitView",
+    reference: "/orbitview",
+    icon: <FaRocket />,
+  },
+  {
+    id: 10,
     title: "Services",
     reference: "/services",
     icon: <FaTools />,
   },
   {
-    id: 10,
+    id: 11,
     title: "Blog/Newsletter",
     reference: "/newsletter",
     icon: <TfiWrite />,
   },
   {
-    id: 11,
+    id: 12,
     title: "Resources",
     reference: "/resources",
     icon: <FaBookOpen />,
   },
   /*{
-    id: 12,
+    id: 13,
     title: "My Ventures",
     reference: "/my-ventures",
     icon: <FaRocket />,
   },*/
   {
-    id: 13,
+    id: 14,
     title: "Testimonials",
     reference: "/testimonials",
     icon: <FaQuoteRight />,
   },
   /*{
-    id: 14,
+    id: 15,
     title: "Athletics",
     reference: "/athletics",
     icon: <FaRunning />,

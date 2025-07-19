@@ -13,6 +13,9 @@ const MissionStatement = dynamic(
 const Quote = dynamic(
   () => import("@/components/LandingPageSections/Quote/Quote")
 );
+const OrbitView = dynamic(
+  () => import("@/components/LandingPageSections/OrbitView/OrbitView")
+);
 /*const Contact = dynamic(
   () => import("@/components/LandingPageSections/Contact/Contact")
 );*/
@@ -50,6 +53,7 @@ export default function Home() {
       <Hero />
       <AboutPage />
       <MissionStatement />
+      <OrbitView />
       <Quote />
       {/*<Contact />*/}
     </>
