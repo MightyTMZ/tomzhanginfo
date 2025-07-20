@@ -67,6 +67,7 @@ const Hero = () => {
               "World-Class Engineer 🧑‍🔬",
               "Programmer 🧑🏻‍💻",
               "Full Stack Software Engineer 🖥️",
+              "Hackathon Winner 🏆",
               "Tech Builder ⚙️",
               "PhD-trained Electrical Engineer",
               "PhD-trained Computer Scientist",
