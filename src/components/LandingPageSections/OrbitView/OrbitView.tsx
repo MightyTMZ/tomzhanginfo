@@ -13,17 +13,19 @@ export default function OrbitView() {
             <div className={styles.badge}>
               <span>My Startup</span>
             </div>
-            
+
             <h2 className={styles.title}>
-              Stop Reading Resumes.
-              <br />
-              <span className={styles.highlight}>Start Building Connections.</span>
+              Stop underselling. <br />
+              <span className={styles.highlight}>Stop oversharing </span>
             </h2>
-            
+
             <p className={styles.description}>
-              Can&apos;t mentally recall the achievements and impact you have made when you are under pressure or tired? Get instant, AI-powered answers about any resume—so you can spend less time scrolling and more time having real conversations.
+              "I always feel like I yap too much or leave out important stuff.
+              Never the right balance." → “You shouldn’t have to guess how to
+              tell your story. OrbitView helps you strike the perfect balance —
+              automatically.”
             </p>
-            
+
             <div className={styles.features}>
               <div className={styles.feature}>
                 <FaBrain className={styles.featureIcon} />
@@ -38,18 +40,23 @@ export default function OrbitView() {
                 <span>Never Forget Again</span>
               </div>
             </div>
-            
+
             <Link href="/orbitview" className={styles.ctaButton}>
               <span>Available for use now!</span>
               <FaArrowRight className={styles.arrowIcon} />
             </Link>
           </div>
-          
+
           <div className={styles.rightContent}>
             <div className={styles.visualCard}>
               <div className={styles.cardHeader}>
                 <div className={styles.cardIcon}>
-                  <Image src={"/ov_logo.png"} alt={"OrbitView logo"} height={500} width={500}/>
+                  <Image
+                    src={"/ov_logo.png"}
+                    alt={"OrbitView logo"}
+                    height={500}
+                    width={500}
+                  />
                 </div>
                 <div className={styles.cardTitle}>OrbitView</div>
               </div>
@@ -64,7 +71,10 @@ export default function OrbitView() {
                 </div>
               </div>
               <div className={styles.cardFooter}>
-                <span>Tired of the time wasted recollecting achievements, projects, or experiences?</span>
+                <span>
+                  Tired of the time wasted recollecting achievements, projects,
+                  or experiences? Overselling yourself? Underselling yourself?
+                </span>
               </div>
             </div>
           </div>
@@ -72,4 +82,4 @@ export default function OrbitView() {
       </div>
     </section>
   );
-} 
+}

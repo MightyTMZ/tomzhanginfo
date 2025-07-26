@@ -27,7 +27,7 @@ const Hero = () => {
   };
 
   const handleViewOrbitView = () => {
-    router.push("/orbitview/");
+    window.open("https://www.orbitview.net/", "_blank")
   };
 
   const handleViewResume = () => {
