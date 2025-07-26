@@ -10,6 +10,7 @@ import Image from "next/image";
 import SlideAnimationButton from "@/components/SlideAnimationButton/SlideAnimationButton";
 import { useRouter } from "next/navigation";
 import { ReactTyped } from "react-typed";
+import { orbitViewLink } from "@/data/orbitview";
 
 const Hero = () => {
   const router = useRouter();
@@ -27,7 +28,7 @@ const Hero = () => {
   };
 
   const handleViewOrbitView = () => {
-    window.open("https://www.orbitview.net/", "_blank")
+    window.open(orbitViewLink, "_blank")
   };
 
   const handleViewResume = () => {
