@@ -10,13 +10,13 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 }); */
 
-
 export const metadata: Metadata = {
-  title: "Tom Zhang - Games - Random Color",
-  description: "Click the screen to change to a new color!",
+  title: "Tom Zhang - Solar System Clicker",
+  description:
+    "Solar System Clicker. Start clicking on the planets in our solar system.",
 };
 
-export default function RandomColorLayout({
+export default function SolarSystemClickerLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;

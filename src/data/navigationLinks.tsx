@@ -88,7 +88,7 @@ export const navItems = [
   },
   {
     id: 13,
-    title: "Games",
+    title: "FUN Games",
     reference: "/games",
     icon: <IoLogoGameControllerB />,
   },

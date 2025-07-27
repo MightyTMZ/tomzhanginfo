@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Montserrat, Poppins } from "next/font/google";
 
 /*const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,7 +16,7 @@ export const metadata: Metadata = {
     "Talking Ben Online. Type in your question and Ben will answer you!",
 };
 
-export default function RandomColorLayout({
+export default function TalkingBenLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
