@@ -10,6 +10,26 @@ export default function GamesHome() {
       description: "Click to generate a random color!",
       href: "/games/random-color",
     },
+    {
+      title: "Solar System Clicker",
+      description: "Start clicking on the planets in our solar system.",
+      href: "/games/solar-system-clicker",
+    },
+    {
+      title: "Soccer Arena",
+      description: "Click to generate a random color!",
+      href: "/games/soccer-arena",
+    },
+    {
+      title: "Talking Ben Online",
+      description: "Click to generate a random color!",
+      href: "/games/talking-ben-online",
+    },
+    {
+      title: "Moon basketball",
+      description: "Click to generate a random color!",
+      href: "/games/moon-basketball",
+    },
     // Add more games here in the future
   ];
 
