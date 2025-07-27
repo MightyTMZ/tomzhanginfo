@@ -1,14 +1,14 @@
 import React from "react";
-import styles from "./SolarSystemClicker.module.css";
+import styles from "./MoonBasketball.module.css";
 import ReturnToGamesButton from "@/components/ReturnToGamesButton/ReturnToGamesButton";
 
-const SolarSystemClicker = () => {
+const MoonBasketball = () => {
   return (
     <div className={styles.gameContainer}>
       <ReturnToGamesButton />
       <iframe
         className={styles.scratchGameEmbed}
-        src="https://scratch.mit.edu/projects/833395184/embed"
+        src="https://scratch.mit.edu/projects/632189415/embed"
         width={"485"}
         height={"402"}
         allowFullScreen
@@ -17,4 +17,4 @@ const SolarSystemClicker = () => {
   );
 };
 
-export default SolarSystemClicker;
+export default MoonBasketball;

@@ -1,5 +1,6 @@
 "use client";
 
+import ReturnToGamesButton from "@/components/ReturnToGamesButton/ReturnToGamesButton";
 import React, { useState, useEffect } from "react";
 
 interface Color {
@@ -117,6 +118,10 @@ function RandomColor() {
         >
           Forward ➡️
         </button>
+      </div>
+      <div className="pl-4">
+        {" "}
+        <ReturnToGamesButton />
       </div>
     </>
   );
