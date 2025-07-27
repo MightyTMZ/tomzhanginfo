@@ -52,6 +52,11 @@ export default function NotFound() {
               <span className={styles.buttonText}>Sign up for OrbitView</span>
               <span className={styles.buttonIcon}>→</span>
             </Link>
+
+            <Link href="/games" className={styles.navButton}>
+              <span className={styles.buttonText}>Play Games</span>
+              <span className={styles.buttonIcon}>→</span>
+            </Link>
           </div>
 
           <div className={styles.homeLink}>

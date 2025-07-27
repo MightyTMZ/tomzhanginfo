@@ -9,6 +9,7 @@ import {
   FaFileAlt,
   FaRocket,
 } from "react-icons/fa";
+import { IoLogoGameControllerB } from "react-icons/io";
 import { TbError404 } from "react-icons/tb";
 import { TfiWrite } from "react-icons/tfi";
 
@@ -87,6 +88,12 @@ export const navItems = [
   },
   {
     id: 13,
+    title: "Games",
+    reference: "/games",
+    icon: <IoLogoGameControllerB />,
+  },
+  {
+    id: 14,
     title: "404: Not Found",
     reference: "/not-found",
     icon: <TbError404 />,
