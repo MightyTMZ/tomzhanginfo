@@ -11,13 +11,13 @@ export default function NotFound() {
           <h1 className={styles.errorCode}>404</h1>
           <h2 className={styles.errorTitle}>Page Not Found</h2>
           <p className={styles.errorMessage}>
-            Oops! The page you're looking for seems to have wandered off into
+            Oops! The page yo are looking for seems to have wandered off into
             the digital wilderness.
           </p>
         </div>
 
         <div className={styles.navigationSection}>
-          <h3 className={styles.sectionTitle}>Let's get you back on track:</h3>
+          <h3 className={styles.sectionTitle}>Let&apos;s get you back on track:</h3>
 
           <div className={styles.buttonGrid}>
             <Link href="/connect-with-me" className={styles.navButton}>

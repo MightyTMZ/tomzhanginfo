@@ -11,7 +11,7 @@ export default function OrbitView() {
         <div className={styles.content}>
           <div className={styles.leftContent}>
             <div className={styles.badge}>
-              <span>My Startup</span>
+              <span>My favourite tool</span>
             </div>
 
             <h2 className={styles.title}>
@@ -20,10 +20,10 @@ export default function OrbitView() {
             </h2>
 
             <p className={styles.description}>
-              "I always feel like I yap too much or leave out important stuff.
-              Never the right balance." → “You shouldn’t have to guess how to
+              &ldquo;I always feel like I yap too much or leave out important stuff.
+              Never the right balance.&rdquo; → &ldquo;You shouldn&apos;t have to guess how to
               tell your story. OrbitView helps you strike the perfect balance —
-              automatically.”
+              automatically.&ldquo;
             </p>
 
             <div className={styles.features}>
