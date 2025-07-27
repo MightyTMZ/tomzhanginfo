@@ -9,6 +9,7 @@ import {
   FaFileAlt,
   FaRocket,
 } from "react-icons/fa";
+import { TbError404 } from "react-icons/tb";
 import { TfiWrite } from "react-icons/tfi";
 
 export const navItems = [
@@ -83,6 +84,12 @@ export const navItems = [
     title: "Resources",
     reference: "/resources",
     icon: <FaBookOpen />,
+  },
+  {
+    id: 13,
+    title: "404: Not Found",
+    reference: "/not-found",
+    icon: <TbError404 />,
   },
   /*{
     id: 13,

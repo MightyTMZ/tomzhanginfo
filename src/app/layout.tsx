@@ -4,6 +4,7 @@ import "./normalize.css";
 import FullScreenNavigation from "@/components/FullScreenNavigation/FullScreenNavigation";
 import Footer from "@/components/Footer/Footer";
 import { Montserrat, Poppins } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next"
 
 /*const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -47,6 +48,7 @@ export default function RootLayout({
       >
         <FullScreenNavigation />
         <main>{children}</main>
+        <Analytics/>
         <Footer />
       </body>
     </html>
