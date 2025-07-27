@@ -11,10 +11,10 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 }); */
 
-
 export const metadata: Metadata = {
-  title: "Tom Zhang - Games - Random Color",
-  description: "Click the screen to change to a new color!",
+  title: "Tom Zhang - Talking Ben Online",
+  description:
+    "Talking Ben Online. Type in your question and Ben will answer you!",
 };
 
 export default function RandomColorLayout({
