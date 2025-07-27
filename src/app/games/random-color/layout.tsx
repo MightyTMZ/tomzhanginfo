@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
 
 
 export const metadata: Metadata = {
-  title: "Tom Zhang - Games - Random Color",
+  title: "Tom Zhang - Random Color",
   description: "Click the screen to change to a new color!",
 };
 
