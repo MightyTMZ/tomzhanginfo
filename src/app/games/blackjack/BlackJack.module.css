@@ -11,6 +11,10 @@
   margin: 4rem 0;
 }
 
+.bet {
+  background-color: #2c2c3e;
+}
+
 .cards {
   display: flex;
   justify-content: center;
