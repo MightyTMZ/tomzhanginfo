@@ -56,7 +56,7 @@ export default function GamesHome() {
     {
       title: "Tic Tac Toe",
       description: "Play tic tac toe!",
-      href: "/games/rock-paper-scissors",
+      href: "/games/tic-tac-toe",
     },
 
     // Add more games here in the future
