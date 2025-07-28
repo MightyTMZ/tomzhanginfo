@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, FormEvent } from "react";
 import styles from "./RockPaperScissors.module.css";
 
 const icons = [
@@ -21,19 +21,17 @@ const roundToTheBestDecimalPlace = (num: number) => {
 };
 
 const RockPaperScissors = () => {
+  const [enteredRounds, setEnteredRounds] = useState(false);
+  const [disabled, setDisabled] = useState(false);
   // Player vs. computer
   const [computerChoice, setComputerChoice] = useState<number>(0);
   const [playerChoice, setPlayerChoice] = useState<number>(0);
-
   // Number of wins
-  const [wins, setWins] = useState(1342344);
-  const [losses, setLosses] = useState(3243434);
-
+  const [wins, setWins] = useState(0);
+  const [losses, setLosses] = useState(0);
+  const [ties, setTies] = useState(0);
   // Number of rounds
-  const [rounds, setRounds] = useState(0);
-
-  useEffect(() => {}, []);
-
+  const [rounds, setRounds] = useState<number>(10);
   const [winningPercentage, setWinningPercentage] = useState<string>("");
 
   useEffect(() => {
@@ -44,11 +42,10 @@ const RockPaperScissors = () => {
     setPlayerChoice(newPlayerChoice);
 
     // determine winner here
-
-  }, []);
+  }, [rounds]);
 
   useEffect(() => {
-    const total = wins + losses;
+    const total = wins + losses + ties;
     if (total > 0) {
       setWinningPercentage(
         roundToTheBestDecimalPlace((100 * wins) / total).toString()
@@ -58,35 +55,92 @@ const RockPaperScissors = () => {
     }
   }, [wins, losses]);
 
+  const handleSubmitRounds = (event: FormEvent) => {
+    event.preventDefault();
+    setEnteredRounds(true);
+  };
+
+  const handleSwitchChoice = (c: number) => {
+    if (disabled) return;
+    setPlayerChoice(c);
+  };
+
+  const handleNextRound = () => {
+    if (disabled) return;
+    const roundsRemaining = rounds - 1;
+    if (roundsRemaining == 0) {
+      setDisabled(true);
+    }
+
+    setRounds(roundsRemaining);
+  };
+
+  const handleStartNewGame = () => {
+    window.location.reload();
+  };
+
+  if (!enteredRounds) {
+    return (
+      <>
+        <div className={styles.container}>
+          <form onSubmit={handleSubmitRounds} className={styles.roundsForm}>
+            <label>Enter the number of rounds:</label>
+            <br />
+            <input
+              type="number"
+              min={1}
+              value={rounds}
+              onChange={(e) => setRounds(Number(e.target.value))}
+            />{" "}
+            <br />
+            <input type="submit" className={styles.submitRounds} />
+          </form>
+        </div>
+      </>
+    );
+  }
+
   return (
     <>
-      <div className="mx-4">
+      <div className={`${styles.container} mx-4`}>
         <h1>Rock Paper Scissors!</h1>
+        <div className="my-3 mb-6">{rounds} rounds remaining</div>
         <div className={styles.gameGrid}>
+          <div className={styles["game-box"]}>Wins</div>
+          <div className={styles["game-box"]}>Ties</div>
+          <div className={styles["game-box"]}>Losses</div>
           <div className={styles["game-box"]}>{wins.toLocaleString()}</div>
-          <div className={styles["game-box"]}>-</div>
+          <div className={styles["game-box"]}>{ties.toLocaleString()}</div>
           <div className={styles["game-box"]}>{losses.toLocaleString()}</div>
-          <div className={styles["game-box"]}></div>
           <div className={styles["game-box"]}>{winningPercentage}%</div>
+          <div className={styles["game-box"]}></div>
           <div className={styles["game-box"]}></div>{" "}
           <div className={`${styles["game-box"]} ${styles["player"]}`}>
             <img src={icons[playerChoice]} alt={"player"} />
           </div>
-          <div className={`${styles["game-box"]} ${styles['winnerArrow']}`}>&uarr;</div>
+          <div className={`${styles["game-box"]} ${styles["winnerArrow"]}`}>
+            &uarr;
+          </div>
           <div className={`${styles["game-box"]} ${styles["computer"]}`}>
             <img src={icons[computerChoice]} alt={"computer"} />
           </div>
         </div>
+        <div className={`my-3 ${styles.roundsRemaining}`}></div>
         <div className={styles.choiceGrid}>
-          <div className={`${styles["game-box"]} ${styles["rock"]}`}>
-            <img className={styles.icon} src={icons[0]} alt="Rock" />
-          </div>
-          <div className={`${styles["game-box"]} ${styles["paper"]}`}>
-            <img className={styles.icon} src={icons[1]} alt="Paper" />
-          </div>
-          <div className={`${styles["game-box"]} ${styles["scissors"]}`}>
-            <img className={styles.icon} src={icons[2]} alt="Scissors" />
-          </div>
+          {icons.map((icon, num) => (
+            <div
+              className={`${styles["game-box"]} `}
+              onClick={() => handleSwitchChoice(num)}
+              key={num}
+            >
+              <img
+                className={`${styles.icon} ${
+                  playerChoice == num ? "border-blue-3" : ""
+                }`}
+                src={icon}
+              />
+            </div>
+          ))}
           {/* <div className={styles["game-box"]}></div>
           <div className={styles["game-box"]}></div>
           <div className={styles["game-box"]}></div>
@@ -94,8 +148,13 @@ const RockPaperScissors = () => {
           <div className={styles["game-box"]}></div>
           <div className={styles["game-box"]}></div> */}
         </div>
-        <div>
-          <button className={styles.newGame}>New Game</button>
+        <div className={styles.buttonGrid}>
+          <button className={styles.nextGame} onClick={handleNextRound}>
+            Next round
+          </button>
+          <button className={styles.newGame} onClick={handleStartNewGame}>
+            Start new game
+          </button>
         </div>
       </div>
     </>
