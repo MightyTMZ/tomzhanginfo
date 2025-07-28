@@ -9,8 +9,6 @@ const icons = [
   "/games/rps/scissors.png", // scissors
 ];
 
-const timeBetweenRounds = [2, 3, 5, 8, 10]; // in seconds
-
 const roundToTheBestDecimalPlace = (num: number) => {
   if ((num * 1000) % 1 !== 0) {
     return Math.round(num * 100) / 100;
