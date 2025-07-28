@@ -25,7 +25,7 @@ const ViewsCount = () => {
   }, []);
 
   return (
-    <div style={{ marginTop: "15px", marginBottom: "15px" }}>
+    <div style={{ marginTop: "15px", marginBottom: "15px", color: "gray", fontSize: '10px' }}>
       Views: {views.toLocaleString()}
     </div>
   );
