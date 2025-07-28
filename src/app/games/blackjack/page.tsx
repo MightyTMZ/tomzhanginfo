@@ -94,7 +94,7 @@ export default function BlackjackGame() {
         </div>
       </div>
       <div className={styles.section}>
-        <h2>Dealer's Hand ({isGameOver ? calculateScore(dealerHand) : "??"})</h2>
+        <h2 className="mb-2">Dealer's Hand ({isGameOver ? calculateScore(dealerHand) : "??"})</h2>
         <div className={styles.cards}>
           {dealerHand.map((card, i) => (
             <span key={i} className={styles.card}>
