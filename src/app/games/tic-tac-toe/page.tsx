@@ -82,8 +82,11 @@ const TicTacToe = () => {
           return;
         }
       }
-    } else if (newIndexes.length === 5) {
+    } 
+    
+    if (newIndexes.length + oIndexes.length === grid.length || newIndexes.length + xIndexes.length === grid.length) {
       setWinningPlayer("it is a draw");
+      setDisabled(true)
     }
 
     // switch the player
@@ -107,7 +110,7 @@ const TicTacToe = () => {
     <>
       <div className={`container ${styles.game}`}>
         <div className={`my-5 ${styles.currentTurn}`}>
-          <span style={{ fontWeight: "normal" }}>Current Player's Turn:</span>{" "}
+          <span style={{ fontWeight: "normal" }}>Player turn:</span>{" "}
           {player}
         </div>
         <div className={`${styles.winningMessage} my-10`}>
