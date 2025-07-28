@@ -1,10 +1,11 @@
 // DISCLAIMER: made with the help of AI (as I need to save time as I learn regulatory compliance, negotiations, intellectual property laws, law and economics)
-// other games are made mostly by hand 
+// other games are made mostly by hand
 
 "use client";
 
 import React, { useState } from "react";
 import styles from "./BlackJack.module.css";
+import ReturnToGamesButton from "@/components/ReturnToGamesButton/ReturnToGamesButton";
 
 interface Card {
   suit: string;
@@ -12,7 +13,21 @@ interface Card {
 }
 
 const suits = ["♠", "♥", "♦", "♣"];
-const values = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
+const values = [
+  "A",
+  "2",
+  "3",
+  "4",
+  "5",
+  "6",
+  "7",
+  "8",
+  "9",
+  "10",
+  "J",
+  "Q",
+  "K",
+];
 
 const getCardValue = (card: Card): number => {
   if (["J", "Q", "K"].includes(card.value)) return 10;
@@ -22,7 +37,7 @@ const getCardValue = (card: Card): number => {
 
 const calculateScore = (hand: Card[]): number => {
   let score = hand.reduce((acc, card) => acc + getCardValue(card), 0);
-  let aces = hand.filter(card => card.value === "A").length;
+  let aces = hand.filter((card) => card.value === "A").length;
   while (score > 21 && aces > 0) {
     score -= 10;
     aces--;
@@ -83,37 +98,47 @@ export default function BlackjackGame() {
   };
 
   return (
-    <div className={styles.container}>
-      <h1>Blackjack</h1>
-      <div className={styles.section}>
-        <h2>Your Hand ({calculateScore(playerHand)})</h2>
-        <div className={styles.cards}>
-          {playerHand.map((card, i) => (
-            <span key={i} className={styles.card}>{`${card.value}${card.suit}`}</span>
-          ))}
+    <>
+      <div className="m-4">
+        <ReturnToGamesButton />
+      </div>
+      <div className={styles.container}>
+        <h1>Blackjack</h1>
+        <div className={styles.section}>
+          <h2 className="mb-4">Your Hand ({calculateScore(playerHand)})</h2>
+          <div className={styles.cards}>
+            {playerHand.map((card, i) => (
+              <span
+                key={i}
+                className={styles.card}
+              >{`${card.value}${card.suit}`}</span>
+            ))}
+          </div>
         </div>
-      </div>
-      <div className={styles.section}>
-        <h2 className="mb-2">Dealer's Hand ({isGameOver ? calculateScore(dealerHand) : "??"})</h2>
-        <div className={styles.cards}>
-          {dealerHand.map((card, i) => (
-            <span key={i} className={styles.card}>
-              {isGameOver || i > 0 ? `${card.value}${card.suit}` : "??"}
-            </span>
-          ))}
+        <div className={styles.section}>
+          <h2 className="mb-4">
+            Dealer's Hand ({isGameOver ? calculateScore(dealerHand) : "??"})
+          </h2>
+          <div className={styles.cards}>
+            {dealerHand.map((card, i) => (
+              <span key={i} className={styles.card}>
+                {isGameOver || i > 0 ? `${card.value}${card.suit}` : "??"}
+              </span>
+            ))}
+          </div>
         </div>
+        <div className={styles.controls}>
+          {playerHand.length === 0 || isGameOver ? (
+            <button onClick={startGame}>New Game</button>
+          ) : (
+            <>
+              <button onClick={hit}>Hit</button>
+              <button onClick={stand}>Stand</button>
+            </>
+          )}
+        </div>
+        {message && <p className={styles.message}>{message}</p>}
       </div>
-      <div className={styles.controls}>
-        {playerHand.length === 0 || isGameOver ? (
-          <button onClick={startGame}>Start Game</button>
-        ) : (
-          <>
-            <button onClick={hit}>Hit</button>
-            <button onClick={stand}>Stand</button>
-          </>
-        )}
-      </div>
-      {message && <p className={styles.message}>{message}</p>}
-    </div>
+    </>
   );
 }
