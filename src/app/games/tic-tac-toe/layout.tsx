@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
 
 
 export const metadata: Metadata = {
-  title: "Tom Zhang - Games - Tic Tac Toe",
+  title: "Tom Zhang - Tic Tac Toe",
   description: "Play tic tac toe today!",
 };
 

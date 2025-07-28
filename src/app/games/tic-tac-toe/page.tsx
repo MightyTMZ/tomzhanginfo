@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import styles from "./TicTacToe.module.css";
+import ReturnToGamesButton from "@/components/ReturnToGamesButton/ReturnToGamesButton";
 
 interface Cell {
   val: "x" | "o" | "";
@@ -82,11 +83,14 @@ const TicTacToe = () => {
           return;
         }
       }
-    } 
-    
-    if (newIndexes.length + oIndexes.length === grid.length || newIndexes.length + xIndexes.length === grid.length) {
+    }
+
+    if (
+      newIndexes.length + oIndexes.length === grid.length ||
+      newIndexes.length + xIndexes.length === grid.length
+    ) {
       setWinningPlayer("it is a draw");
-      setDisabled(true)
+      setDisabled(true);
     }
 
     // switch the player
@@ -108,10 +112,13 @@ const TicTacToe = () => {
 
   return (
     <>
+      <div style={{ padding: "50px" }}>
+        {" "}
+        <ReturnToGamesButton />
+      </div>
       <div className={`container ${styles.game}`}>
         <div className={`my-5 ${styles.currentTurn}`}>
-          <span style={{ fontWeight: "normal" }}>Player turn:</span>{" "}
-          {player}
+          <span style={{ fontWeight: "normal" }}>Player turn:</span> {player}
         </div>
         <div className={`${styles.winningMessage} my-10`}>
           {winningPlayer.length == 1 && <p>{winningPlayer}&apos;s win!</p>}
