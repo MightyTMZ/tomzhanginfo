@@ -1,0 +1,94 @@
+/* on a normal desktop/laptop (Tom's device) */
+.gameGrid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 150px 75px 450px;
+  border: 1px solid black;
+  margin-bottom: 20px;
+}
+
+.choiceGrid {
+  display: grid;
+  grid-template-columns: repeat(9, auto);
+  grid-template-rows: 200px;
+  border: 1px solid black;
+}
+
+.game-box {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* on a narrower device */
+
+@media only screen and (max-width: 450px) {
+  /* body {
+    background-color: lightblue;
+  } */
+
+  .gameGrid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 100px 30px 150px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+  }
+
+  .choiceGrid {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: 100px;
+    border: 1px solid black;
+    margin-bottom: 50px;
+  }
+}
+
+.newGame {
+  padding: 5px;
+  background: greenyellow;
+  color: black;
+  border-radius: 5px;
+  margin: 20px 0;
+  font-size: 1rem;
+  border: 1px solid black;
+}
+
+.newGame:hover {
+  border: 3px solid blue;
+  background: green;
+  color: white;
+  transition: 0.2s;
+}
+
+.computer {
+  background-color: lightblue;
+}
+
+.computer > img {
+  transform: rotate(-90deg);
+  height: 100%;
+}
+
+.player {
+  background-color: rgb(250, 210, 213);
+}
+
+.player > img {
+  transform: rotate(90deg);
+  height: 100%;
+}
+
+.icon {
+  height: 100%;
+}
+
+.icon:hover {
+  transform: translateY(-20px);
+  transition: 0.2s;
+}
+
+.winnerArrow {
+  font-size: 42px;
+}
