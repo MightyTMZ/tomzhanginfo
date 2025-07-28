@@ -133,6 +133,7 @@ const TicTacToe = () => {
             <div
               key={x}
               className={`cell ${styles.gridCell}`}
+              style={{ fontSize: '64px' }}
               onClick={() => {
                 if (!disabled) {
                   handleClick(x);
