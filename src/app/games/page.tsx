@@ -41,7 +41,7 @@ export default function GamesHome() {
     {
       title: "Blackjack",
       description: "Play blackjack!",
-      href: "/games/black-jack",
+      href: "/games/blackjack",
     },
     {
       title: "Rock Paper Scissors",
