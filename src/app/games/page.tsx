@@ -47,6 +47,7 @@ export default function GamesHome() {
       title: "Rock Paper Scissors",
       description: "Play rock paper scissors!",
       href: "/games/rock-paper-scissors",
+      image: "/games/rps.png",
     },
     {
       title: "Hangman",
