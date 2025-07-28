@@ -32,7 +32,12 @@
 
 .container {
   max-width: 500px;
-  height: 100vh; /*ensure no janky layout with a floating footer */
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    height: auto;
+  }
 }
 
 .roundsForm {
@@ -45,7 +50,8 @@
   margin: 3rem auto;
   box-shadow: 0 0 20px rgba(76, 175, 80, 0.5);
   text-align: center;
-  font-family: "Press Start 2P", cursive; /* Retro game font */
+  /* font-family: "Press Start 2P", cursive;  */
+  /* Retro game font */
   animation: pulseGlow 2s infinite;
 }
 

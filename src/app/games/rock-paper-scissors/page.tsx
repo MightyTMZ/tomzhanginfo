@@ -138,6 +138,9 @@ const RockPaperScissors = () => {
               onChange={(e) => setRounds(Number(e.target.value))}
             />{" "}
             <br />
+            <br />
+            <br />
+            <br />
             <label>Choose time between rounds:</label>
             <br />
             <select
@@ -152,7 +155,7 @@ const RockPaperScissors = () => {
               ))}
             </select>
             <br />
-            <input type="submit" className={styles.submitRounds} />
+            <input type="submit" className={styles.submitRounds} value="Start game!" />
           </form>
         </div>
       </>
