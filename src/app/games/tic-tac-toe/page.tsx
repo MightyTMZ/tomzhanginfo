@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import styles from "./TicTacToe.module.css";
 
 interface Cell {
@@ -60,11 +60,11 @@ const TicTacToe = () => {
 
     if (player.toLowerCase() === "x") {
       newIndexes = [...xIndexes, index];
-      console.log("X's: " + newIndexes);
+      // console.log("X's: " + newIndexes);
       setXIndexes(newIndexes);
     } else {
       newIndexes = [...oIndexes, index];
-      console.log("O's: " + newIndexes);
+      // console.log("O's: " + newIndexes);
       setOIndexes([...oIndexes, index]);
     }
 
@@ -114,7 +114,7 @@ const TicTacToe = () => {
           {player}
         </div>
         <div className={`${styles.winningMessage} my-10`}>
-          {winningPlayer.length == 1 && <p>{winningPlayer}'s win!!!</p>}
+          {winningPlayer.length == 1 && <p>{winningPlayer}&apos;s win!</p>}
           {winningPlayer.length > 1 && <p>It is a draw!</p>}
 
           <button className={styles.newGame} onClick={handleStartNewGame}>
