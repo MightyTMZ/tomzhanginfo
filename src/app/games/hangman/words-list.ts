@@ -9,6 +9,7 @@ export const WORDS = [
   "Google",
   "Meta",
   "Amazon",
+  "Microsoft",
   "Tesla",
   "Nvidia",
   "Intel",
