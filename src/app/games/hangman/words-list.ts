@@ -14,6 +14,7 @@ export const WORDS = [
   "Intel",
   "Netflix",
   "Salesforce",
+  "IBM",
   "Uber",
   "Lyft",
   "Stripe",
