@@ -1,11 +1,19 @@
 "use client";
 
+import ColorCount from "@/components/color-count";
 import ReturnHomeButton from "@/components/ReturnHomeButton/ReturnHomeButton";
 import Link from "next/link";
 
 export default function GamesHome() {
   // List of games (expandable in the future)
   const games = [
+    {
+      title: "The Color Project",
+      description:
+        "Can we (as a world) generate every color? One click at a time. This is because each of the three primary colors (Red, Green, and Blue) can have 256 different intensity levels (0-255), and 256 * 256 * 256 = 16,777,216",
+      href: "https://thecolorproject.vercel.app/",
+      image: "/games/thecolorproject.png",
+    },
     {
       title: "Moon basketball",
       description: "Beat my high score of 43! (use arrows on the keyboard)",
@@ -55,7 +63,7 @@ export default function GamesHome() {
       description:
         "Play hangman (tech edition)! Learn tech as you have the most fun!",
       href: "/games/hangman",
-      image: "/games/hangman.png"
+      image: "/games/hangman.png",
     },
     {
       title: "Tic Tac Toe",
@@ -103,10 +111,10 @@ export default function GamesHome() {
               style={{
                 display: "flex",
                 flexDirection: "column",
-                alignItems: "center",
+                // alignItems: "center",
                 justifyContent: "flex-start",
                 width: 260,
-                height: 200,
+                height: 400,
                 background: "#fff",
                 borderRadius: 16,
                 boxShadow: "0 2px 12px rgba(0,0,0,0.08)",
@@ -173,6 +181,16 @@ export default function GamesHome() {
                 </div>
                 <div style={{ fontSize: "0.9rem", color: "#666" }}>
                   {game.description}
+                  {game.title === "The Color Project" && (
+                    <>
+                      <br />
+                      <br />
+                      <span>
+                        &nbsp;
+                        <ColorCount /> colors as of today
+                      </span>
+                    </>
+                  )}
                 </div>
               </div>
             </Link>
