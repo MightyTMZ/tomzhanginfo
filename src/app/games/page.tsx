@@ -42,7 +42,7 @@ export default function GamesHome() {
       title: "Blackjack",
       description: "Play blackjack!",
       href: "/games/blackjack",
-      image: "/games/blackjack.png"
+      image: "/games/blackjack.png",
     },
     {
       title: "Rock Paper Scissors",
@@ -52,14 +52,16 @@ export default function GamesHome() {
     },
     {
       title: "Hangman",
-      description: "Play hangman!",
+      description:
+        "Play hangman (tech edition)! Learn tech as you have the most fun!",
       href: "/games/hangman",
+      image: "/games/hangman.png"
     },
     {
       title: "Tic Tac Toe",
       description: "Play tic tac toe!",
       href: "/games/tic-tac-toe",
-      image: "/games/tictactoe.png"
+      image: "/games/tictactoe.png",
     },
 
     // Add more games here in the future
