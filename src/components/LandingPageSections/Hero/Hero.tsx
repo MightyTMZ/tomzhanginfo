@@ -28,7 +28,7 @@ const Hero = () => {
   };
 
   const handleViewOrbitView = () => {
-    window.open(orbitViewLink, "_blank")
+    window.open(orbitViewLink, "_blank");
   };
 
   const handleViewResume = () => {
@@ -37,6 +37,10 @@ const Hero = () => {
 
   const handleViewNewsletter = () => {
     router.push("/newsletter/");
+  };
+
+  const handlePlayGames = () => {
+    router.push("/games/");
   };
 
   return (
@@ -111,6 +115,12 @@ const Hero = () => {
             text="Download my resume"
             color="#8C1515"
             onClick={handleViewResume}
+          />
+
+          <SlideAnimationButton
+            text="Play a bit of games to chill? 😄☺️"
+            color="#a98080ff"
+            onClick={handlePlayGames}
           />
         </div>
       </div>
