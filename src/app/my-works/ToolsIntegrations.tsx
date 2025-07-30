@@ -8,19 +8,19 @@ import { useState } from "react";
 import "./ShowMoreLessButton.css";
 
 const ToolsIntegration = () => {
-  const [showMore, setShowMore] = useState(false);
+  // const [showMore, setShowMore] = useState(false);
 
-  const projects = showMore
-    ? tools_Integrations
-    : tools_Integrations.slice(0, 3);
+  // const projects = showMore
+  //   ? tools_Integrations
+  //   : tools_Integrations.slice(0, 3);
 
-  const handleShowMore = () => {
-    setShowMore(!showMore);
-  };
+  // const handleShowMore = () => {
+  //   setShowMore(!showMore);
+  // };
 
   return (
     <>
-      <h1 className={styles.sectionTitle}>Tools and Integration</h1>
+      {/* <h1 className={styles.sectionTitle}>Tools and Integration</h1>
       <div className={styles.projectGrid}>
         {projects.map((project) => (
           <div key={project.id} className={styles.projectCard}>
@@ -53,7 +53,7 @@ const ToolsIntegration = () => {
         >
           {showMore ? "Show less" : "Show more"}
         </button>
-      </div>
+      </div> */}
     </>
   );
 };

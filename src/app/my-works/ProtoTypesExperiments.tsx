@@ -8,19 +8,19 @@ import { useState } from "react";
 import "./ShowMoreLessButton.css";
 
 const PrototypesExperiments = () => {
-  const [showMore, setShowMore] = useState(false);
+  // const [showMore, setShowMore] = useState(false);
 
-  const projects = showMore
-    ? protoTypes_Experiments
-    : protoTypes_Experiments.slice(0, 3);
+  // const projects = showMore
+  //   ? protoTypes_Experiments
+  //   : protoTypes_Experiments.slice(0, 3);
 
-  const handleShowMore = () => {
-    setShowMore(!showMore);
-  };
+  // const handleShowMore = () => {
+  //   setShowMore(!showMore);
+  // };
 
   return (
     <>
-      <h1 className={styles.sectionTitle}>Prototypes and Experiments</h1>
+      {/* <h1 className={styles.sectionTitle}>Prototypes and Experiments</h1>
       <div className={styles.projectGrid}>
         {projects.map((project) => (
           <div key={project.id} className={styles.projectCard}>
@@ -59,7 +59,7 @@ const PrototypesExperiments = () => {
         >
           {showMore ? "Show less" : "Show more"}
         </button>
-      </div>
+      </div> */}
     </>
   );
 };
