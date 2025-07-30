@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./MyWorks.module.css";
 import CoreProjects from "./CoreProjects";
-import PrototypesExperiments from "./ProtoTypesExperiments";
-import ToolsIntegration from "./ToolsIntegrations";
+// import PrototypesExperiments from "./ProtoTypesExperiments";
+// import ToolsIntegration from "./ToolsIntegrations";
 import { websiteName } from "@/data/base";
 import { Metadata } from "next";
 import ReturnHomeButton from "@/components/ReturnHomeButton/ReturnHomeButton";
@@ -43,8 +43,8 @@ export default function MyWorks() {
             experiments, tools, and integrations...
           </p>
           <CoreProjects />
-          <PrototypesExperiments />
-          <ToolsIntegration />
+          {/* <PrototypesExperiments />
+          <ToolsIntegration /> */}
         </div>
       </section>
     </>
