@@ -7,13 +7,13 @@ import Link from "next/link";
 export default function GamesHome() {
   // List of games (expandable in the future)
   const games = [
-    {
-      title: "The Color Project",
-      description:
-        "Can we (as a world) generate every color? One click at a time. This is because each of the three primary colors (Red, Green, and Blue) can have 256 different intensity levels (0-255), and 256 * 256 * 256 = 16,777,216",
-      href: "https://thecolorproject.vercel.app/",
-      image: "/games/thecolorproject.png",
-    },
+    // {
+    //   title: "The Color Project",
+    //   description:
+    //     "Can we (as a world) generate every color? One click at a time. This is because each of the three primary colors (Red, Green, and Blue) can have 256 different intensity levels (0-255), and 256 * 256 * 256 = 16,777,216",
+    //   href: "https://thecolorproject.vercel.app/",
+    //   image: "/games/thecolorproject.png",
+    // },
     {
       title: "Moon basketball",
       description: "Beat my high score of 43! (use arrows on the keyboard)",
