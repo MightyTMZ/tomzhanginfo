@@ -8,15 +8,15 @@ import {
   FaGoogleDrive,
 } from "react-icons/fa";
 import placeholderImage from "../../public/placeholder.webp";
-import orbitview from "./workPics/newOrbitView.png";
+import orbitview from "./workPics/ov-new.png";
 // import tokenzlabs from "./workPics/TokenZLabs.png";
 import azure_partners from "./workPics/azure_partners.png";
-import saleemai from "./workPics/saleemai.png";
+// import saleemai from "./workPics/saleemai.png";
 import scisoc from "./workPics/EarlHaigScienceSociety.png";
 import orbImmersive from "./workPics/orb_immersive.png";
 // import ollama from "./workPics/ollama.png";
 import personalWeb from "./workPics/personalweb.png";
-import privateNotekeeper from "./workPics/private_notekeeper.png";
+// import privateNotekeeper from "./workPics/private_notekeeper.png";
 import ssn from "./workPics/ssn.jpg";
 import ah from "./workPics/ah.jpg";
 import desync from "./workPics/desync.png";
@@ -29,9 +29,9 @@ export const coreProjects = [
     id: 1,
     title: "OrbitView",
     featureImage: orbitview ? orbitview : placeholderImage,
-    description: `OrbitView is a go-to career accelerator for students and professionals. 
+    description: `Your "second brain" to help you recall your achievements, impact, projects and more. Saving you up to 80% of your time
     
-    Solving people's problems with accelerating their career. Full information at https://www.orbitview.net/product
+    Paired with AI resume generation and interview chatbox.     
 `,
     links: [
       {
@@ -232,63 +232,63 @@ export const coreProjects = [
 ];
 
 export const protoTypes_Experiments = [
-  {
-    id: 1,
-    title: "OrbitView Immersive Reader (failed)",
-    featureImage: orbImmersive ? orbImmersive : placeholderImage,
-    description: `Attempted to increase media consumption engagement through the use of customization tools and filters.
-      Supports: stereoscopic filters, contrast toggle, font size adjustments, contrast adjustments, 
-      `,
-    links: [
-      {
-        icon: <FaExternalLinkAlt />,
-        url: "https://orbitview.vercel.app/article/5/join-orbitview-today/immersive",
-        label: "Read More",
-      },
-    ],
-  },
+  // {
+  //   id: 1,
+  //   title: "OrbitView Immersive Reader (failed)",
+  //   featureImage: orbImmersive ? orbImmersive : placeholderImage,
+  //   description: `Attempted to increase media consumption engagement through the use of customization tools and filters.
+  //     Supports: stereoscopic filters, contrast toggle, font size adjustments, contrast adjustments, 
+  //     `,
+  //   links: [
+  //     {
+  //       icon: <FaExternalLinkAlt />,
+  //       url: "https://orbitview.vercel.app/article/5/join-orbitview-today/immersive",
+  //       label: "Read More",
+  //     },
+  //   ],
+  // },
 ];
 
 export const tools_Integrations = [
-  {
-    id: 1,
-    title: "Mr. Saleem.ai",
-    featureImage: saleemai ? saleemai : placeholderImage,
-    description: `I created a "ChatGPT" of my computer science teacher, Mr. Saleem, capturing his humor and teaching style. It quickly became a school sensation, with over 90 students now using it for coding help. This fun AI version of Mr. Saleem has become a go-to resource for students!`,
-    links: [
-      {
-        icon: <FaGlobe />,
-        url: "https://chatgpt.com/g/g-DLJ1ZKf5m-mr-saleem-ai",
-        label: "Live Site",
-      },
-      {
-        icon: <FaGithub />,
-        url: "https://github.com/",
-        label: "GitHub",
-      },
-    ],
-  },
-  {
-    id: 2,
-    title: "Personal Private Notekeeper Chatbot",
-    featureImage: privateNotekeeper ? privateNotekeeper : placeholderImage,
-    description: `
+  // {
+  //   id: 1,
+  //   title: "Mr. Saleem.ai",
+  //   featureImage: saleemai ? saleemai : placeholderImage,
+  //   description: `I created a "ChatGPT" of my computer science teacher, Mr. Saleem, capturing his humor and teaching style. It quickly became a school sensation, with over 90 students now using it for coding help. This fun AI version of Mr. Saleem has become a go-to resource for students!`,
+  //   links: [
+  //     {
+  //       icon: <FaGlobe />,
+  //       url: "https://chatgpt.com/g/g-DLJ1ZKf5m-mr-saleem-ai",
+  //       label: "Live Site",
+  //     },
+  //     {
+  //       icon: <FaGithub />,
+  //       url: "https://github.com/",
+  //       label: "GitHub",
+  //     },
+  //   ],
+  // },
+  // {
+  //   id: 2,
+  //   title: "Personal Private Notekeeper Chatbot",
+  //   featureImage: privateNotekeeper ? privateNotekeeper : placeholderImage,
+  //   description: `
     
-    A local AI that processes sensitive data entirely on your device, ensuring privacy
-     and security. By utilizing Ollama and ChromaDB, this system supports a variety of 
-     file types (PDFs, MP3s, DOCX, Excel, etc.) and allows for secure data querying and 
-     processing without the need for cloud storage. It empowers users to upload, preprocess, 
-     and interact with their data locally, ensuring sensitive information remains confidential.
+  //   A local AI that processes sensitive data entirely on your device, ensuring privacy
+  //    and security. By utilizing Ollama and ChromaDB, this system supports a variety of 
+  //    file types (PDFs, MP3s, DOCX, Excel, etc.) and allows for secure data querying and 
+  //    processing without the need for cloud storage. It empowers users to upload, preprocess, 
+  //    and interact with their data locally, ensuring sensitive information remains confidential.
 
-     All in all, this project is a very transferable use case both at the personal and entreprise scales. 
+  //    All in all, this project is a very transferable use case both at the personal and entreprise scales. 
     
-    `,
-    links: [
-      {
-        icon: <FaGithub />,
-        url: "https://github.com/MightyTMZ/Private_AI_Notekeeper/blob/main/Personal_Private_Chatbot_using_Ollama.ipynb",
-        label: "GitHub",
-      },
-    ],
-  },
+  //   `,
+  //   links: [
+  //     {
+  //       icon: <FaGithub />,
+  //       url: "https://github.com/MightyTMZ/Private_AI_Notekeeper/blob/main/Personal_Private_Chatbot_using_Ollama.ipynb",
+  //       label: "GitHub",
+  //     },
+  //   ],
+  // },
 ];
