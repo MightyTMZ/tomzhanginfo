@@ -12,14 +12,18 @@ const MaxDotThink = () => {
           alt="Max Levchin"
           className={styles.photo}
         />
-      </div>
-      <div className="m-10">
         Named after my Rove (YC W24) CEO: <strong>Max Morganroth</strong>
         <img
           src="https://media.licdn.com/dms/image/v2/D4E03AQFymKQ7WX4nOA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1700363365365?e=1756944000&v=beta&t=HiwOB_TiiFCvjyDtKabRYVjYriyDY-a2bNKsm6qjMLc"
           alt="Max Morganroth"
           className={styles.photo}
         />
+        <h1>What?</h1>
+        <p>
+          Riddle game that simulates the mental curveballs of elite interviews. 
+          Built to stretch how you think, not just what you know. Welcome to the
+          mind gym for future founders, hackers, and legends.
+        </p>
       </div>
     </>
   );
