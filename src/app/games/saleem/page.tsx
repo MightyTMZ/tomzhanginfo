@@ -2,8 +2,6 @@
 
 import React, { useState } from "react";
 
-const bucketURL = process.env.MEDIA_BUCKET;
-
 const images = [
   "/leem1.png",
   "/leem2.png",
