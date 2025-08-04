@@ -8,11 +8,6 @@ const Chess = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [pieceColor, setPieceColor] = useState(colors[currentIndex]);
 
-  const chessRowNumbers =
-    pieceColor === "white"
-      ? [8, 7, 6, 5, 4, 3, 2, 1]
-      : [1, 2, 3, 4, 5, 6, 7, 8];
-
   const handleColorChange = () => {
     const newIndex = (currentIndex + 1) % colors.length;
     setCurrentIndex(newIndex);
