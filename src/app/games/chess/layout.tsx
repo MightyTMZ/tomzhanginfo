@@ -12,11 +12,11 @@ const geistMono = Geist_Mono({
 
 
 export const metadata: Metadata = {
-  title: "Tom Zhang - Hangman",
-  description: "Play hangman today!",
+  title: "Tom Zhang - Chess",
+  description: "Play chess today!",
 };
 
-export default function HangmanLayout({
+export default function ChessLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;

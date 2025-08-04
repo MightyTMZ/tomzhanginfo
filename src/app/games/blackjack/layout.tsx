@@ -10,13 +10,12 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 }); */
 
-
 export const metadata: Metadata = {
-  title: "Tom Zhang - Hangman",
-  description: "Play hangman today!",
+  title: "Tom Zhang - Blackjack",
+  description: "Play blackjack today!",
 };
 
-export default function HangmanLayout({
+export default function BlackjackLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
