@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
+import YouTube, { YouTubePlayer, YouTubeProps } from "react-youtube";
 import styles from "./Chess.module.css";
 
 const Chess = () => {
@@ -14,10 +15,52 @@ const Chess = () => {
     setPieceColor(colors[newIndex]);
   };
 
+  const [isPlaying, setIsPlaying] = useState<boolean>(false);
+  const playerRef = useRef<YouTubePlayer | null>(null);
+
+  const toggleMusic = (): void => {
+    if (!playerRef.current) return;
+
+    if (isPlaying) {
+      playerRef.current.pauseVideo();
+    } else {
+      playerRef.current.playVideo();
+    }
+
+    setIsPlaying(!isPlaying);
+  };
+
+  const onYouTubeReady: YouTubeProps["onReady"] = (event) => {
+    playerRef.current = event.target;
+    event.target.setVolume(30); // Optional
+  };
+
   return (
     <>
       <div className="ml-10 mt-10 mb-24">
-        <button className={styles.switchButton} onClick={handleColorChange}>Playing as {pieceColor}</button>
+        <button className={styles.switchButton} onClick={handleColorChange}>
+          Playing as {pieceColor}
+        </button>
+        <button className={`${styles.switchButton} ml-4`} onClick={toggleMusic}>
+          {isPlaying ? "Pause Music" : "Play Music"}
+        </button>
+
+        <div className="mt-4">
+          <YouTube
+            videoId="q5NyeaAwWE8"
+            opts={{
+              height: "0",
+              width: "0",
+              playerVars: {
+                autoplay: 0,
+                modestbranding: 1,
+                rel: 0,
+                start: 80,
+              },
+            }}
+            onReady={onYouTubeReady}
+          />
+        </div>
         <div className={styles.grid}>
           {pieceColor === "white" ? (
             <>
