@@ -5,30 +5,27 @@ import React, { useState } from "react";
 const bucketURL = process.env.MEDIA_BUCKET;
 
 const images = [
-  "leem1.png",
-  "leem2.png",
-  "leem3.png",
-  "leem3.png",
-  "leem4.png",
-  "leem5.png",
-  "leem6.png",
+  "/leem1.png",
+  "/leem2.png",
+  "/leem3.png",
+  "/leem3.png",
+  "/leem4.png",
+  "/leem5.png",
+  "/leem6.png",
 ];
 const sounds = [
-  "unplug_your_ears.m4a",
-  "join_me_on_teams.m4a",
-  "alright_heres_the_question.m4a",
+  "/unplug_your_ears.m4a",
+  "/join_me_on_teams.m4a",
+  "/alright_heres_the_question.m4a",
 ];
-
-const fullImageURLs = images.map((img) => `${bucketURL}/${img}`);
-const fullSoundURLs = sounds.map((snd) => `${bucketURL}/${snd}`);
 
 
 const MrSaleem: React.FC = () => {
-  const [currentImage, setCurrentImage] = useState<string>(fullImageURLs[0]);
+  const [currentImage, setCurrentImage] = useState<string>(images[0]);
 
   const handleImageClick = () => {
     // Choose a random sound and play it
-    const randomSound = new Audio(randomItem(fullSoundURLs));
+    const randomSound = new Audio(randomItem(sounds));
     randomSound.play();
 
     // Swap to a new random image
@@ -71,6 +68,7 @@ const MrSaleem: React.FC = () => {
           </button>
         ))}
       </div>
+      <div style={{ height: "400px" }}></div>
     </div>
   );
 };
