@@ -7,7 +7,6 @@ const Chess = () => {
   const colors = ["white", "black"];
   const [currentIndex, setCurrentIndex] = useState(0);
   const [pieceColor, setPieceColor] = useState(colors[currentIndex]);
-  const whitePiecesSetup = [""];
 
   const chessRowNumbers =
     pieceColor === "white"
