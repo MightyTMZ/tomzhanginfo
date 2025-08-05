@@ -3,18 +3,20 @@
 import React, { useState } from "react";
 
 const images = [
-  "/leem1.png",
-  "/leem2.png",
-  "/leem3.png",
-  "/leem3.png",
-  "/leem4.png",
-  "/leem5.png",
-  "/leem6.png",
+  "/games/leem/leem1.png",
+  "/games/leem/leem2.png",
+  "/games/leem/leem3.png",
+  "/games/leem/leem3.png",
+  "/games/leem/leem4.png",
+  "/games/leem/leem5.png",
+  "/games/leem/leem6.png",
 ];
 const sounds = [
-  "/unplug_your_ears.m4a",
-  "/join_me_on_teams.m4a",
-  "/alright_heres_the_question.m4a",
+  "/games/leem/unplug_your_ears.m4a",
+  "/games/leem/join_me_on_teams.m4a",
+  "/games/leem/alright_heres_the_question.m4a",
+  "/games/leem/tom!.m4a",
+  "/games/leem/okay!.m4a",
 ];
 
 
@@ -56,6 +58,8 @@ const MrSaleem: React.FC = () => {
           "Unplug your ears!",
           "Join me on Teams!",
           "Alright, here's the question...",
+          "Tom", 
+          "OK!"
         ].map((label, audio_id) => (
           <button
             key={audio_id}
