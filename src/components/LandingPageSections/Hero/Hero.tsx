@@ -11,6 +11,7 @@ import SlideAnimationButton from "@/components/SlideAnimationButton/SlideAnimati
 import { useRouter } from "next/navigation";
 import { ReactTyped } from "react-typed";
 import { orbitViewLink } from "@/data/orbitview";
+import Link from "next/link";
 
 const Hero = () => {
   const router = useRouter();
@@ -122,6 +123,17 @@ const Hero = () => {
             color="#a98080ff"
             onClick={handlePlayGames}
           />
+        </div>
+        <div className={`flex ${styles.manifestation}`}>
+          {/* Manifestation */}
+          <Link rel="stylesheet" href="https://tomzhangcapital.vercel.app/">
+            <span className="font-bold">Tom Zhang Capital </span>- Venture
+            capital fund
+          </Link>
+          <Link rel="stylesheet" href="https://tomzhangglobal.vercel.app/">
+            <span className="font-bold">Zhang Global</span> - Investment
+            management and hedge fund company pursuing a global macro strategy
+          </Link>
         </div>
       </div>
     </section>

@@ -150,3 +150,9 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+
+.manifestation {
+  font-size: 6px;
+  justify-content: center;
+  gap: 40px;
+}
