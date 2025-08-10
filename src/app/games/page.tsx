@@ -66,10 +66,23 @@ export default function GamesHome() {
       image: "/games/hangman.png",
     },
     {
-      title: "Tic Tac Toe",
+      title: "Battleship",
+      description:
+        "Play battleship!",
+      href: "/games/battleship",
+      image: "/games/battleship.png",
+    },
+    {
+      title: "Tic Tac Toe (3x3)",
       description: "Play tic tac toe!",
-      href: "/games/tic-tac-toe",
+      href: "/games/tic-tac-toe/traditional",
       image: "/games/tictactoe.png",
+    },
+    {
+      title: "Tic Tac Toe (8x8)",
+      description: "Play tic tac toe (8x8 version)!",
+      href: "/games/tic-tac-toe/eight",
+      image: "/games/8x8.png",
     },
 
     // Add more games here in the future

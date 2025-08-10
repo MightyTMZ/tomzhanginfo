@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   description: "Play tic tac toe today!",
 };
 
-export default function RandomColorLayout({
+export default function TicTacToeLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
