@@ -44,25 +44,34 @@ export const categories: Category[] = [
     ],
   },
   {
-    name: "Math & Numbers",
+    name: "Strings",
     challenges: [
-      { id: 15, title: "Prime Checker", link: "/solutions/prime-checker" },
-      { id: 6, title: "Fibonacci Sequence", link: "/solutions/fibonacci" },
+      { id: 23, title: "Anagrams", link: "https://github.com/MightyTMZ/python100/blob/main/ch_04/anagram.py" },
+      { id: 24, title: "Baseball Game", link: "https://github.com/MightyTMZ/python100/blob/main/ch_04/baseball_game.py" },
+      { id: 25, title: "Tennis Score & Game", link: "https://github.com/MightyTMZ/python100/blob/main/ch_04/tennis_score.py" },
+      { id: 26, title: "Capitalize", link: "https://github.com/MightyTMZ/python100/blob/main/ch_04/capitalize.py" },
+      { id: 27, title: "Joiner", link: "https://github.com/MightyTMZ/python100/blob/main/ch_04/joiner.py" },
+      { id: 28, title: "Morse Code", link: "https://github.com/MightyTMZ/python100/blob/main/ch_04/morse_code.py" },
+      { id: 29, title: "Check Duplicates", link: "https://github.com/MightyTMZ/python100/blob/main/ch_04/no_duplicate_chars.py" },
+      { id: 30, title: "Palindromes (string)", link: "https://github.com/MightyTMZ/python100/blob/main/ch_04/palindrome.py" },
+      { id: 31, title: "Reverse String", link: "https://github.com/MightyTMZ/python100/blob/main/ch_04/reverse_string.py" },
+      { id: 33, title: "Binary, HEX to Decimal", link: "https://github.com/MightyTMZ/python100/blob/main/ch_04/string_to_numbers.py" },
+      { id: 34, title: "Well formed braces", link: "https://github.com/MightyTMZ/python100/blob/main/ch_04/well_formed_braces.py" },
     ],
   },
-  {
-    name: "Recursion",
-    challenges: [
-      { id: 7, title: "Factorial", link: "/solutions/factorial" },
-      { id: 8, title: "Tower of Hanoi", link: "/solutions/tower-of-hanoi" },
-    ],
-  },
-  {
-    name: "Sorting & Searching",
-    challenges: [
-      { id: 9, title: "Binary Search", link: "/solutions/binary-search" },
-      { id: 10, title: "Merge Sort", link: "/solutions/merge-sort" },
-    ],
-  },
+  // {
+  //   name: "Recursion",
+  //   challenges: [
+  //     { id: 7, title: "Factorial", link: "/solutions/factorial" },
+  //     { id: 8, title: "Tower of Hanoi", link: "/solutions/tower-of-hanoi" },
+  //   ],
+  // },
+  // {
+  //   name: "Sorting & Searching",
+  //   challenges: [
+  //     { id: 9, title: "Binary Search", link: "/solutions/binary-search" },
+  //     { id: 10, title: "Merge Sort", link: "/solutions/merge-sort" },
+  //   ],
+  // },
   // Add more categories here...
 ];
