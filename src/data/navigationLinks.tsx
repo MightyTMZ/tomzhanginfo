@@ -8,6 +8,7 @@ import {
   FaBookOpen,
   FaFileAlt,
   FaRocket,
+  FaPython,
 } from "react-icons/fa";
 import { IoLogoGameControllerB } from "react-icons/io";
 import { TbError404 } from "react-icons/tb";
@@ -92,8 +93,14 @@ export const navItems = [
     reference: "/games",
     icon: <IoLogoGameControllerB />,
   },
-  {
+   {
     id: 14,
+    title: "Python for Kids",
+    reference: "/python-challenges",
+    icon: <FaPython />,
+  },
+  {
+    id: 15,
     title: "404: Not Found",
     reference: "/not-found",
     icon: <TbError404 />,
