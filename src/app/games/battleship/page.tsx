@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import ReturnToGamesButton from "@/components/ReturnToGamesButton/ReturnToGamesButton";
 import styles from "./Battleship.module.css";
 
 type Cell = {
@@ -94,7 +95,7 @@ export default function Battleship() {
   const [sunkEnemyShips, setSunkEnemyShips] = useState<number[]>([]);
   const [sunkPlayerShips, setSunkPlayerShips] = useState<number[]>([]);
 
-  if (sunkEnemyShips && sunkPlayerShips){
+  if (sunkEnemyShips && sunkPlayerShips) {
     // ghost reference to bypass build error
   }
 
@@ -111,8 +112,8 @@ export default function Battleship() {
 
   // helper to detect if ship (by id) is sunk on given board
   function checkSunkShips(board: Cell[], revealed = true): number[] {
-    if (revealed){
-        // ghost reference to bypass build error
+    if (revealed) {
+      // ghost reference to bypass build error
     }
     const shipsFound: { [id: number]: number[] } = {};
     board.forEach((cell, idx) => {
@@ -288,132 +289,137 @@ export default function Battleship() {
   }
 
   return (
-    <div className={styles.container}>
-      <div className={styles.header}>
-        <h1>Battleship</h1>
-        <div className={styles.instructions}>
-          <strong>How to play:</strong> Place your ships (or auto-place). Then
-          take turns firing at the enemy grid. First to sink all enemy ships
-          wins. Toggle orientation when placing.
-        </div>
+    <>
+      <div className="ml-6">
+        <ReturnToGamesButton />
       </div>
-
-      <div className={styles.controls}>
-        {phase === "placement" && (
-          <>
-            <div>
-              <button
-                className={styles.btn}
-                onClick={() => setOrientationHorizontal((s) => !s)}
-              >
-                Toggle Orientation:{" "}
-                {orientationHorizontal ? "Horizontal" : "Vertical"}
-              </button>
-              <button className={styles.btn} onClick={autoPlacePlayerShips}>
-                Auto-place
-              </button>
-              <button className={styles.btn} onClick={restart}>
-                Restart
-              </button>
-            </div>
-            <div className={styles.status}>
-              Placing: <strong>{SHIPS[currentShipIndex].name}</strong> (size{" "}
-              {SHIPS[currentShipIndex].size})
-            </div>
-          </>
-        )}
-
-        {phase === "battle" && (
-          <>
-            <div>
-              <button className={styles.btn} onClick={restart}>
-                Restart
-              </button>
-            </div>
-            <div className={styles.status}>
-              {playerTurn
-                ? "Your turn — fire at enemy grid."
-                : "Enemy's turn..."}
-            </div>
-          </>
-        )}
-
-        {phase === "gameover" && (
-          <>
-            <div>
-              <button className={styles.btn} onClick={restart}>
-                Play again
-              </button>
-            </div>
-          </>
-        )}
-      </div>
-
-      <div className={styles.boards}>
-        <div className={styles.boardWrapper}>
-          <h3>Your Fleet</h3>
-          <div className={styles.grid}>
-            {playerBoard.map((cell, idx) => {
-              const [r, c] = rcFromIndex(idx);
-              return (
-                <div
-                  key={idx}
-                  className={`${styles.cell} ${
-                    cell.hasShip ? styles.playerShipCell : ""
-                  }`}
-                  onClick={() => {
-                    if (phase === "placement") handlePlayerPlace(r, c);
-                  }}
-                  title={
-                    phase === "placement"
-                      ? `Click to place ${SHIPS[currentShipIndex].name}`
-                      : undefined
-                  }
-                >
-                  {renderPlayerCell(cell)}
-                </div>
-              );
-            })}
+      <div className={styles.container}>
+        <div className={styles.header}>
+          <h1>Battleship</h1>
+          <div className={styles.instructions}>
+            <strong>How to play:</strong> Place your ships (or auto-place). Then
+            take turns firing at the enemy grid. First to sink all enemy ships
+            wins. Toggle orientation when placing.
           </div>
         </div>
 
-        <div className={styles.boardWrapper}>
-          <h3>Enemy Waters</h3>
-          <div className={styles.grid}>
-            {enemyBoard.map((cell, idx) => {
-              const [r, c] = rcFromIndex(idx);
-              return (
-                <div
-                  key={idx}
-                  className={`${styles.cell} ${
-                    cell.hit && cell.hasShip ? styles.exploded : ""
-                  }`}
-                  onClick={() => {
-                    if (phase === "battle" && playerTurn) playerFire(r, c);
-                  }}
+        <div className={styles.controls}>
+          {phase === "placement" && (
+            <>
+              <div>
+                <button
+                  className={styles.btn}
+                  onClick={() => setOrientationHorizontal((s) => !s)}
                 >
-                  {renderEnemyCell(cell)}
-                </div>
-              );
-            })}
+                  Toggle Orientation:{" "}
+                  {orientationHorizontal ? "Horizontal" : "Vertical"}
+                </button>
+                <button className={styles.btn} onClick={autoPlacePlayerShips}>
+                  Auto-place
+                </button>
+                <button className={styles.btn} onClick={restart}>
+                  Restart
+                </button>
+              </div>
+              <div className={styles.status}>
+                Placing: <strong>{SHIPS[currentShipIndex].name}</strong> (size{" "}
+                {SHIPS[currentShipIndex].size})
+              </div>
+            </>
+          )}
+
+          {phase === "battle" && (
+            <>
+              <div>
+                <button className={styles.btn} onClick={restart}>
+                  Restart
+                </button>
+              </div>
+              <div className={styles.status}>
+                {playerTurn
+                  ? "Your turn — fire at enemy grid."
+                  : "Enemy's turn..."}
+              </div>
+            </>
+          )}
+
+          {phase === "gameover" && (
+            <>
+              <div>
+                <button className={styles.btn} onClick={restart}>
+                  Play again
+                </button>
+              </div>
+            </>
+          )}
+        </div>
+
+        <div className={styles.boards}>
+          <div className={styles.boardWrapper}>
+            <h3>Your Fleet</h3>
+            <div className={styles.grid}>
+              {playerBoard.map((cell, idx) => {
+                const [r, c] = rcFromIndex(idx);
+                return (
+                  <div
+                    key={idx}
+                    className={`${styles.cell} ${
+                      cell.hasShip ? styles.playerShipCell : ""
+                    }`}
+                    onClick={() => {
+                      if (phase === "placement") handlePlayerPlace(r, c);
+                    }}
+                    title={
+                      phase === "placement"
+                        ? `Click to place ${SHIPS[currentShipIndex].name}`
+                        : undefined
+                    }
+                  >
+                    {renderPlayerCell(cell)}
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+
+          <div className={styles.boardWrapper}>
+            <h3>Enemy Waters</h3>
+            <div className={styles.grid}>
+              {enemyBoard.map((cell, idx) => {
+                const [r, c] = rcFromIndex(idx);
+                return (
+                  <div
+                    key={idx}
+                    className={`${styles.cell} ${
+                      cell.hit && cell.hasShip ? styles.exploded : ""
+                    }`}
+                    onClick={() => {
+                      if (phase === "battle" && playerTurn) playerFire(r, c);
+                    }}
+                  >
+                    {renderEnemyCell(cell)}
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.footer}>
+          <div className={styles.message}>{message}</div>
+          <div className={styles.legend}>
+            <span className={styles.legendItem}>
+              <span className={styles.ship}>●</span> Ship
+            </span>
+            <span className={styles.legendItem}>
+              <span className={styles.hit}>✕</span> Hit
+            </span>
+            <span className={styles.legendItem}>
+              <span className={styles.miss}>•</span> Miss
+            </span>
           </div>
         </div>
       </div>
-
-      <div className={styles.footer}>
-        <div className={styles.message}>{message}</div>
-        <div className={styles.legend}>
-          <span className={styles.legendItem}>
-            <span className={styles.ship}>●</span> Ship
-          </span>
-          <span className={styles.legendItem}>
-            <span className={styles.hit}>✕</span> Hit
-          </span>
-          <span className={styles.legendItem}>
-            <span className={styles.miss}>•</span> Miss
-          </span>
-        </div>
-      </div>
-    </div>
+    </>
   );
 }
