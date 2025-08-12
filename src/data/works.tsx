@@ -9,6 +9,7 @@ import {
 } from "react-icons/fa";
 import placeholderImage from "../../public/placeholder.webp";
 import orbitview from "./workPics/ov-new.png";
+import clearsmile from "./workPics/clearsmile.png";
 // import tokenzlabs from "./workPics/TokenZLabs.png";
 import azure_partners from "./workPics/azure_partners.png";
 // import saleemai from "./workPics/saleemai.png";
@@ -25,22 +26,6 @@ import prestreet from "./workPics/prestreet.png"
 import nift_of_the_web from "./workPics/nift_of_the_web.png"
 
 export const coreProjects = [
-  {
-    id: 1,
-    title: "OrbitView",
-    featureImage: orbitview ? orbitview : placeholderImage,
-    description: `Your "second brain" to help you recall your achievements, impact, projects and more. Saving you up to 80% of your time
-    
-    Paired with AI resume generation and interview chatbox.     
-`,
-    links: [
-      {
-        icon: <FaExternalLinkAlt />,
-        url: "https://www.orbitview.net/",
-        label: "Details",
-      },
-    ],
-  },
   {
     id: 12,
     title: "Medport",
@@ -60,6 +45,22 @@ export const coreProjects = [
         icon: <FaGoogleDrive />,
         url: "https://drive.google.com/drive/folders/1slMnWFObjFdGeYCdAfj5KmmPZ_mEjSi_",
         label: "Photo Drive",
+      },
+    ],
+  },
+  {
+    id: 1,
+    title: "ClearSmile AI",
+    featureImage: clearsmile ? clearsmile : placeholderImage,
+    description: `ClearSmile AI is a computer vision system that automatically detects and removes dental braces from images using Mask R-CNN (Region-based Convolutional Neural Networks).
+
+P.S. Made by Tom Zhang to solve his own insecurities of braces ruining his photos.  
+`,
+    links: [
+      {
+        icon: <FaGithub />,
+        url: "https://github.com/MightyTMZ/clearsmile-ai",
+        label: "GitHub",
       },
     ],
   },
@@ -122,25 +123,25 @@ export const coreProjects = [
     `,
     links: [],
   },
-  {
-    id: 13,
-    title: "PreStreet",
-    featureImage: prestreet ? prestreet : placeholderImage,
-    description: `Where Big Ideas Become Child's Play
+  // {
+  //   id: 13,
+  //   title: "PreStreet",
+  //   featureImage: prestreet ? prestreet : placeholderImage,
+  //   description: `Where Big Ideas Become Child's Play
 
-    Think of it like the Wall Street Journal (WSJ), Business Insider, or Fortune Magazine for young children.
+  //   Think of it like the Wall Street Journal (WSJ), Business Insider, or Fortune Magazine for young children.
 
-    Currently working with youth commissions and councils in my community to bring this project to as many people as possible 💖
-      `,
-    links: [
-      {
-        icon: <FaGlobe />,
-        url: "https://prestreet.vercel.app/",
-        label: "Live Site",
-      },
+  //   Currently working with youth commissions and councils in my community to bring this project to as many people as possible 💖
+  //     `,
+  //   links: [
+  //     {
+  //       icon: <FaGlobe />,
+  //       url: "https://prestreet.vercel.app/",
+  //       label: "Live Site",
+  //     },
     
-    ],
-  },
+  //   ],
+  // },
   {
     id: 7,
     title: "Automatic Humidifier",
