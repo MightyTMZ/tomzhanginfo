@@ -1,14 +1,14 @@
 import {
   FaGlobe,
   FaGithub,
-  FaExternalLinkAlt,
+  // FaExternalLinkAlt,
   FaVideo,
   FaTwitter,
   // FaFileArchive,
   FaGoogleDrive,
 } from "react-icons/fa";
 import placeholderImage from "../../public/placeholder.webp";
-import orbitview from "./workPics/ov-new.png";
+// import orbitview from "./workPics/ov-new.png";
 import clearsmile from "./workPics/clearsmile.png";
 // import tokenzlabs from "./workPics/TokenZLabs.png";
 import azure_partners from "./workPics/azure_partners.png";
@@ -22,7 +22,7 @@ import ssn from "./workPics/ssn.jpg";
 import ah from "./workPics/ah.jpg";
 import desync from "./workPics/desync.png";
 import medport from "./workPics/medport.png";
-import prestreet from "./workPics/prestreet.png"
+// import prestreet from "./workPics/prestreet.png"
 import nift_of_the_web from "./workPics/nift_of_the_web.png"
 
 export const coreProjects = [
@@ -65,7 +65,7 @@ P.S. Made by Tom Zhang to solve his own insecurities of braces ruining his photo
     ],
   },
   {
-    id: 6,
+    id: 32,
     title: "Sentinel Safeguard Network",
     featureImage: ssn ? ssn : placeholderImage,
     description: `Innovative neighborhood security solution that to enhance community safety using cutting-edge Internet of Things (IoT) technology and scalable cloud infrastructure. This project integrates security cameras, motion detectors, alarms, and sensors to monitor and detect suspicious activities in real-time. Data collected from these devices is processed with advanced AI models to identify potential threats, such as firearms or masked burglars. 

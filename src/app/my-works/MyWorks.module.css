@@ -75,6 +75,27 @@
   color: #555;
 }
 
+.projectDescriptionContainer {
+  position: relative;
+}
+
+.expandButton {
+  background: none;
+  border: none;
+  color: #1f4157;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 5px 0;
+  margin-top: 10px;
+  transition: color 0.3s ease;
+}
+
+.expandButton:hover {
+  color: #0b87fa;
+}
+
 .projectLinks {
   display: flex;
   gap: 15px;
