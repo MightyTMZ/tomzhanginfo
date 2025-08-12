@@ -1,7 +1,8 @@
 "use client";
-import { useState, useEffect, FormEvent } from "react";
+import React, { useState, useEffect, FormEvent } from "react";
 import styles from "./RockPaperScissors.module.css";
 import ReturnToGamesButton from "@/components/ReturnToGamesButton/ReturnToGamesButton";
+import Image from "next/image";
 
 const icons = [
   "/games/rps/rock.png", // rock
@@ -185,7 +186,7 @@ const RockPaperScissors = () => {
           <div className={styles["game-box"]}></div>{" "}
           <div className={`${styles["game-box"]} ${styles["player"]}`}>
             {hasComputerPlayed ? (
-              <img src={icons[playerChoice]} alt={"player"} />
+              <Image src={icons[playerChoice]} alt={"player"} width={50} height={50} />
             ) : (
               <span className={styles.countDown}>
                 {countDown > 0 ? countDown : "Ready!"}
@@ -197,7 +198,7 @@ const RockPaperScissors = () => {
           </div>
           <div className={`${styles["game-box"]} ${styles["computer"]}`}>
             {hasComputerPlayed ? (
-              <img src={icons[computerChoice]} alt={"computer"} />
+              <Image src={icons[computerChoice]} alt={"computer"} width={50} height={50} />
             ) : (
               <span className={styles.countDown}>
                 {countDown > 0 ? countDown : "Ready!"}
@@ -219,11 +220,14 @@ const RockPaperScissors = () => {
               onClick={() => handleSwitchChoice(num)}
               key={num}
             >
-              <img
+              <Image
                 className={`${styles.icon} ${
                   playerChoice === num ? styles.selectedChoice : ""
                 }`}
                 src={icon}
+                width={50}
+                height={50}
+                alt={`Choice ${num}`}
               />
             </div>
           ))}

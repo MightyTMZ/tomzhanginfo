@@ -3,6 +3,7 @@
 import ColorCount from "@/components/color-count";
 import ReturnHomeButton from "@/components/ReturnHomeButton/ReturnHomeButton";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function GamesHome() {
   // List of games (expandable in the future)
@@ -151,9 +152,11 @@ export default function GamesHome() {
               }}
             >
               {game.image ? (
-                <img
+                <Image
                   src={game.image}
                   alt={game.title}
+                  width={260}
+                  height={120}
                   style={{
                     width: "100%",
                     height: 120,

@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 
 const images = [
   "/games/leem/leem1.png",
@@ -46,11 +47,13 @@ const MrSaleem: React.FC = () => {
   return (
     <div className="m-10 text-center">
       <div className="text-2xl font-bold mb-4">Hello I'm Mr. Saleem!</div>
-      <img
+      <Image
         src={currentImage}
         alt="Mr. Saleem"
         onClick={handleImageClick}
         className="cursor-pointer mx-auto w-64 h-auto transition-transform duration-200 hover:scale-105"
+        width={256}
+        height={256}
       />
 
       <div className="mt-8 space-x-4 mb-15">
