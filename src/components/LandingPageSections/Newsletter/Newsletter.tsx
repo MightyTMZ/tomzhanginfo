@@ -2,8 +2,8 @@ import React from "react";
 import styles from "./Newsletter.module.css";
 import { places } from "./places/places";
 import Image from "next/image";
-import ZhangTommySubstack from "./SubstackFeed";
-import TomZhangDotDev from "./SubstackFeedV2";
+// import ZhangTommySubstack from "./SubstackFeed";
+// import TomZhangDotDev from "./SubstackFeedV2";
 
 const Newsletter = () => {
   return (
@@ -11,11 +11,11 @@ const Newsletter = () => {
       <h1 className={styles.newsletterHeading}>
         <a href="https://zhangtommy.substack.com/">My Newsletter/Blog</a>
       </h1>
-      <ZhangTommySubstack />
+      {/* <ZhangTommySubstack /> */}
       <h1 className={styles.newsletterHeading}>
         <a href="https://tomzhangdev.substack.com/">My Technical Blog, Tutorials, Moments</a>
       </h1>
-      <TomZhangDotDev />
+      {/* <TomZhangDotDev /> */}
       <hr />
       <p className={styles.readBy}>Read by awesome people from </p>
       <div className={styles.logoWrapper}>
