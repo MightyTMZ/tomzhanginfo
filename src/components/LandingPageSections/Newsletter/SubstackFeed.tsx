@@ -2,14 +2,15 @@
 
 import { useEffect } from "react";
 
-const ZhangTommySubstack = () => {
+const SubstackFeed = () => {
   useEffect(() => {
     const scriptConfig = document.createElement("script");
     scriptConfig.innerHTML = `
-      window.SubstackFeedWidget_ZhangTommy = {
+      window.SubstackFeedWidget = {
         substackUrl: "zhangtommy.substack.com",
         posts: 3,
         layout: "center"
+        
       };
     `;
     document.body.appendChild(scriptConfig);
@@ -17,25 +18,15 @@ const ZhangTommySubstack = () => {
     const script = document.createElement("script");
     script.src = "https://substackapi.com/embeds/feed.js";
     script.async = true;
-    script.onload = () => {
-      // Create a new widget instance for this specific feed
-      if ((window as any).SubstackFeedWidget && (window as any).SubstackFeedWidget_ZhangTommy) {
-        const widget = new (window as any).SubstackFeedWidget((window as any).SubstackFeedWidget_ZhangTommy, "substack-feed-embed-zhangtommy");
-      }
-    };
     document.body.appendChild(script);
 
     return () => {
-      if (document.body.contains(scriptConfig)) {
-        document.body.removeChild(scriptConfig);
-      }
-      if (document.body.contains(script)) {
-        document.body.removeChild(script);
-      }
+      document.body.removeChild(scriptConfig);
+      document.body.removeChild(script);
     };
   }, []);
 
-  return <div id="substack-feed-embed-zhangtommy" className="mb-4"></div>;
+  return <div id="substack-feed-embed" className="mb-4"></div>;
 };
 
-export default ZhangTommySubstack;
+export default SubstackFeed;
