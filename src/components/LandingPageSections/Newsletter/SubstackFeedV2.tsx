@@ -2,12 +2,12 @@
 
 import { useEffect } from "react";
 
-const ZhangTommySubstack = () => {
+const TomZhangDotDev = () => {
   useEffect(() => {
     const scriptConfig = document.createElement("script");
     scriptConfig.innerHTML = `
-      window.SubstackFeedWidget_ZhangTommy = {
-        substackUrl: "zhangtommy.substack.com",
+      window.SubstackFeedWidget_TomZhangDev = {
+        substackUrl: "tomzhangdev.substack.com",
         posts: 3,
         layout: "center"
       };
@@ -19,8 +19,8 @@ const ZhangTommySubstack = () => {
     script.async = true;
     script.onload = () => {
       // Create a new widget instance for this specific feed
-      if ((window as any).SubstackFeedWidget && (window as any).SubstackFeedWidget_ZhangTommy) {
-        const widget = new (window as any).SubstackFeedWidget((window as any).SubstackFeedWidget_ZhangTommy, "substack-feed-embed-zhangtommy");
+      if ((window as any).SubstackFeedWidget && (window as any).SubstackFeedWidget_TomZhangDev) {
+        const widget = new (window as any).SubstackFeedWidget((window as any).SubstackFeedWidget_TomZhangDev, "substack-feed-embed-tomzhangdev");
       }
     };
     document.body.appendChild(script);
@@ -35,7 +35,7 @@ const ZhangTommySubstack = () => {
     };
   }, []);
 
-  return <div id="substack-feed-embed-zhangtommy" className="mb-4"></div>;
+  return <div id="substack-feed-embed-tomzhangdev" className="mb-4"></div>;
 };
 
-export default ZhangTommySubstack;
+export default TomZhangDotDev;
