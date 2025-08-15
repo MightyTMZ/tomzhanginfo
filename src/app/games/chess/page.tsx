@@ -3,6 +3,7 @@
 import { useRef, useState } from "react";
 import YouTube, { YouTubePlayer, YouTubeProps } from "react-youtube";
 import styles from "./Chess.module.css";
+import ReturnToGamesButton from "@/components/ReturnToGamesButton/ReturnToGamesButton";
 
 const Chess = () => {
   const colors = ["white", "black"];
@@ -37,6 +38,9 @@ const Chess = () => {
 
   return (
     <>
+      <div className="ml-4">
+        <ReturnToGamesButton />
+      </div>
       <div className="ml-10 mt-10 mb-24">
         <button className={styles.switchButton} onClick={handleColorChange}>
           Playing as {pieceColor}
@@ -44,7 +48,6 @@ const Chess = () => {
         <button className={`${styles.switchButton} ml-4`} onClick={toggleMusic}>
           {isPlaying ? "Pause Music" : "Play Music"}
         </button>
-
         <div className="mt-4">
           <YouTube
             videoId="q5NyeaAwWE8"
@@ -247,6 +250,15 @@ const Chess = () => {
               <div className={styles.labelSquare}>H</div>
             </>
           )}
+        </div>
+        <div className="mt-4">
+          <p>The chess game sucks here...</p>
+          <p>
+            Play on{" "}
+            <a className={styles.link} href="https://www.chess.com/home">
+              Chess.com
+            </a>
+          </p>
         </div>
       </div>
     </>

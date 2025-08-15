@@ -85,6 +85,12 @@ export default function GamesHome() {
       href: "/games/tic-tac-toe/eight",
       image: "/games/8x8.png",
     },
+    {
+      title: "Chess",
+      description: "Play chess!",
+      href: "/games/chess",
+      image: "/games/chess.png",
+    },
 
     // Add more games here in the future
   ];
