@@ -91,8 +91,13 @@ export default function GamesHome() {
       href: "/games/chess",
       image: "/games/chess.png",
     },
+    {
+      title: "Hold the Button!",
+      description: "Play 'hold the button'!",
+      href: "/games/hold-the-button",
+      image: "/games/htb.png",
+    },
 
-    // Add more games here in the future
   ];
 
   return (

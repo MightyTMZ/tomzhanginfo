@@ -1,0 +1,21 @@
+.colorGrid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 40px;
+  gap: 30px;
+}
+
+.colorGridItem:hover {
+  border: 2px solid black;
+}
+
+.sessionContainer,
+.buttonContainer,
+.timeContainer {
+  padding: 40px;
+}
+
+.timeContainer {
+  font-size: 32px;
+}
