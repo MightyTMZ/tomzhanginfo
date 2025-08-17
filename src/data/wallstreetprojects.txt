@@ -1,3 +1,0 @@
-- Jamie Dimon's executive assistant --> currently working with Andrew and Aniruddha
-- Azure Partner's web site (easy)
-- hedge fund project (seeing who are the best analysts on Wall Street based on NVIDIA earnings calls) --> will submit to hackathon and later publish as a paper
