@@ -44,6 +44,10 @@ const Hero = () => {
     router.push("/games/");
   };
 
+  const handleServices = () => {
+    router.push("/services/");
+  };
+
   return (
     <section id="hero" className={styles.hero}>
       <video autoPlay loop muted playsInline className={styles.backgroundVideo}>
@@ -102,6 +106,11 @@ const Hero = () => {
             onClick={handleViewWorks}
           />
           {/*<TertiaryAppButton text="Resources" onClick={handleResources} /> */}
+          <SlideAnimationButton
+            text="Work with me"
+            color="#010102ff"
+            onClick={handleServices}
+          />
           <SlideAnimationButton
             text="Check out my favourite tool"
             color="#0029f3ff"
