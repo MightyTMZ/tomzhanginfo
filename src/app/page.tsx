@@ -6,17 +6,17 @@ const Hero = dynamic(
 const AboutPage = dynamic(
   () => import("@/components/LandingPageSections/About/AboutPage")
 );
-const MissionStatement = dynamic(
-  () =>
-    import("@/components/LandingPageSections/MissionStatement/MissionStatement")
-);
-const Quote = dynamic(
-  () => import("@/components/LandingPageSections/Quote/Quote")
-);
+// const MissionStatement = dynamic(
+//   () =>
+//     import("@/components/LandingPageSections/MissionStatement/MissionStatement")
+// );
+// const Quote = dynamic(
+//   () => import("@/components/LandingPageSections/Quote/Quote")
+// );
 
-const Games = dynamic(
-  () => import("@/components/LandingPageSections/Games/Games")
-);
+// const Games = dynamic(
+//   () => import("@/components/LandingPageSections/Games/Games")
+// );
 
 // const OrbitView = dynamic(
 //   () => import("@/components/LandingPageSections/OrbitView/OrbitView")
@@ -57,10 +57,10 @@ export default function Home() {
     <>
       <Hero />
       <AboutPage />
-      <MissionStatement />
-      <Games />
+      {/* <MissionStatement /> */}
+      {/* <Games /> */}
       {/* <OrbitView /> */}
-      <Quote />
+      {/* <Quote /> */}
       {/*<Contact />*/}
     </>
   );
