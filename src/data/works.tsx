@@ -1,33 +1,85 @@
 import {
   FaGlobe,
   FaGithub,
-  // FaExternalLinkAlt,
   FaVideo,
   FaTwitter,
-  // FaFileArchive,
   FaGoogleDrive,
 } from "react-icons/fa";
 import placeholderImage from "../../public/placeholder.webp";
-// import orbitview from "./workPics/ov-new.png";
 import clearsmile from "./workPics/clearsmile.png";
-// import tokenzlabs from "./workPics/TokenZLabs.png";
 import azure_partners from "./workPics/azure_partners.png";
-// import saleemai from "./workPics/saleemai.png";
 import scisoc from "./workPics/EarlHaigScienceSociety.png";
-// import orbImmersive from "./workPics/orb_immersive.png";
-// import ollama from "./workPics/ollama.png";
 import personalWeb from "./workPics/personalweb.png";
-// import privateNotekeeper from "./workPics/private_notekeeper.png";
 import ssn from "./workPics/ssn.jpg";
 import ah from "./workPics/ah.jpg";
 import desync from "./workPics/desync.png";
 import medport from "./workPics/medport.png";
-// import prestreet from "./workPics/prestreet.png"
 import nift_of_the_web from "./workPics/nift_of_the_web.png"
+import thecolorproject from "./workPics/thecolorproject.png"
+import huvtsp_search from './workPics/huvtsp_search.jpg'
+
+
+// coming 
 
 export const coreProjects = [
   {
-    id: 12,
+    id: 1,
+    title: "HUVTSP (student-led) Alumni Search Engine",
+    featureImage: huvtsp_search ? huvtsp_search : placeholderImage,
+    description: `Empowered 300+ HUVTSP (Harvard Undergraduate Ventures TECH Summer Program) to connect with each other and ventures through a search engine. 
+    
+    Implemented secure password protection to ensure exclusive access to verified HUVTSP alumni. 
+  
+    It has smart search (using natural language to find alumni based on skills, interest, and project needs), filter search for alumni (browsing and filtering alumni by region, session, pod, or internship), location-based searching (finding alumni based on their location), smart project/venture search (finding projects and collaboration opportunities using natural language), and filter search for projects/ventures (browsing and filtering projects based on type, stage and other criteria).
+    
+    Improved performance by an average of 41% through strategic caching. 
+    
+    Reached nearly 600 users, over 3500 impressions, and over 5000 searches as of August 2025. 
+
+      `,
+    links: [
+      {
+        icon: <FaGithub />,
+        url: "https://github.com/MightyTMZ/huvtsp-linked",
+        label: "Photo Drive",
+      },
+      {
+        icon: <FaGlobe />,
+        url: "https://cracked-students.vercel.app/",
+        label: "Live app",
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "The Color Project (World)",
+    featureImage: thecolorproject ? thecolorproject : placeholderImage,
+    description: `Made a clicking game for the WORLD in a GLOBAL attempt to discover all 16,777,216 unique colors one click at a time. 
+
+    Currently 333,000+ colors have been discovered at the time of right now (August 2025).
+    
+    Made the backend so that it can successfully process tens of thousands of requests per minute and cached to keep things fast with high traffic. 
+      `,
+    links: [
+      {
+        icon: <FaGlobe />,
+        url: "https://www.thecolorproject.world/",
+        label: "Live app",
+      },
+      {
+        icon: <FaGithub />,
+        url: "https://github.com/MightyTMZ/thecolorproject.world/",
+        label: "GitHub (frontend)",
+      },
+      {
+        icon: <FaGithub />,
+        url: "https://github.com/MightyTMZ/thecolorproject.world-backend/",
+        label: "GitHub (backend)",
+      },
+    ],
+  },
+  {
+    id: 3,
     title: "Medport",
     featureImage: medport ? medport : placeholderImage,
     description: `A secure and locally-ran health management system. Contains a container for storing your medication and supplements. Calibrated sensors to track intake instances in real time and generate a log/ledger. Users can then export the data and streamline the communication with their healthcare providers (e.g. doctors, physicians, nutritionists, etc). 
@@ -49,7 +101,7 @@ export const coreProjects = [
     ],
   },
   {
-    id: 1,
+    id: 4,
     title: "ClearSmile AI",
     featureImage: clearsmile ? clearsmile : placeholderImage,
     description: `ClearSmile AI is a computer vision system that automatically detects and removes dental braces from images using Mask R-CNN (Region-based Convolutional Neural Networks).
@@ -65,7 +117,7 @@ P.S. Made by Tom Zhang to solve his own insecurities of braces ruining his photo
     ],
   },
   {
-    id: 32,
+    id: 5,
     title: "Sentinel Safeguard Network",
     featureImage: ssn ? ssn : placeholderImage,
     description: `Innovative neighborhood security solution that to enhance community safety using cutting-edge Internet of Things (IoT) technology and scalable cloud infrastructure. This project integrates security cameras, motion detectors, alarms, and sensors to monitor and detect suspicious activities in real-time. Data collected from these devices is processed with advanced AI models to identify potential threats, such as firearms or masked burglars. 
@@ -77,7 +129,7 @@ P.S. Made by Tom Zhang to solve his own insecurities of braces ruining his photo
     links: [],
   },
   {
-    id: 11,
+    id: 6,
     title: "desync.fi",
     featureImage: desync ? desync : placeholderImage,
     description: `deSync is a zero-interest lending protocol built on Scroll that unlocks lucrative yield for lenders while allowing borrowers to borrow at 0% interest.
@@ -112,7 +164,7 @@ P.S. Made by Tom Zhang to solve his own insecurities of braces ruining his photo
     ],
   },
   {
-    id: 14,
+    id: 7,
     title: "The Nift of the Web",
     featureImage: nift_of_the_web ? nift_of_the_web : placeholderImage,
     description: `Master full-stack development across web and mobile platforms with AI integration. Access comprehensive resources and practical guides.
@@ -143,7 +195,7 @@ P.S. Made by Tom Zhang to solve his own insecurities of braces ruining his photo
   //   ],
   // },
   {
-    id: 7,
+    id: 8,
     title: "Automatic Humidifier",
     featureImage: ah ? ah : placeholderImage,
     description: `
@@ -153,7 +205,7 @@ P.S. Made by Tom Zhang to solve his own insecurities of braces ruining his photo
     links: [],
   },
   {
-    id: 2,
+    id: 9,
     title: "Earl Haig Science Society",
     featureImage: scisoc ? scisoc : placeholderImage,
     description: `
@@ -185,7 +237,7 @@ P.S. Made by Tom Zhang to solve his own insecurities of braces ruining his photo
   //   ],
   // },
   {
-    id: 4,
+    id: 10,
     title: "Personal Website",
     featureImage: personalWeb ? personalWeb : placeholderImage,
     description: `You are viewing this project right now! It showcases my works (projects, prototypes, experiments, integrations) along with my mission statement, favourite quotes, etc. 
@@ -213,7 +265,7 @@ P.S. Made by Tom Zhang to solve his own insecurities of braces ruining his photo
   //   ],
   // },
   {
-    id: 6,
+    id: 11,
     title: "Azure Partners",
     featureImage: azure_partners ? azure_partners : placeholderImage,
     description: `Created a website that has multilingual support for both English-speaking and Chinese-speaking vistors of Azure Partners. 
