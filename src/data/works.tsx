@@ -14,12 +14,12 @@ import ssn from "./workPics/ssn.jpg";
 import ah from "./workPics/ah.jpg";
 import desync from "./workPics/desync.png";
 import medport from "./workPics/medport.png";
-import nift_of_the_web from "./workPics/nift_of_the_web.png"
-import thecolorproject from "./workPics/thecolorproject.png"
-import huvtsp_search from './workPics/huvtsp_search.jpg'
+import nift_of_the_web from "./workPics/nift_of_the_web.png";
+import thecolorproject from "./workPics/thecolorproject.png";
+import huvtsp_search from "./workPics/huvtsp_search.jpg";
+import planebrain from "./workPics/planebrain.png"
 
-
-// coming 
+// coming
 
 export const coreProjects = [
   {
@@ -118,6 +118,26 @@ P.S. Made by Tom Zhang to solve his own insecurities of braces ruining his photo
   },
   {
     id: 5,
+    title: "PlaneBrain",
+    featureImage: planebrain ? planebrain : placeholderImage,
+    description: `A win-win project: built for my epic brother Eric (an aviation geek), and for myself to dive deeper into the world of flight and space exploration while honing development skills.  
+
+  Cultivating future aviation and space pioneers! 🚀  
+  Fun, fast-paced quizzes. Curated questions across aviation and space domains. Progress tracking and learning reinforcement. Designed with passion and family in mind.  
+
+  Developed with web technologies, structured data for quizzes, AWS S3 for efficiently delivering media files, and a focus on interactivity and knowledge-building.
+  `,
+    links: [
+      {
+        icon: <FaGithub />,
+        url: "https://github.com/MightyTMZ/planebrain", // replace with your repo if public
+        label: "GitHub",
+      },
+    ],
+  },
+
+  {
+    id: 6,
     title: "Sentinel Safeguard Network",
     featureImage: ssn ? ssn : placeholderImage,
     description: `Innovative neighborhood security solution that to enhance community safety using cutting-edge Internet of Things (IoT) technology and scalable cloud infrastructure. This project integrates security cameras, motion detectors, alarms, and sensors to monitor and detect suspicious activities in real-time. Data collected from these devices is processed with advanced AI models to identify potential threats, such as firearms or masked burglars. 
@@ -129,7 +149,7 @@ P.S. Made by Tom Zhang to solve his own insecurities of braces ruining his photo
     links: [],
   },
   {
-    id: 6,
+    id: 7,
     title: "desync.fi",
     featureImage: desync ? desync : placeholderImage,
     description: `deSync is a zero-interest lending protocol built on Scroll that unlocks lucrative yield for lenders while allowing borrowers to borrow at 0% interest.
@@ -164,7 +184,7 @@ P.S. Made by Tom Zhang to solve his own insecurities of braces ruining his photo
     ],
   },
   {
-    id: 7,
+    id: 8,
     title: "The Nift of the Web",
     featureImage: nift_of_the_web ? nift_of_the_web : placeholderImage,
     description: `Master full-stack development across web and mobile platforms with AI integration. Access comprehensive resources and practical guides.
@@ -191,11 +211,11 @@ P.S. Made by Tom Zhang to solve his own insecurities of braces ruining his photo
   //       url: "https://prestreet.vercel.app/",
   //       label: "Live Site",
   //     },
-    
+
   //   ],
   // },
   {
-    id: 8,
+    id: 9,
     title: "Automatic Humidifier",
     featureImage: ah ? ah : placeholderImage,
     description: `
@@ -205,7 +225,7 @@ P.S. Made by Tom Zhang to solve his own insecurities of braces ruining his photo
     links: [],
   },
   {
-    id: 9,
+    id: 10,
     title: "Earl Haig Science Society",
     featureImage: scisoc ? scisoc : placeholderImage,
     description: `
@@ -225,8 +245,8 @@ P.S. Made by Tom Zhang to solve his own insecurities of braces ruining his photo
   //   id: 3,
   //   title: "Ollama Guidebook (in progress)",
   //   featureImage: ollama ? ollama : placeholderImage,
-  //   description: `A comprehensive guidebook to Ollama, covering tools and integrations for seamless AI workflows. 
-      
+  //   description: `A comprehensive guidebook to Ollama, covering tools and integrations for seamless AI workflows.
+
   //     Publisher: Packt`,
   //   links: [
   //     {
@@ -237,7 +257,7 @@ P.S. Made by Tom Zhang to solve his own insecurities of braces ruining his photo
   //   ],
   // },
   {
-    id: 10,
+    id: 11,
     title: "Personal Website",
     featureImage: personalWeb ? personalWeb : placeholderImage,
     description: `You are viewing this project right now! It showcases my works (projects, prototypes, experiments, integrations) along with my mission statement, favourite quotes, etc. 
@@ -265,7 +285,7 @@ P.S. Made by Tom Zhang to solve his own insecurities of braces ruining his photo
   //   ],
   // },
   {
-    id: 11,
+    id: 12,
     title: "Azure Partners",
     featureImage: azure_partners ? azure_partners : placeholderImage,
     description: `Created a website that has multilingual support for both English-speaking and Chinese-speaking vistors of Azure Partners. 
@@ -290,7 +310,7 @@ export const protoTypes_Experiments = [
   //   title: "OrbitView Immersive Reader (failed)",
   //   featureImage: orbImmersive ? orbImmersive : placeholderImage,
   //   description: `Attempted to increase media consumption engagement through the use of customization tools and filters.
-  //     Supports: stereoscopic filters, contrast toggle, font size adjustments, contrast adjustments, 
+  //     Supports: stereoscopic filters, contrast toggle, font size adjustments, contrast adjustments,
   //     `,
   //   links: [
   //     {
@@ -326,15 +346,12 @@ export const tools_Integrations = [
   //   title: "Personal Private Notekeeper Chatbot",
   //   featureImage: privateNotekeeper ? privateNotekeeper : placeholderImage,
   //   description: `
-    
   //   A local AI that processes sensitive data entirely on your device, ensuring privacy
-  //    and security. By utilizing Ollama and ChromaDB, this system supports a variety of 
-  //    file types (PDFs, MP3s, DOCX, Excel, etc.) and allows for secure data querying and 
-  //    processing without the need for cloud storage. It empowers users to upload, preprocess, 
+  //    and security. By utilizing Ollama and ChromaDB, this system supports a variety of
+  //    file types (PDFs, MP3s, DOCX, Excel, etc.) and allows for secure data querying and
+  //    processing without the need for cloud storage. It empowers users to upload, preprocess,
   //    and interact with their data locally, ensuring sensitive information remains confidential.
-
-  //    All in all, this project is a very transferable use case both at the personal and entreprise scales. 
-    
+  //    All in all, this project is a very transferable use case both at the personal and entreprise scales.
   //   `,
   //   links: [
   //     {
