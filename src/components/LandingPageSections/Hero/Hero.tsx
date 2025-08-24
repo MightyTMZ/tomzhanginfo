@@ -11,7 +11,7 @@ import SlideAnimationButton from "@/components/SlideAnimationButton/SlideAnimati
 import { useRouter } from "next/navigation";
 import { ReactTyped } from "react-typed";
 import { orbitViewLink } from "@/data/orbitview";
-import Link from "next/link";
+// import Link from "next/link";
 
 const Hero = () => {
   const router = useRouter();
