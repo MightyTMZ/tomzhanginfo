@@ -133,8 +133,8 @@ const Hero = () => {
             onClick={handlePlayGames}
           />
         </div>
+        {/* Manifestation 
         <div className={`flex ${styles.manifestation}`}>
-          {/* Manifestation */}
           <Link rel="stylesheet" href="https://tomzhangcapital.vercel.app/">
             <span className="font-bold">Tom Zhang Capital </span>- Venture
             capital fund
@@ -143,7 +143,7 @@ const Hero = () => {
             <span className="font-bold">Zhang Global</span> - Investment
             management and hedge fund company pursuing a global macro strategy
           </Link>
-        </div>
+        </div>*/}
       </div>
     </section>
   );
