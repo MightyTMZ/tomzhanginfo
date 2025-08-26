@@ -12,7 +12,7 @@ export default function GamesHome() {
       title: "The Color Project",
       description:
         "Can we (as a world) generate every color? One click at a time. This is because each of the three primary colors (Red, Green, and Blue) can have 256 different intensity levels (0-255), and 256 * 256 * 256 = 16,777,216",
-      href: "https://thecolorproject.vercel.app/",
+      href: "https://www.thecolorproject.world/?utm_source=tomzhang",
       image: "/games/thecolorproject.png",
     },
     {
