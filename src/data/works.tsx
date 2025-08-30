@@ -17,9 +17,7 @@ import medport from "./workPics/medport.png";
 import nift_of_the_web from "./workPics/nift_of_the_web.png";
 import thecolorproject from "./workPics/thecolorproject.png";
 import huvtsp_search from "./workPics/huvtsp_search.jpg";
-import planebrain from "./workPics/planebrain.png"
-
-// coming
+import planebrain from "./workPics/planebrain.png";
 
 export const coreProjects = [
   {
@@ -361,4 +359,27 @@ export const tools_Integrations = [
   //     },
   //   ],
   // },
+];
+
+export const currently_working_on = [
+  {
+    id: 1,
+    title: "Corey (Your Brain Upgraded)",
+    description: `Building a revolutionary product in the productivity / knowledge space (stealth)`,
+    links: [],
+  },
+  {
+    id: 2,
+    title: "ZhangOS",
+    description: `Building an operating system for Gen Z founders and ambitious students. 
+    It is an AI-powered system that helps you grow faster, think deeper, and build better by uniting reflection, startup tools, personalized learning, and community into one immersive experience.`,
+    links: [],
+  },
+  {
+    id: 3,
+    title: "Quantum Key Distribution (QKD) Simulation",
+    description: `Building a simulator of the BB84 QKD protocol. 
+    This will illustrate how quantum mechanics can secure military communications.`,
+    links: [],
+  },
 ];
