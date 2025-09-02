@@ -18,6 +18,7 @@ import nift_of_the_web from "./workPics/nift_of_the_web.png";
 import thecolorproject from "./workPics/thecolorproject.png";
 import huvtsp_search from "./workPics/huvtsp_search.jpg";
 import planebrain from "./workPics/planebrain.png";
+import omniwave from "./workPics/omniwave.png"
 
 export const coreProjects = [
   {
@@ -110,6 +111,27 @@ P.S. Made by Tom Zhang to solve his own insecurities of braces ruining his photo
       {
         icon: <FaGithub />,
         url: "https://github.com/MightyTMZ/clearsmile-ai",
+        label: "GitHub",
+      },
+    ],
+  },
+  {
+    id: 123,
+    title: "Omniwave Nexus",
+    featureImage: omniwave ? omniwave : placeholderImage,
+    description: `A comprehensive speech-planning platform designed for debaters, Model UN delegates, and public speakers. I created Omniwave Nexus by drawing on my experiences competing at Model UN conferences across Canada, where I earned recognition at both provincial and national levels. This project addresses the challenges I encountered as a delegate and speaker, offering intuitive tools to streamline speech planning and organizing subtle components such as antics, humor, eye contact, pauses, or other speech blocks. 
+
+    FREE to use for everyone!
+    `,
+    links: [
+      {
+        icon: <FaGlobe />,
+        url: "https://omniwave-nexus.vercel.app/",
+        label: "Free Web Version",
+      },
+      {
+        icon: <FaGithub />,
+        url: "https://github.com/MightyTMZ/omniwave_nexus",
         label: "GitHub",
       },
     ],
