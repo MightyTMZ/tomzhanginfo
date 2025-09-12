@@ -63,12 +63,12 @@ export const navItems = [
     reference: "/my-works",
     icon: <FaProjectDiagram />,
   },
-  {
-    id: 9,
-    title: "OrbitView",
-    reference: "/orbitview",
-    icon: <FaRocket />,
-  },
+  // {
+  //   id: 9,
+  //   title: "OrbitView",
+  //   reference: "/orbitview",
+  //   icon: <FaRocket />,
+  // },
   {
     id: 10,
     title: "Services",
