@@ -19,8 +19,33 @@ import thecolorproject from "./workPics/thecolorproject.png";
 import huvtsp_search from "./workPics/huvtsp_search.jpg";
 import planebrain from "./workPics/planebrain.png";
 import omniwave from "./workPics/omniwave.png"
+import leetops from "./workPics/leetops.png"
+import { SiDevpost } from "react-icons/si";
 
 export const coreProjects = [
+  {
+    id: 2025,
+    title: "LeetOps: The New Currency of Engineering Credibility",
+    featureImage: leetops ? leetops : placeholderImage,
+    description: `LeetOps is the standardized benchmark for on-call engineering reliability. Practice real-world incident response scenarios at top tech companies or rising startups to prove your on-call response skills and reliability.
+
+    Think of it as "LeetCode for incident response", but instead of solving algorithmic puzzles, engineers handle realistic production incidents across dozens of major tech companies and rising startups. Each user has a "LeetOps ELO" which is a benchmark they can use to prove their on-call reliability as well as for companies to leverage when comparing candidates.
+
+    Top 20 (Honoroble Mention) project 🏅 @ Hack the North 2025
+      `,
+    links: [
+      {
+        icon: <FaGithub />,
+        url: "https://github.com/MightyTMZ/leetops",
+        label: "GitHub",
+      },
+      {
+        icon: <SiDevpost />,
+        url: "https://devpost.com/software/fsdfs",
+        label: "Devpost",
+      },
+    ],
+  },
   {
     id: 1,
     title: "HUVTSP (student-led) Alumni Search Engine",
@@ -40,7 +65,7 @@ export const coreProjects = [
       {
         icon: <FaGithub />,
         url: "https://github.com/MightyTMZ/huvtsp-linked",
-        label: "Photo Drive",
+        label: "GitHub",
       },
       {
         icon: <FaGlobe />,
