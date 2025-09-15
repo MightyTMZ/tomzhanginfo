@@ -7,7 +7,7 @@ import {
   FaTools,
   FaBookOpen,
   FaFileAlt,
-  FaRocket,
+  // FaRocket,
   FaPython,
 } from "react-icons/fa";
 import { IoLogoGameControllerB } from "react-icons/io";

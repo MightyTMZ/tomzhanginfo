@@ -10,7 +10,6 @@ import Image from "next/image";
 import SlideAnimationButton from "@/components/SlideAnimationButton/SlideAnimationButton";
 import { useRouter } from "next/navigation";
 import { ReactTyped } from "react-typed";
-import { orbitViewLink } from "@/data/orbitview";
 // import Link from "next/link";
 
 const Hero = () => {
@@ -26,10 +25,6 @@ const Hero = () => {
 
   const handleViewWorks = () => {
     router.push("/my-works/");
-  };
-
-  const handleViewOrbitView = () => {
-    window.open(orbitViewLink, "_blank");
   };
 
   const handleViewResume = () => {
@@ -111,11 +106,6 @@ const Hero = () => {
             text="Work with me"
             color="#010102ff"
             onClick={handleServices}
-          />
-          <SlideAnimationButton
-            text="Check out my favourite tool"
-            color="#0029f3ff"
-            onClick={handleViewOrbitView}
           />
           <SlideAnimationButton
             text="Subscribe to my newsletter"
