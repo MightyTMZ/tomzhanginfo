@@ -6,6 +6,9 @@ const Hero = dynamic(
 const AboutPage = dynamic(
   () => import("@/components/LandingPageSections/About/AboutPage")
 );
+const BikeProgress = dynamic(
+  () => import("@/components/BikeProgress/BikeProgress")
+);
 // const MissionStatement = dynamic(
 //   () =>
 //     import("@/components/LandingPageSections/MissionStatement/MissionStatement")
@@ -57,6 +60,7 @@ export default function Home() {
     <>
       <Hero />
       <AboutPage />
+      <BikeProgress/>
       {/* <MissionStatement /> */}
       {/* <Games /> */}
       {/* <OrbitView /> */}

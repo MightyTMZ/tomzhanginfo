@@ -31,7 +31,7 @@ export const coreProjects = [
 
     Think of it as "LeetCode for incident response", but instead of solving algorithmic puzzles, engineers handle realistic production incidents across dozens of major tech companies and rising startups. Each user has a "LeetOps ELO" which is a benchmark they can use to prove their on-call reliability as well as for companies to leverage when comparing candidates.
 
-    Top 20 (Honoroble Mention) project 🏅 @ Hack the North 2025
+    Top 20 (Honorable Mention) project 🏅 @ Hack the North 2025
       `,
     links: [
       {
