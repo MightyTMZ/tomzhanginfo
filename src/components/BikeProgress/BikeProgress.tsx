@@ -1,17 +1,20 @@
-'use client'
+"use client";
 
 import { useState, useMemo } from "react";
 
 export default function BikeProgress() {
   const goal = 10000; // total goal in km
-  const [distance, setDistance] = useState(10);
+  //   const [distance, setDistance] = useState(10);
+  //
+
+  const distance = 15;
 
   const percentage = useMemo(() => {
     return Math.min((distance / goal) * 100, 100).toFixed(2);
   }, [distance, goal]);
 
   return (
-    <div className="mx-8 bg-white shadow-lg rounded-2xl p-6">
+    <div className="max-w-[1600px] mx-auto bg-white shadow-lg rounded-2xl p-6">
       {/* Left-aligned heading + progress text */}
       <h2 className="text-2xl font-bold mb-2">🚴 My Biking Journey</h2>
       <p className="text-gray-600 mb-4">
@@ -32,7 +35,7 @@ export default function BikeProgress() {
       </p>
 
       {/* Update controls */}
-      <div className="mt-4 flex gap-2">
+      {/* <div className="mt-4 flex gap-2">
         <input
           type="number"
           value={distance}
@@ -46,7 +49,7 @@ export default function BikeProgress() {
         >
           Update
         </button>
-      </div>
+      </div> */}
     </div>
   );
 }
