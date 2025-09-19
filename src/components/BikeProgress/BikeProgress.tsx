@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useMemo } from "react";
 
 export default function BikeProgress() {
   const goal = 10000; // total goal in km
