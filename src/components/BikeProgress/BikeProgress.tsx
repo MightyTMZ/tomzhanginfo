@@ -2,12 +2,18 @@
 
 import { useMemo } from "react";
 
+const distances = [
+    { date: "Sep 18, 2025", value: 10 },
+    { date: "Sep 19, 2025", value: 20 },
+];
+
+
 export default function BikeProgress() {
   const goal = 10000; // total goal in km
   //   const [distance, setDistance] = useState(10);
   //
 
-  const distance = 15;
+  const distance = distances.reduce((sum, d) => sum + d.value, 0)
 
   const percentage = useMemo(() => {
     return Math.min((distance / goal) * 100, 100).toFixed(2);
