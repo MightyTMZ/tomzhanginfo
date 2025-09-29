@@ -90,6 +90,14 @@ const Hero = () => {
             }}
           ></ReactTyped>
         </div>
+        <div className={styles.nicknamesSection}>
+          <span className={styles.nicknamesLabel}>Nicknames:</span>
+          <div className={styles.nicknamesList}>
+            <span className={styles.nickname}>TΩ <span className={styles.nicknameSubtext}>(T"Ohm"m)</span></span>
+            <span className={styles.nickname}>aTOMic</span>
+            <span className={styles.nickname}>TOML</span>
+          </div>
+        </div>
         <div className={styles.buttonContainer}>
           <SlideAnimationButton
             text="Contact me"

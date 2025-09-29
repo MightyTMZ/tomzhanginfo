@@ -159,3 +159,42 @@
   justify-content: center;
   gap: 40px;
 }
+
+.nicknamesSection {
+  margin: 20px 0;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.nicknamesLabel {
+  font-weight: 500;
+  margin-right: 8px;
+}
+
+.nicknamesList {
+  display: inline-flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nickname {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.nickname:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-1px);
+}
+
+.nicknameSubtext {
+  font-size: 10px;
+  opacity: 0.7;
+  font-style: italic;
+}
