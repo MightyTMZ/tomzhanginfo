@@ -12,6 +12,45 @@ import { useRouter } from "next/navigation";
 import { ReactTyped } from "react-typed";
 // import Link from "next/link";
 
+const nicknames = [
+  {
+    nickname: "aTOM",
+    subText: "",
+  },
+  {
+    nickname: "aTOMic",
+    subText: "",
+  },
+  {
+    nickname: "TΩ",
+    subText: "(T'Ohm'm)",
+  },
+  {
+    nickname: "TOML",
+    subText: "",
+  },
+  {
+    nickname: "auTOMate",
+    subText: "",
+  },
+  {
+    nickname: "phoTOMetry",
+    subText: "",
+  },
+  {
+    nickname: "phanTOM 👻",
+    subText: "",
+  },
+  {
+    nickname: "BotTOM-up ⬆️⬇️",
+    subText: "",
+  },
+  {
+    nickname: "quanTOM",
+    subText: "",
+  },
+];
+
 const Hero = () => {
   const router = useRouter();
 
@@ -91,11 +130,18 @@ const Hero = () => {
           ></ReactTyped>
         </div>
         <div className={styles.nicknamesSection}>
-          <span className={styles.nicknamesLabel}>Nicknames:</span>
+          <span className={styles.nicknamesLabel} >I'm also known as...</span>
           <div className={styles.nicknamesList}>
-            <span className={styles.nickname}>TΩ <span className={styles.nicknameSubtext}>(T"Ohm"m)</span></span>
-            <span className={styles.nickname}>aTOMic</span>
-            <span className={styles.nickname}>TOML</span>
+            {nicknames.map((nickname, e) => (
+              <span key={e} className={styles.nickname}>
+                {nickname.nickname}{" "}
+                {nickname.subText && (
+                  <span className={styles.nicknameSubtext}>
+                    {nickname.subText}
+                  </span>
+                )}
+              </span>
+            ))}
           </div>
         </div>
         <div className={styles.buttonContainer}>
