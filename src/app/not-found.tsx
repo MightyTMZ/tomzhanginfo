@@ -1,7 +1,7 @@
 // app/not-found.tsx
 import Link from "next/link";
 import styles from "./not-found.module.css";
-import { orbitViewLink } from "@/data/orbitview";
+// import { orbitViewLink } from "@/data/orbitview";
 
 export default function NotFound() {
   return (

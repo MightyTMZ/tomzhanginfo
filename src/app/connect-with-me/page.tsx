@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./ConnectWithMe.module.css";
 // import Contact from "@/components/LandingPageSections/Contact/Contact";
-import { socialLinks, orbitviewProfileLink } from "@/data/socials";
+import { socialLinks } from "@/data/socials";
 import Link from "next/link";
 import { Metadata } from "next";
 import { websiteName } from "@/data/base";
