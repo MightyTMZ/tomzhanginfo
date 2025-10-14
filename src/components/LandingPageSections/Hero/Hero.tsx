@@ -85,7 +85,7 @@ const Hero = () => {
   return (
     <section id="hero" className={styles.hero}>
       <video autoPlay loop muted playsInline className={styles.backgroundVideo}>
-        <source src="/california_interstate.mp4" type="video/webm" />
+        <source src="/189838-886596433_small.mp4" type="video/webm" />
         Your browser does not support the video tag.
       </video>
       <div className={styles.content}>
