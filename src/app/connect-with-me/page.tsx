@@ -42,7 +42,7 @@ export default function ConnectWithMe() {
             say hi, I’d love to hear from you. Let’s get in touch!
           </p>
           {/* OrbitView Section */}
-          <div className={styles.orbitviewSection}>
+          {/* <div className={styles.orbitviewSection}>
             <h2 className={styles.socialTitle}>🪐 Chat With My Resume</h2>
             <p className={styles.orbitviewDescription}>
               Instead of emailing me your questions, try this first...
@@ -76,8 +76,8 @@ export default function ConnectWithMe() {
                 title="OrbitView Profile"
                 loading="lazy"
               ></iframe>
-            </div>
-          </div>
+            </div> 
+          </div> */}
           {/* Social Links Section */}
           <div className={styles.socialLinks}>
             <h2 className={styles.socialTitle}>Follow Me</h2>

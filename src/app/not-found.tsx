@@ -44,14 +44,14 @@ export default function NotFound() {
               <span className={styles.buttonIcon}>↓</span>
             </a>
 
-            <Link
+            {/* <Link
               href={orbitViewLink}
               className={styles.navButton}
               target="_blank"
             >
               <span className={styles.buttonText}>Sign up for OrbitView</span>
               <span className={styles.buttonIcon}>→</span>
-            </Link>
+            </Link> */}
 
             <Link href="/games" className={styles.navButton}>
               <span className={styles.buttonText}>Play Games</span>
