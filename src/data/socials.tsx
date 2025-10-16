@@ -1,5 +1,5 @@
 import { email } from "./email";
-import { FaLinkedin, FaEnvelope, FaTwitter } from "react-icons/fa";
+import { FaLinkedin, FaEnvelope, FaTwitter, FaGithub } from "react-icons/fa";
 import { SiCalendly } from "react-icons/si";
 
 export const socialLinks = [
@@ -26,20 +26,18 @@ export const socialLinks = [
   },
   {
     id: 4,
+    icon: <FaGithub />,
+    title: "MightyTMZ",
+    label: "GitHub",
+    url: "https://github.com/MightyTMZ",
+  },
+  {
+    id: 5,
     icon: <SiCalendly />,
     title: "Schedule a free call with me!",
     label: "Calendly",
     url: "https://calendly.com/tom-zhang-20",
   },
-  /*{
-    id: 4,
-    icon: <FaGithub />,
-    title: "MightyTMZ",
-    label: "GitHub",
-    url: "https://github.com/MightyTMZ",
-  },*/
-
-  
 ];
 
 export const orbitviewProfileLink = "https://www.orbitview.net/profile/tom.zhang20"
