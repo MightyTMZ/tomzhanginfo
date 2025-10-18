@@ -148,11 +148,11 @@ const Hero = () => {
             onClick={handleViewWorks}
           />
           {/*<TertiaryAppButton text="Resources" onClick={handleResources} /> */}
-          <SlideAnimationButton
+          {/* <SlideAnimationButton
             text="Work with me"
             color="#010102ff"
             onClick={handleServices}
-          />
+          /> */}
           <SlideAnimationButton
             text="Subscribe to my newsletter"
             color="#ff9900ff"
