@@ -105,20 +105,12 @@ const Hero = () => {
           <ReactTyped
             strings={[
               "ENTJ 🧑",
-              // "Passionate Gym Enthusiast ❤️‍🩹",
-              // "Lover of Scenic Adventures 🌵",
-              // "Road Trip Explorer 🛣️",
               "World-Class Engineer 🧑‍🔬",
-              "Programmer 🧑🏻‍💻",
-              "Full Stack Software Engineer 🖥️",
-              "Venture Scout 🔍",
-              "Hackathon Winner 🏆",
-              "Tech Builder ⚙️",
+              "Full Stack Software Engineer 🖥️🧑🏻‍💻",
+              "Multi-time Hackathon Winner 🏆",
               "PhD-trained Electrical Engineer",
               "PhD-trained Computer Scientist",
-              "First-principles Thinker",
-              // "Multi-Sport Athlete ⚾🥏",
-              "Continuous Learner",
+              "First-principles Polymath 🌎🌍🌏",
             ]}
             typeSpeed={35}
             backSpeed={10}
