@@ -78,9 +78,9 @@ const Hero = () => {
     router.push("/games/");
   };
 
-  const handleServices = () => {
-    router.push("/services/");
-  };
+  // const handleServices = () => {
+  //   router.push("/services/");
+  // };
 
   return (
     <section id="hero" className={styles.hero}>
