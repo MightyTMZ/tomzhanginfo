@@ -70,9 +70,9 @@ const Hero = () => {
     router.push("/resume/");
   };
 
-  const handleViewNewsletter = () => {
-    router.push("/newsletter/");
-  };
+  // const handleViewNewsletter = () => {
+  //   router.push("/newsletter/");
+  // };
 
   const handlePlayGames = () => {
     router.push("/games/");
@@ -157,11 +157,11 @@ const Hero = () => {
             color="#010102ff"
             onClick={handleServices}
           /> */}
-          <SlideAnimationButton
+          {/* <SlideAnimationButton
             text="Subscribe to my newsletter"
             color="#ff9900ff"
             onClick={handleViewNewsletter}
-          />
+          /> */}
           <SlideAnimationButton
             text="Download my resume"
             color="#8C1515"
