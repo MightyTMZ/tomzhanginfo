@@ -34,6 +34,10 @@ const nicknames = [
     subText: "",
   },
   {
+    nickname: "Tom Zhanergy ⚡",
+    subText: "",
+  },
+  {
     nickname: "phoTOMetry",
     subText: "",
   },
