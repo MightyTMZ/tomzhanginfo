@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import styles from "./Hero.module.css";
 // import Tom1 from "./tz.webp";
 import Image from "next/image";
@@ -9,8 +9,14 @@ import Image from "next/image";
 // import TertiaryAppButton from "@/components/TertiaryAppButton/TertiaryAppButton";
 import SlideAnimationButton from "@/components/SlideAnimationButton/SlideAnimationButton";
 import { useRouter } from "next/navigation";
-import { ReactTyped } from "react-typed";
+import dynamic from "next/dynamic";
 // import Link from "next/link";
+
+// Lazy load ReactTyped to reduce initial bundle size
+const ReactTyped = dynamic(
+  () => import("react-typed").then((mod) => mod.ReactTyped),
+  { ssr: false }
+);
 
 const nicknames = [
   {
@@ -57,6 +63,91 @@ const nicknames = [
 
 const Hero = () => {
   const router = useRouter();
+  const [currentPortraitIndex, setCurrentPortraitIndex] = useState(0);
+  const [isHovering, setIsHovering] = useState(false);
+  const [isVideoLoaded, setIsVideoLoaded] = useState(false);
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  const tomPortraits = [
+    "/tom-portrait/tom-portrait.png",
+    "/tom-portrait/tom-midsmile.png",
+    "/tom-portrait/tom-fullsmile.png"
+  ];
+
+  // Lazy load video when component mounts
+  useEffect(() => {
+    if (videoRef.current && !isVideoLoaded) {
+      setIsVideoLoaded(true);
+    }
+  }, [isVideoLoaded]);
+
+  // Prefetch hover portrait images for smoother animation
+  useEffect(() => {
+    const prefetchImages = () => {
+      const link1 = document.createElement("link");
+      link1.rel = "prefetch";
+      link1.href = tomPortraits[1];
+      link1.as = "image";
+      document.head.appendChild(link1);
+
+      const link2 = document.createElement("link");
+      link2.rel = "prefetch";
+      link2.href = tomPortraits[2];
+      link2.as = "image";
+      document.head.appendChild(link2);
+    };
+
+    // Prefetch after initial render
+    const timer = setTimeout(prefetchImages, 1000);
+    return () => clearTimeout(timer);
+  }, [tomPortraits]);
+
+  // Handle portrait animation on hover
+  useEffect(() => {
+    if (!isHovering) return;
+
+    // Reset to first portrait when starting hover
+    setCurrentPortraitIndex(0);
+
+    // Forward animation: smile sequence (0 -> 1 -> 2)
+    const forwardInterval = setInterval(() => {
+      setCurrentPortraitIndex((prevIndex) => {
+        const nextIndex = prevIndex + 1;
+        if (nextIndex >= tomPortraits.length) {
+          clearInterval(forwardInterval);
+          return prevIndex; // Stay at the last portrait
+        }
+        return nextIndex;
+      });
+    }, 350); // Smooth timing, not too fast
+
+    return () => {
+      clearInterval(forwardInterval);
+    };
+  }, [isHovering, tomPortraits.length]);
+
+  // Handle reverse animation when mouse leaves
+  useEffect(() => {
+    if (isHovering) return;
+
+    // Only reverse if we're not already at the first portrait
+    if (currentPortraitIndex === 0) return;
+
+    // Reverse animation: fade back to original (current -> ... -> 0)
+    const reverseInterval = setInterval(() => {
+      setCurrentPortraitIndex((prevIndex) => {
+        if (prevIndex <= 0) {
+          clearInterval(reverseInterval);
+          return 0; // Stay at the first portrait
+        }
+        return prevIndex - 1;
+      });
+    }, 350);
+
+    return () => {
+      clearInterval(reverseInterval);
+    };
+  }, [isHovering, currentPortraitIndex]);
 
   const handleContact = () => {
     router.push("/connect-with-me/");
@@ -88,7 +179,16 @@ const Hero = () => {
 
   return (
     <section id="hero" className={styles.hero}>
-      <video autoPlay loop muted playsInline className={styles.backgroundVideo}>
+      <video
+        ref={videoRef}
+        autoPlay
+        loop
+        muted
+        playsInline
+        preload="none"
+        className={styles.backgroundVideo}
+        onLoadedData={() => setIsVideoLoaded(true)}
+      >
         <source src="/189838-886596433_small.mp4" type="video/webm" />
         Your browser does not support the video tag.
       </video>
@@ -97,13 +197,20 @@ const Hero = () => {
           Hello, my name is <span className={styles.name}>Tom Zhang</span>
         </h1>
         <div className={styles.imageWrapper}>
-          <div className={styles.portraitContainer}>
+          <div 
+            className={styles.portraitContainer}
+            onMouseEnter={() => setIsHovering(true)}
+            onMouseLeave={() => setIsHovering(false)}
+          >
             <Image
-              src="/tom-portrait.png"
+              src={tomPortraits[currentPortraitIndex]}
               alt="Tom Zhang"
               width={300}
               height={300}
               className={styles.portraitImage}
+              priority={currentPortraitIndex === 0}
+              fetchPriority={currentPortraitIndex === 0 ? "high" : "low"}
+              loading={currentPortraitIndex === 0 ? "eager" : "lazy"}
             />
           </div>
           <ReactTyped
@@ -127,7 +234,7 @@ const Hero = () => {
               fontWeight: "bold",
               fontSize: "24px",
             }}
-          ></ReactTyped>
+          />
         </div>
         <div className={styles.nicknamesSection}>
           <span className={styles.nicknamesLabel} >I'm also known as...</span>
