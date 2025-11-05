@@ -417,6 +417,12 @@ export const currently_working_on = [
   },
   {
     id: 2,
+    title: "C.O.N.S.T.E.L.L.A.T.I.O.N",
+    description: `(Computational Orbital Network for Scalable Telecommunications and Efficient Launch Logistics Architecture Through Integrated Orbit Networks) Space-based datacenter technology through a working thermal management prototype, an origami-inspired deployable satellite model, and economic analysis of specialized launch infrastructure for scaling orbital computing into a trillion-dollar industry.`,
+    links: [],
+  },
+  {
+    id: 3,
     title: "ZhangOS",
     description: `Building an operating system for Gen Z founders and ambitious students. 
     It is an AI-powered system that helps you grow faster, think deeper, and build better by uniting reflection, startup tools, personalized learning, and community into one immersive experience.`,
