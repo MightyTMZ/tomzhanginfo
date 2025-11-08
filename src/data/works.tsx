@@ -44,6 +44,11 @@ export const coreProjects = [
         url: "https://devpost.com/software/fsdfs",
         label: "Devpost",
       },
+      {
+        icon: <FaGlobe />,
+        url: "https://leetops.vercel.app/",
+        label: "Waitlist",
+      },
     ],
   },
   {
