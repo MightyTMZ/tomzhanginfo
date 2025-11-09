@@ -21,32 +21,44 @@ const DesignProjectCard = ({ project }: { project: DesignProject }) => {
   const hasImages = project.images && project.images.length > 0;
   const initialIndex = useMemo(() => getInitialImageIndex(project), [project]);
   const [activeIndex, setActiveIndex] = useState(initialIndex);
+  const [isHovering, setIsHovering] = useState(false);
+  const [isManuallyPaused, setIsManuallyPaused] = useState(false);
+
+  const imageCount = project.images?.length ?? 0;
+  const isPaused = isHovering || isManuallyPaused;
+  const shouldAutoPlay =
+    hasImages && project.shuffleImages && imageCount > 1 && !isPaused;
 
   useEffect(() => {
     setActiveIndex(initialIndex);
   }, [initialIndex]);
 
   useEffect(() => {
-    if (!hasImages || !project.shuffleImages || project.images.length <= 1) {
+    setIsManuallyPaused(false);
+    setIsHovering(false);
+  }, [project.title]);
+
+  useEffect(() => {
+    if (!shouldAutoPlay) {
       return;
     }
 
     const intervalMs = Math.max(1500, (project.shuffleInterval ?? 3) * 1000);
     const intervalId = window.setInterval(() => {
       setActiveIndex((prev) => {
-        if (!project.images.length) {
+        if (!imageCount) {
           return prev;
         }
 
         const next = prev + 1;
-        return next % project.images.length;
+        return next % imageCount;
       });
     }, intervalMs);
 
     return () => {
       window.clearInterval(intervalId);
     };
-  }, [hasImages, project.shuffleImages, project.shuffleInterval, project.images]);
+  }, [shouldAutoPlay, project.shuffleInterval, imageCount]);
 
   const handleSelectIndex = useCallback(
     (index: number) => {
@@ -58,16 +70,45 @@ const DesignProjectCard = ({ project }: { project: DesignProject }) => {
 
   const handleStep = useCallback(
     (direction: 1 | -1) => {
-      if (!hasImages || project.images.length <= 1) return;
+      if (!hasImages || imageCount <= 1) return;
       setActiveIndex((prev) => {
-        const next = (prev + direction + project.images.length) % project.images.length;
+        const next = (prev + direction + imageCount) % imageCount;
         return next;
       });
     },
-    [hasImages, project.images],
+    [hasImages, imageCount],
   );
 
   const displayedImage = hasImages && activeIndex >= 0 ? project.images[activeIndex] : undefined;
+  const pauseAriaLabel = isManuallyPaused ? "Resume carousel" : "Pause carousel";
+
+  const handleMouseEnter = useCallback(() => {
+    setIsHovering(true);
+  }, []);
+
+  const handleMouseLeave = useCallback(() => {
+    setIsHovering(false);
+  }, []);
+
+  const handleWrapperClick: React.MouseEventHandler<HTMLDivElement> = useCallback(
+    (event) => {
+      const target = event.target as HTMLElement;
+      if (target.closest("button")) {
+        return;
+      }
+      setIsManuallyPaused((prev) => !prev);
+    },
+    [],
+  );
+
+  const handleKeyDown: React.KeyboardEventHandler<HTMLDivElement> = useCallback((event) => {
+    if (event.key === " " || event.key === "Enter") {
+      event.preventDefault();
+      setIsManuallyPaused((prev) => !prev);
+    } else if (event.key === "Escape") {
+      setIsManuallyPaused(false);
+    }
+  }, []);
 
   return (
     <article className={styles.projectCard}>
@@ -87,7 +128,21 @@ const DesignProjectCard = ({ project }: { project: DesignProject }) => {
         </div>
       </header>
 
-      <div className={styles.carouselContainer}>
+      <div
+        className={styles.carouselContainer}
+        data-paused={isPaused}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+        onClick={handleWrapperClick}
+        onKeyDown={handleKeyDown}
+        tabIndex={0}
+        role="button"
+        aria-pressed={isManuallyPaused}
+        aria-label={pauseAriaLabel}
+      >
+        {isPaused && (
+          <div className={styles.carouselStatus}>{isManuallyPaused ? "Paused" : "Hover Paused"}</div>
+        )}
         <div className={styles.carouselImageWrapper}>
           {displayedImage ? (
             <Image
@@ -154,7 +209,10 @@ const DesignProjectCard = ({ project }: { project: DesignProject }) => {
 };
 
 const DesignPortfolio = () => {
-  if (!design_portfolio.length) {
+  const [showAll, setShowAll] = useState(false);
+  const hasProjects = design_portfolio.length > 0;
+
+  if (!hasProjects) {
     return (
       <div className={styles.projectGrid}>
         <span className="text-xl text-gray-500">Design portfolio coming soon.</span>
@@ -162,13 +220,33 @@ const DesignPortfolio = () => {
     );
   }
 
+  const projectsToRender = showAll ? design_portfolio : design_portfolio.slice(0, 3);
+  const hasMoreProjects = design_portfolio.length > 3;
+
+  const toggleShowAll = () => {
+    setShowAll((prev) => !prev);
+  };
+
   return (
     <section>
       <div className={styles.projectGrid}>
-        {design_portfolio.map((project) => (
+        {projectsToRender.map((project) => (
           <DesignProjectCard key={project.title} project={project} />
         ))}
       </div>
+
+      {hasMoreProjects && (
+        <div className="flex justify-center mt-6">
+          <button
+            type="button"
+            className="showMoreLessUnderlineButton text-sm font-semibold"
+            onClick={toggleShowAll}
+            aria-expanded={showAll}
+          >
+            {showAll ? "Show less" : "Show more"}
+          </button>
+        </div>
+      )}
     </section>
   );
 };
