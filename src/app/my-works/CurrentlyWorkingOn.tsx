@@ -10,6 +10,7 @@ const CurrentlyWorkingOn = () => {
   const [expandedDescriptions, setExpandedDescriptions] = useState<{ [key: number]: boolean }>({});
 
   const projects = showMore ? currently_working_on : currently_working_on.slice(0, 3);
+  const hasMoreProjects = currently_working_on.length > 3;
 
   const handleShowMore = () => {
     setShowMore(!showMore);
@@ -33,8 +34,8 @@ const CurrentlyWorkingOn = () => {
         {projects.map((project) => {
           const isExpanded = expandedDescriptions[project.id] || false;
           const shouldTruncate = project.description.length > 150;
-          const displayDescription = isExpanded 
-            ? project.description 
+          const displayDescription = isExpanded
+            ? project.description
             : truncateDescription(project.description);
 
           return (
@@ -82,13 +83,18 @@ const CurrentlyWorkingOn = () => {
             </div>
           );
         })}
-        <button
-          onClick={handleShowMore}
-          className="showMoreLessUnderlineButton"
-        >
-          {showMore ? "Show less" : "Show more"}
-        </button>
       </div>
+      {hasMoreProjects && (
+        <div className="flex justify-center mt-6">
+          <button
+            onClick={handleShowMore}
+            className="showMoreLessUnderlineButton text-sm font-semibold"
+            aria-expanded={showMore}
+          >
+            {showMore ? "Show less" : "Show more"}
+          </button>
+        </div>
+      )}
     </>
   );
 };

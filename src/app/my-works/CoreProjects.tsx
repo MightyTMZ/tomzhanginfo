@@ -12,6 +12,7 @@ const CoreProjects = () => {
   const [expandedDescriptions, setExpandedDescriptions] = useState<{ [key: number]: boolean }>({});
 
   const projects = showMore ? coreProjects : coreProjects.slice(0, 3);
+  const hasMoreProjects = coreProjects.length > 3;
 
   const handleShowMore = () => {
     setShowMore(!showMore);
@@ -35,8 +36,8 @@ const CoreProjects = () => {
         {projects.map((project) => {
           const isExpanded = expandedDescriptions[project.id] || false;
           const shouldTruncate = project.description.length > 150;
-          const displayDescription = isExpanded 
-            ? project.description 
+          const displayDescription = isExpanded
+            ? project.description
             : truncateDescription(project.description);
 
           return (
@@ -84,13 +85,18 @@ const CoreProjects = () => {
             </div>
           );
         })}
-        <button
-          onClick={handleShowMore}
-          className="showMoreLessUnderlineButton"
-        >
-          {showMore ? "Show less" : "Show more"}
-        </button>
       </div>
+      {hasMoreProjects && (
+        <div className="flex justify-center mt-6">
+          <button
+            onClick={handleShowMore}
+            className="showMoreLessUnderlineButton text-sm font-semibold"
+            aria-expanded={showMore}
+          >
+            {showMore ? "Show less" : "Show more"}
+          </button>
+        </div>
+      )}
     </>
   );
 };

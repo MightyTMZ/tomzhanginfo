@@ -435,14 +435,14 @@ export const currently_working_on = [
     links: [],
   },
   {
-    id: 3,
+    id: 4,
     title: "Quantum Key Distribution (QKD) Simulation",
     description: `Building a simulator of the BB84 QKD protocol. 
     This will illustrate how quantum mechanics can secure military communications.`,
     links: [],
   },
   {
-    id: 4,
+    id: 5,
     title: "NeuralClone",
     description: `Advanced computing device that uses neural data to train AI models, creating digital clones capable of autonomous tasks and real-time representation. It offers version control, personalization, and potential physical assistance. Revolutionizing productivity and accessibility by providing users with an extension of their consciousness.`,
     links: [],
