@@ -9,6 +9,7 @@ import {
   FaFileAlt,
   // FaRocket,
   FaPython,
+  FaLightbulb,
 } from "react-icons/fa";
 import { IoLogoGameControllerB } from "react-icons/io";
 import { TbError404 } from "react-icons/tb";
@@ -63,12 +64,12 @@ export const navItems = [
     reference: "/my-works",
     icon: <FaProjectDiagram />,
   },
-  // {
-  //   id: 9,
-  //   title: "OrbitView",
-  //   reference: "/orbitview",
-  //   icon: <FaRocket />,
-  // },
+  {
+    id: 9,
+    title: "Daily Dose of Insight",
+    reference: "/daily-dose-of-insights",
+    icon: <FaLightbulb />,
+  },
   {
     id: 10,
     title: "Services",

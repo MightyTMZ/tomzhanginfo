@@ -7,6 +7,7 @@ import { websiteName } from "@/data/base";
 import { Metadata } from "next";
 import ReturnHomeButton from "@/components/ReturnHomeButton/ReturnHomeButton";
 import CurrentlyWorkingOn from "./CurrentlyWorkingOn";
+import DesignPortfolio from "./DesignPortfolio";
 
 const pageTitle = "My Works";
 const fullTitle = websiteName + " - " + pageTitle;
@@ -46,6 +47,8 @@ export default function MyWorks() {
           <CoreProjects />
           <h1 className={styles.sectionTitle}>What I'm currently working on?</h1>
           <CurrentlyWorkingOn />
+          <h1 className={styles.sectionTitle}>My Design Portfolio</h1>
+          <DesignPortfolio />
           {/* <PrototypesExperiments />
           <ToolsIntegration /> */}
         </div>

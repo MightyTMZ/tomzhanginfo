@@ -18,9 +18,10 @@ import nift_of_the_web from "./workPics/nift_of_the_web.png";
 import thecolorproject from "./workPics/thecolorproject.png";
 import huvtsp_search from "./workPics/huvtsp_search.jpg";
 import planebrain from "./workPics/planebrain.png";
-import omniwave from "./workPics/omniwave.png"
-import leetops from "./workPics/leetops.png"
+import omniwave from "./workPics/omniwave.png";
+import leetops from "./workPics/leetops.png";
 import { SiDevpost } from "react-icons/si";
+import { StaticImageData } from "next/image";
 
 export const coreProjects = [
   {
@@ -447,3 +448,152 @@ export const currently_working_on = [
     links: [],
   },
 ];
+
+interface Image {
+  src: StaticImageData | string;
+  alt: string;
+  caption: string;
+  feature: boolean | false;
+}
+
+interface DesignProject {
+  title: string;
+  description: string;
+  images: Image[];
+  shuffleImages: boolean | false;
+  shuffleInterval?: number;
+}
+
+export const design_portfolio: DesignProject[] = [
+  {
+    title: "Ollama handbook icons",
+    description: "Designed for 'The Ollama Handbook' (Packt publisher)",
+    shuffleImages: true,
+    shuffleInterval: 2, // in seconds
+    images: [
+      {
+        src: "/design-portfolio/ollama-icons/ollama_key_principle.png",
+        alt: "Ollama Handbook 'Key Principle' icon",
+        caption:
+          "Key principle: a fundamental concept or takeaway that underpins the material being discussed.",
+        feature: false,
+      },
+      {
+        src: "/design-portfolio/ollama-icons/ollama_pro_tip.png",
+        alt: "Ollama Handbook 'Pro Tip' icon",
+        caption:
+          "Pro Tip: Offers practical advice or a shortcut to help you work more efficiently or effectively.",
+        feature: false,
+      },
+      {
+        src: "/design-portfolio/ollama-icons/ollama_code_snippet.png",
+        alt: "Ollama Handbook 'Code Snippet' icon",
+        caption:
+          "Code Snippet: A small, functional piece of code to illustrate a concept or help you apply what you've learned.",
+        feature: false,
+      },
+      {
+        src: "/design-portfolio/ollama-icons/ollama_case_study.png",
+        alt: "Ollama Handbook 'Case Study' icon",
+        caption:
+          "Case Study: A real-world example that demonstrates the practical application of the concepts covered.",
+        feature: false,
+      },
+      {
+        src: "/design-portfolio/ollama-icons/ollama_inquiry.png",
+        alt: "Ollama Handbook 'Inquiry or Quick Question' icon",
+        caption:
+          "Poses a thought-provoking question to encourage reflection or deepen your understanding.",
+        feature: false,
+      },
+      {
+        src: "/design-portfolio/ollama-icons/ollama_inquiry.png",
+        alt: "Ollama Handbook 'Check Your Learning' icon",
+        caption:
+          "Check Your Learning: At the end of each chapter of section, this is an opportunity to review and reinforce key points through questions or exercises.",
+        feature: false,
+      },
+    ],
+  },
+  {
+    title: "3D Cash emoji",
+    description: "Created using Fusion 360",
+    shuffleImages: true,
+    shuffleInterval: 2, // in seconds
+    images: [
+      {
+        src: "/design-portfolio/3d-money/money1.png",
+        alt: "Pic 1",
+        caption: "",
+        feature: false,
+      },
+      {
+        src: "/design-portfolio/3d-money/money2.png",
+        alt: "Pic 2",
+        caption: "",
+        feature: false,
+      },
+      {
+        src: "/design-portfolio/3d-money/money3.png",
+        alt: "Pic 3",
+        caption: "",
+        feature: false,
+      },
+    ],
+  },
+  {
+    title: "3D Briefcase emoji",
+    description: "Created using Fusion 360",
+    shuffleImages: true,
+    shuffleInterval: 2, // in seconds
+    images: [
+      {
+        src: "/design-portfolio/3d-briefcase/briefcase1.png",
+        alt: "Pic 1",
+        caption: "",
+        feature: false,
+      },
+      {
+        src: "/design-portfolio/3d-briefcase/briefcase2.png",
+        alt: "Pic 2",
+        caption: "",
+        feature: false,
+      },
+      {
+        src: "/design-portfolio/3d-briefcase/briefcase3.png",
+        alt: "Pic 3",
+        caption: "",
+        feature: false,
+      },
+    ],
+  },
+  {
+    title: "3D Train emoji",
+    description: "Created using Fusion 360",
+    shuffleImages: true,
+    shuffleInterval: 2, // in seconds
+    images: [
+      {
+        src: "/design-portfolio/3d-train/train1.png",
+        alt: "Pic 1",
+        caption: "",
+        feature: false,
+      },
+      {
+        src: "/design-portfolio/3d-train/train2.png",
+        alt: "Pic 2",
+        caption: "",
+        feature: false,
+      },
+      {
+        src: "/design-portfolio/3d-train/train3.png",
+        alt: "Pic 3",
+        caption: "",
+        feature: false,
+      },
+    ],
+  },
+];
+// CapCut
+// Adobe Premiere
+//
