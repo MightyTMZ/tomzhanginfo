@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./PhotographyPage.module.css";
-import placeholderIMG from "../../../public/placeholder.webp";
 import Image from "next/image";
 import { websiteName } from "@/data/base";
 import ReturnHomeButton from "@/components/ReturnHomeButton/ReturnHomeButton";
@@ -9,27 +8,39 @@ import { Metadata } from "next";
 const photos = [
   {
     id: 1,
-    url: placeholderIMG,
-    title: "Sunset Over the Lake",
-    description: "Captured at the Golden Hour.",
+    url: '/photography/PXL_20250917_002128492.jpg',
+    title: "Toronto at night 🌃",
+    description: "Queen St E",
   },
   {
     id: 2,
-    url: placeholderIMG,
-    title: "Mountain Peaks",
-    description: "A breathtaking view of snow-capped mountains.",
+    url: "/photography/htn_yc_fireside.jpg",
+    title: "🟧 Y Combinator Fireside Chat @ Hack the North",
+    description: "",
   },
   {
     id: 3,
-    url: placeholderIMG,
-    title: "Urban Nights",
-    description: "City lights illuminating the skyline.",
+    url: "/photography/peaches_in_georgia.png",
+    title: "'I got my peaches out in Georgia'",
+    description: "",
   },
   {
     id: 4,
-    url: placeholderIMG,
-    title: "Forest Trail",
-    description: "A peaceful walk through the woods.",
+    url: "/photography/yc_event_entrance.jpg",
+    title: "YC Event in Toronto",
+    description: "Entrance view",
+  },
+  {
+    id: 5,
+    url: "/photography/yc_in_toronto.jpg",
+    title: "YC Event in Toronto",
+    description: "Live session view",
+  },
+  {
+    id: 6,
+    url: "/photography/htn_opening_ceremonies.jpg",
+    title: "Hack the North opening ceremonies",
+    description: "YC partner Andrew Miklas speaking on behalf of YC",
   },
   // Add more photos here
 ];
@@ -59,7 +70,7 @@ export default function PhotographyPage() {
           <div className={styles.gallery}>
             {photos.map((photo) => (
               <div key={photo.id} className={styles.card}>
-                <Image
+                <img
                   src={photo.url}
                   alt={photo.title}
                   className={styles.photo}
