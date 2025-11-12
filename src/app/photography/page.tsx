@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./PhotographyPage.module.css";
-import Image from "next/image";
 import { websiteName } from "@/data/base";
 import ReturnHomeButton from "@/components/ReturnHomeButton/ReturnHomeButton";
 import { Metadata } from "next";
