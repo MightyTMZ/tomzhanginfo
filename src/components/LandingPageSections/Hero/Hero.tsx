@@ -219,13 +219,13 @@ const Hero = () => {
               "First-principles Polymath 🌎🌍🌏",
               "World-Class Engineer 🧑‍🔬",
               "Multi-time Hackathon Winner 🏆",
-              "PhD-trained Computer Scientist",
-              "PhD-trained Computer Engineer",
-              "PhD-trained Electrical Engineer",
-              "PhD-trained AI Engineer",
-              "PhD-trained Software Engineer",
-              "PhD-trained Mechanical Engineer",
-              "PhD-trained Chemical Engineer",
+              "Computer Scientist",
+              "Computer Engineer",
+              "Electrical Engineer",
+              "AI Engineer",
+              "Software Engineer",
+              "Mechanical Engineer",
+              "Chemical Engineer",
             ]}
             typeSpeed={35}
             backSpeed={10}
