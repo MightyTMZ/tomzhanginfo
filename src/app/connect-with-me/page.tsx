@@ -85,7 +85,7 @@ export default function ConnectWithMe() {
               {socialLinks.map((link, index) => (
                 <li key={index}>
                   <Link
-                    key={link.id}
+                    key={index}
                     href={link.url}
                     target="_blank"
                     rel="noopener noreferrer"

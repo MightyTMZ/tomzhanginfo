@@ -1,38 +1,45 @@
 import { email } from "./email";
-import { FaLinkedin, FaEnvelope, FaTwitter, FaGithub } from "react-icons/fa";
+import {
+  FaLinkedin,
+  FaEnvelope,
+  FaTwitter,
+  FaGithub,
+  FaInstagram,
+} from "react-icons/fa";
 import { SiCalendly } from "react-icons/si";
 
 export const socialLinks = [
   {
-    id: 1,
     icon: <FaEnvelope />,
     title: email,
     label: "Email",
     url: `mailto:${email}`,
   },
   {
-    id: 2,
     icon: <FaLinkedin />,
     title: "Tom Zhang",
     label: "LinkedIn",
     url: "https://www.linkedin.com/in/tom-zhang-485341274/",
   },
   {
-    id: 3,
+    icon: <FaInstagram />,
+    title: "@tmy.zhng",
+    label: "Instagram",
+    url: "https://www.instagram.com/tmy.zhng/",
+  },
+  {
     icon: <FaTwitter />,
     title: "OrbitTommyZ",
     label: "Twitter (X)",
     url: "https://x.com/OrbitTommyZ",
   },
   {
-    id: 4,
     icon: <FaGithub />,
     title: "MightyTMZ",
     label: "GitHub",
     url: "https://github.com/MightyTMZ",
   },
   {
-    id: 5,
     icon: <SiCalendly />,
     title: "Schedule a free call with me!",
     label: "Calendly",
