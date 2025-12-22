@@ -204,6 +204,7 @@ const Hero = () => {
           </div>
           <ReactTyped
             strings={[
+              "Full-Stack Software Engineer at Phia Co. 💼",
               "ENTJ 🧑",
               "First-principles Polymath 🌎🌍🌏",
               "World-Class Engineer 🧑‍🔬",
