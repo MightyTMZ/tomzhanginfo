@@ -4,6 +4,7 @@ import {
   FaVideo,
   FaTwitter,
   FaGoogleDrive,
+  FaLinkedin,
 } from "react-icons/fa";
 import placeholderImage from "../../public/placeholder.webp";
 import clearsmile from "./workPics/clearsmile.png";
@@ -20,10 +21,34 @@ import huvtsp_search from "./workPics/huvtsp_search.jpg";
 import planebrain from "./workPics/planebrain.png";
 import omniwave from "./workPics/omniwave.png";
 import leetops from "./workPics/leetops.png";
+import fineval from "./workPics/fineval.png";
 import { SiDevpost } from "react-icons/si";
 import { StaticImageData } from "next/image";
 
 export const coreProjects = [
+  {
+    id: 202511,
+    title: "FinEval: Model Analytics and Benchmarking Performance",
+    featureImage: fineval ? fineval : placeholderImage,
+    description: `FinEval is a full-stack benchmark for evaluating financial reasoning in large language models. Its tests whether models can handle structured, multi-step financial logic. Not just arriving at the right answer, but reason correctly along the way. 
+
+    Think of it as “unit tests for financial intelligence in LLMs.” Models are run through curated financial problems (easy → hard), scored by a judge model on 60% correctness and 40% reasoning quality, and compared in real time. FinEval explicitly catches failure modes like right answer, wrong reasoning or sound logic, flawed calculations issues → that matter in real financial systems.
+    
+    Built end-to-end under 6-hour hackathon in NYC, FinEval emphasizes pragmatic engineering: simple data layers (JSONL), fast iteration, and system reliability over polish. The backend was rebuilt from scratch mid-hackathon to ship a working, real evaluation pipeline.
+    `,
+    links: [
+      {
+        icon: <FaGoogleDrive />,
+        url: "https://drive.google.com/drive/folders/1wM2yQBdIYd8pTWW0xcyxLYGI0lPeuyKm?usp=drive_link",
+        label: "Google Drive",
+      },
+      {
+        icon: <FaLinkedin />,
+        url: "https://www.linkedin.com/posts/tom-zhang-485341274_aiengineering-llmevaluation-genai-activity-7398380529571536896--BCl?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEL4MWUBrGupf4d8fIVU0s_XkgCoF48hezc",
+        label: "LinkedIn",
+      },
+    ],
+  },
   {
     id: 2025,
     title: "LeetOps: The New Currency of Engineering Credibility",
