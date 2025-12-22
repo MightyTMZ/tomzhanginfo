@@ -10,6 +10,7 @@ import Image from "next/image";
 import SlideAnimationButton from "@/components/SlideAnimationButton/SlideAnimationButton";
 import { useRouter } from "next/navigation";
 import dynamic from "next/dynamic";
+import HeroBackground from "@/components/HeroBackground/HeroBackground";
 // import Link from "next/link";
 
 // Lazy load ReactTyped to reduce initial bundle size
@@ -179,19 +180,7 @@ const Hero = () => {
 
   return (
     <section id="hero" className={styles.hero}>
-      <video
-        ref={videoRef}
-        autoPlay
-        loop
-        muted
-        playsInline
-        preload="none"
-        className={styles.backgroundVideo}
-        onLoadedData={() => setIsVideoLoaded(true)}
-      >
-        <source src="/189838-886596433_small.mp4" type="video/webm" />
-        Your browser does not support the video tag.
-      </video>
+      <HeroBackground/>
       <div className={styles.content}>
         <h1 className={styles.helloHeading}>
           Hello, my name is <span className={styles.name}>Tom Zhang</span>
