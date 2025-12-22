@@ -84,7 +84,7 @@ const HeroBackground = () => {
         if (this.y < 0) this.y = canvas.height;
       }
       
-      draw(ctx: CanvasRenderingContext2D, canvas: HTMLCanvasElement) {
+      draw(ctx: CanvasRenderingContext2D) {
         const hex = this.color;
         const r = parseInt(hex.slice(1, 3), 16);
         const g = parseInt(hex.slice(3, 5), 16);
