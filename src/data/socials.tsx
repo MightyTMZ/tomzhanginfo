@@ -40,6 +40,12 @@ export const socialLinks = [
     url: "https://github.com/MightyTMZ",
   },
   {
+    icon: <FaGithub />,
+    title: "TomPhia",
+    label: "GitHub",
+    url: "https://github.com/TomPhia",
+  },
+  {
     icon: <SiCalendly />,
     title: "Schedule a free call with me!",
     label: "Calendly",
