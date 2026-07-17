@@ -204,18 +204,14 @@ const Hero = () => {
           </div>
           <ReactTyped
             strings={[
-              "Full-Stack Software Engineer at Phia Co. 💼",
+              "Full-Stack Software Engineer",
               "ENTJ 🧑",
               "First-principles Polymath 🌎🌍🌏",
               "World-Class Engineer 🧑‍🔬",
               "Multi-time Hackathon Winner 🏆",
               "Computer Scientist",
-              "Computer Engineer",
-              "Electrical Engineer",
               "AI Engineer",
               "Software Engineer",
-              "Mechanical Engineer",
-              "Chemical Engineer",
             ]}
             typeSpeed={35}
             backSpeed={10}

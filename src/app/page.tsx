@@ -35,7 +35,7 @@ const fullTitle = websiteName + " - " + pageTitle;
 const pageDescription =
   "Welcome to my personal website! View my projects, prototypes, experiments, integrations, photos, etc. Enjoy!";
 const pageKeywords =
-  "tom, tom zhang, earl haig, canada, north york, baseball, programming, harvard, orbitview billionaire, ai, tech, ar vr, finance, economics, ultimate frisbee";
+  "tom, tom zhang, canada, north york, programming, harvard, billionaire, ai, tech, ar vr, finance, economics, full stack, web development, software engineering, personal website, portfolio, projects, prototypes, experiments, integrations, photos";
 
 export const metadata: Metadata = {
   title: fullTitle,
