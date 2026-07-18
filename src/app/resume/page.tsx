@@ -31,9 +31,7 @@ const Resume = () => {
 
         <h1>Download my resume</h1>
         <p className="pb-4">
-          <span className="text-red-500 font-bold">Disclaimer:</span> If you would like to
-          me explain further, please kindly{" "}
-          <a href="/connect-with-me"><span className="text-blue-500">reach out to me</span></a>
+          As of July 2026
         </p>
         <iframe
           src="./Tom Zhang - Resume.pdf"
